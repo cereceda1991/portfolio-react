@@ -9,7 +9,6 @@ import Peliculas from "../assets/peliculas.png";
 import Pokedex from "../assets/pokedex.png";
 import Weather from "../assets/apiweather.png";
 import Cars from "../assets/autos.png";
-import Portfolio from "../assets/portfolio.png";
 import ReactImg from "../assets/react.png";
 import HTML from "../assets/html.png";
 import CSS from "../assets/css.png";
@@ -177,30 +176,6 @@ const Projects = () => {
               <button className="text-[black] p-1 hover:bg-orange-600 hover:rounded-md hover:text-[white]">
                 <a
                   href="https://github.com/SantiA21/pokedex"
-                  target="__blank"
-                >
-                  Code
-                </a>
-              </button>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="bg-[white] rounded-xl">
-            <Card make="Portfolio" image={Portfolio} />
-            <div className="flex flex-row justify-center">
-              <img
-                className="w-[30px] h-[30px]"
-                src={ReactImg}
-                alt="/"
-                size={25}
-              />
-              <img className="w-[30px] h-[30px]" src={HTML} alt="/" />
-              <img className="w-[30px] h-[30px]" src={Tailwind} alt="/" />
-            </div>
-            <div className="flex flex-row justify-evenly w-auto">
-              <button className="text-[black] p-1 hover:bg-orange-600 hover:rounded-md hover:text-[white]">
-                <a
-                  href="https://github.com/SantiA21/portfolio-react"
                   target="__blank"
                 >
                   Code
