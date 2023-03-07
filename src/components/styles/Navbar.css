@@ -52,6 +52,12 @@
     font-size: 2rem;
     font-weight: 600;
     cursor: pointer;
+    font-family: 'Teko', sans-serif;
+}
+
+.navbar__title sub {
+    vertical-align: sub;
+    font-size: 2rem;
 }
 
 .container__social-icons {

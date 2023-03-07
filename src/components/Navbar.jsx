@@ -17,7 +17,7 @@ const Navbar = () => {
     <header className="container__navbar">
       <h1 className="navbar__title">
         <Link to="home" smooth={true} duration={1000}>
-          MC
+          M <sub>C</sub>
         </Link>
       </h1>
       <div className="menu__navbar">
