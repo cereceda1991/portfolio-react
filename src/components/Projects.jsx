@@ -11,8 +11,7 @@ import CSS from "../assets/css.png";
 import Js from '../assets/javascript.png'
 import Vite from '../assets/vite.png'
 import Redux from '../assets/redux.png'
-import ecommerce from '../assets/ecommerce.png'
-
+import Ecommerce from '../assets/ecommerce.png'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 
@@ -65,7 +64,7 @@ const Projects = () => {
         >
           <SwiperSlide>
             <Project
-              title="Cloud Page"
+              title="Weather App"
               image={Weather}
               languages={[ReactImg, HTML, CSS, Vite]}
               demoUrl="https://max-c-app-weather.netlify.app"
@@ -96,7 +95,7 @@ const Projects = () => {
           <SwiperSlide>
             <Project
               title="e-commerce"
-              image={ecommerce}
+              image={Ecommerce}
               languages={[ReactImg, HTML, CSS, Js, Redux]}
               demoUrl="https://my-ecommerce-react-maxc.netlify.app/#/"
               codeUrl="https://github.com/cereceda1991/ecommerce-react.git"
