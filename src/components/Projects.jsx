@@ -11,7 +11,7 @@ import CSS from "../assets/css.png";
 import Js from '../assets/javascript.png'
 import Vite from '../assets/vite.png'
 import Redux from '../assets/redux.png'
-import Ecommerce from '../assets/ecommerce.png'
+import Ecommerce from '../assets/eco.png'
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
@@ -95,7 +95,7 @@ const Projects = () => {
 
           <SwiperSlide>
             <Project
-              title="e-commerce"
+              title="Ecommerce"
               image={Ecommerce}
               languages={[ReactImg, HTML, CSS, Js, Redux]}
               demoUrl="https://my-ecommerce-react-maxc.netlify.app/#/"
