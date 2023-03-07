@@ -12,6 +12,7 @@ import Js from '../assets/javascript.png'
 import Vite from '../assets/vite.png'
 import Redux from '../assets/redux.png'
 import Ecommerce from '../assets/ecommerce.png'
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 
