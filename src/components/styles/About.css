@@ -1,0 +1,9 @@
+.container__about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    padding: 3rem 10rem;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
