@@ -2,20 +2,17 @@ import React from "react";
 import { useEffect } from "react";
 
 //resources
-import Cloud from "../assets/cloudpage.png";
-import Nator from "../assets/nator.png";
-import Tareas from "../assets/tareas.png";
-import Peliculas from "../assets/peliculas.png";
 import Pokedex from "../assets/pokedex.png";
 import Weather from "../assets/apiweather.png";
-import Cars from "../assets/autos.png";
+import RickandMorty from "../assets/rickandmorty.png";
 import ReactImg from "../assets/react.png";
 import HTML from "../assets/html.png";
 import CSS from "../assets/css.png";
-import JavaScript from "../assets/javascript.png";
 import Tailwind from "../assets/tailwind.png";
-
-import Card from "./Card";
+import Js from '../assets/javascript.png'
+import Vite from '../assets/vite.png'
+import Redux from '../assets/redux.png'
+import ecommerce from '../assets/ecommerce.png'
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
@@ -26,247 +23,89 @@ import "swiper/css/navigation";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import './styles/Projects.css'
+import Project from "./Project";
 
 const Projects = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
+
   return (
+
     <div name="projects" className="container__projects">
-      <h1>Projects</h1>
-      <div className="" data-aos="fade-up">
+
+      <div>
+        <div className="swiper-button-prev"></div>
+        <div className="swiper-button-next"></div>
+      </div>
+
+      <div>
         <Swiper
+          data-aos="fade-up"
           modules={[Navigation, Pagination, Scrollbar, A11y]}
-          spaceBetween={10}
-          slidesPerView={5}
-          navigation
-          breakpoints={{
-            // when window width is >= 340px
-            340: {
-              width: 200,
-              slidesPerView: 1,
-            },
-            // when window width is >= 768px
-            768: {
-              width: 768,
-              slidesPerView: 4,
-            },
-            // when window width is >= 1040px
-            1040: {
-              width: 1040,
-              slidesPerView: 5,
-            },
+          slidesPerView={3}
+          navigation={{
+            prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-button-next",
           }}
+
+        // breakpoints={{
+        //   340: {
+        //     width: 200,
+        //     slidesPerView: 1,
+        //   },
+        //   768: {
+        //     width: 768,
+        //     slidesPerView: 3,
+        //   },
+        //   1040: {
+        //     width: 1040,
+        //     slidesPerView: 3,
+        //   },
+        // }}
         >
-          <SwiperSlide className="bg-[white] rounded-xl">
-            <Card make="Cloud Page" image={Cloud} />
-            <div className="flex flex-row justify-center">
-              <img
-                className="w-[30px] h-[30px]"
-                src={ReactImg}
-                alt="/"
-                size={25}
-              />
-              <img className="w-[30px] h-[30px]" src={HTML} alt="/" />
-              <img className="w-[30px] h-[30px]" src={Tailwind} alt="/" />
-            </div>
-            <div className="flex flex-row justify-evenly w-auto">
-              <button className="text-[black] p-1 hover:bg-orange-600 hover:rounded-md hover:text-[white]">
-                <a
-                  href="https://react-cloudpage.netlify.app"
-                  target="__blank"
-                >
-                  Demo
-                </a>
-              </button>
-              <button className="text-[black] p-1 hover:bg-orange-600 hover:rounded-md hover:text-[white]">
-                <a
-                  href="https://github.com/SantiA21/cloud-page"
-                  target="__blank"
-                >
-                  Code
-                </a>
-              </button>
-            </div>
+          <SwiperSlide>
+            <Project
+              title="Cloud Page"
+              image={Weather}
+              languages={[ReactImg, HTML, CSS, Vite]}
+              demoUrl="https://max-c-app-weather.netlify.app"
+              codeUrl="https://github.com/cereceda1991/weather-app.git"
+            />
           </SwiperSlide>
 
-          <SwiperSlide className="bg-[white] rounded-xl">
-            <Card make="Drive" image={Cars} />
-            <div className="flex flex-row justify-center">
-              <img
-                className="w-[30px] h-[30px]"
-                src={ReactImg}
-                alt="/"
-                size={25}
-              />
-              <img className="w-[30px] h-[30px]" src={HTML} alt="/" />
-              <img className="w-[30px] h-[30px]" src={CSS} alt="/" />
-            </div>
-            <div className="flex flex-row justify-evenly w-auto">
-              <button className="text-[black] p-1 hover:bg-orange-600 hover:rounded-md hover:text-[white]">
-                <a href="https://autosreactjs.netlify.app" target="__blank">
-                  Demo
-                </a>
-              </button>
-              <button className="text-[black] p-1 hover:bg-orange-600 hover:rounded-md hover:text-[white]">
-                <a
-                  href="https://github.com/SantiA21/AutosReactJS"
-                  target="__blank"
-                >
-                  Code
-                </a>
-              </button>
-            </div>
+          <SwiperSlide>
+            <Project
+              title="Rick and Morty App"
+              image={RickandMorty}
+              languages={[ReactImg, HTML, CSS, Vite]}
+              demoUrl="https://rick-and-morty-app-maxc.netlify.app/"
+              codeUrl="https://github.com/cereceda1991/finallyRickandMorty.git"
+            />
           </SwiperSlide>
 
-          <SwiperSlide className="bg-[white] rounded-xl">
-            <Card make="OpenWeather API" image={Weather} />
-            <div className="flex flex-row justify-center">
-              <img
-                className="w-[30px] h-[30px]"
-                src={ReactImg}
-                alt="/"
-                size={25}
-              />
-              <img className="w-[30px] h-[30px]" src={HTML} alt="/" />
-              <img className="w-[30px] h-[30px]" src={CSS} alt="/" />
-            </div>
-            <div className="flex flex-row justify-evenly">
-              <button className="text-[black] p-1 hover:bg-orange-600 hover:rounded-md hover:text-[white]">
-                <a
-                  href="https://appiopenweather.netlify.app"
-                  target="__blank"
-                >
-                  Demo
-                </a>
-              </button>
-              <button className="text-[black] p-1 hover:bg-orange-600 hover:rounded-md hover:text-[white]">
-                <a
-                  href="https://github.com/SantiA21/openweatherapi"
-                  target="__blank"
-                >
-                  Code
-                </a>
-              </button>
-            </div>
-
+          <SwiperSlide>
+            <Project
+              title="Pokedex"
+              image={Pokedex}
+              languages={[ReactImg, HTML, CSS, Js, Vite]}
+              demoUrl="https://my-pokedex-max-cereceda.netlify.app/#/"
+              codeUrl="https://github.com/cereceda1991/Pokedex_App"
+            />
           </SwiperSlide>
 
-          <SwiperSlide className="bg-[white] rounded-xl">
-            <Card make="Pokedex API" image={Pokedex} />
-            <div className="flex flex-row justify-center">
-              <img
-                className="w-[30px] h-[30px]"
-                src={ReactImg}
-                alt="/"
-                size={25}
-              />
-              <img className="w-[30px] h-[30px]" src={HTML} alt="/" />
-              <img className="w-[30px] h-[30px]" src={Tailwind} alt="/" />
-            </div>
-            <div className="flex flex-row justify-evenly">
-              <button className="text-[black] p-1 hover:bg-orange-600 hover:rounded-md hover:text-[white]">
-                <a
-                  href="https://pokedex-reactapi.netlify.app"
-                  target="__blank"
-                >
-                  Demo
-                </a>
-              </button>
-              <button className="text-[black] p-1 hover:bg-orange-600 hover:rounded-md hover:text-[white]">
-                <a
-                  href="https://github.com/SantiA21/pokedex"
-                  target="__blank"
-                >
-                  Code
-                </a>
-              </button>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="bg-[white] rounded-xl">
-            <Card make="Catalogo de peliculas" image={Peliculas} />
-            <div className="flex flex-row justify-center">
-              <img
-                className="w-[30px] h-[30px]"
-                src={ReactImg}
-                alt="/"
-                size={25}
-              />
-              <img className="w-[30px] h-[30px]" src={HTML} alt="/" />
-              <img className="w-[30px] h-[30px]" src={CSS} alt="/" />
-            </div>
-            <div className="flex flex-row justify-evenly ">
-              <button className="text-[black] p-1 hover:bg-orange-600 hover:rounded-md hover:text-[white]">
-                <a
-                  href="https://pelisprueba-react.netlify.app"
-                  target="__blank"
-                >
-                  Demo
-                </a>
-              </button>
-              <button className="text-[black] p-1 hover:bg-orange-600 hover:rounded-md hover:text-[white]">
-                <a
-                  href="https://github.com/SantiA21/movies-react"
-                  target="__blank"
-                >
-                  Code
-                </a>
-              </button>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="bg-[white] rounded-xl">
-            <Card make="Nator Furniture" image={Nator} />
-            <div className="flex flex-row justify-center">
-              <img
-                className="w-[30px] h-[30px]"
-                src={ReactImg}
-                alt="/"
-                size={25}
-              />
-              <img className="w-[30px] h-[30px]" src={HTML} alt="/" />
-              <img className="w-[30px] h-[30px]" src={CSS} alt="/" />
-              <img className="w-[30px] h-[30px]" src={JavaScript} alt="/" />
-            </div>
-            <div className="flex flex-row justify-evenly ">
-              <button className="text-[black] p-1 hover:bg-orange-600 hover:rounded-md hover:text-[white]">
-                <a
-                  href="https://github.com/SantiA21/NATOR"
-                  target="__blank"
-                >
-                  Code
-                </a>
-              </button>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="bg-[white] rounded-xl">
-            <Card make="Task Manager" image={Tareas} />
-            <div className="flex flex-row justify-center">
-              <img
-                className="w-[30px] h-[30px]"
-                src={ReactImg}
-                alt="/"
-                size={25}
-              />
-              <img className="w-[30px] h-[30px]" src={HTML} alt="/" />
-              <img className="w-[30px] h-[30px]" src={CSS} alt="/" />
-            </div>
-            <div className="flex flex-row justify-evenly ">
-              <button className="text-[black] p-1 hover:bg-orange-600 hover:rounded-md hover:text-[white]">
-                <a
-                  href="https://github.com/SantiA21/Task-Manager"
-                  target="__blank"
-                >
-                  Code
-                </a>
-              </button>
-            </div>
+          <SwiperSlide>
+            <Project
+              title="e-commerce"
+              image={ecommerce}
+              languages={[ReactImg, HTML, CSS, Js, Redux]}
+              demoUrl="https://my-ecommerce-react-maxc.netlify.app/#/"
+              codeUrl="https://github.com/cereceda1991/ecommerce-react.git"
+            />
           </SwiperSlide>
         </Swiper>
       </div>
-    </div>
+    </div >
   );
 };
 

@@ -1,5 +1,25 @@
 .container__projects {
-    display: flex;
-    padding: 3rem 8rem;
-    background-color: red;
+    min-height: 100vh;
+    position: relative;
+    padding: 8rem 3rem 0rem 12rem;
+}
+
+.swiper-button-prev {
+    position: absolute;
+    top: 55%;
+    left: 12%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.swiper-button-next {
+    position: absolute;
+    top: 55%;
+    right: 1%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.swiper-slide {
+    padding: 1rem;
 }

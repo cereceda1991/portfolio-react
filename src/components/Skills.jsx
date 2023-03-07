@@ -8,14 +8,19 @@ import JavaScript from "../assets/javascript.png";
 import ReactImg from "../assets/react.png";
 import Tailwind from "../assets/tailwind.png";
 import Vite from "../assets/vite.png";
+import Bootstrap from "../assets/bootstrap.png"
+import Redux from '../assets/redux.png'
 
 const skillsData = [
   { name: "HTML", icon: HTML },
   { name: "CSS", icon: CSS },
   { name: "JavaScript", icon: JavaScript },
-  { name: "React", icon: ReactImg },
+  { name: "React Js", icon: ReactImg },
+  { name: "Vite Js", icon: Vite },
   { name: "Tailwind", icon: Tailwind },
-  { name: "Vite Js", icon: Vite }
+  { name: "Bootstrap", icon: Bootstrap },
+  { name: "Redux", icon: Redux }
+
 ];
 
 const Skills = () => {
