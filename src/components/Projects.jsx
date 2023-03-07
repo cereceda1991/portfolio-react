@@ -8,7 +8,6 @@ import RickandMorty from "../assets/rickandmorty.png";
 import ReactImg from "../assets/react.png";
 import HTML from "../assets/html.png";
 import CSS from "../assets/css.png";
-import Tailwind from "../assets/tailwind.png";
 import Js from '../assets/javascript.png'
 import Vite from '../assets/vite.png'
 import Redux from '../assets/redux.png'
