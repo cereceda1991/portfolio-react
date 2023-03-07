@@ -7,7 +7,7 @@ import CSS from "../assets/css.png";
 import JavaScript from "../assets/javascript.png";
 import ReactImg from "../assets/react.png";
 import Tailwind from "../assets/tailwind.png";
-import Vite from "../assets/Vite.svg";
+import Vite from "../assets/vite.png";
 
 const skillsData = [
   { name: "HTML", icon: HTML },
