@@ -16,7 +16,6 @@ const Contact = () => {
   const handleFormSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
-    const formData = new FormData(form);
     form.submit();
     form.reset();
   };

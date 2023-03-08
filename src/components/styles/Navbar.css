@@ -5,7 +5,7 @@
     justify-content: space-between;
     padding: 0 1rem;
     background-color: #eeeeee;
-    z-index: 1;
+    z-index: 20;
     align-items: center;
 }
 
@@ -46,7 +46,6 @@
     border-radius: .1rem;
     background-color: #000;
 }
-
 
 .navbar__title {
     font-size: 2rem;

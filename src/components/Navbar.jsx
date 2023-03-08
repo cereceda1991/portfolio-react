@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import CV from "../assets/CV.pdf";
+import CV from "../assets/CVMaxCereceda.pdf";
 import { Link } from "react-scroll";
 import './styles/Navbar.css'
 import hoverSound from '../assets/sound.mp3';
@@ -68,7 +68,7 @@ const Navbar = () => {
           </li>
           <li className="li__cv" onMouseEnter={playSound} onMouseLeave={() => { }}>
             <a target="__blank" href={CV}>
-              Mi CV  <BsFillPersonLinesFill size={30} />
+              My CV  <BsFillPersonLinesFill size={30} />
             </a>
           </li>
         </ul>
