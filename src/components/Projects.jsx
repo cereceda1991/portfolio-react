@@ -65,6 +65,8 @@ const Projects = () => {
               title="Weather App"
               image={Weather}
               languages={[ReactImg, HTML, CSS, Vite]}
+              content="During the development of this application, I used React js, React-Route, Axios,
+              and CSS3."
               demoUrl="https://max-c-app-weather.netlify.app"
               codeUrl="https://github.com/cereceda1991/weather-app.git"
             />
@@ -75,6 +77,8 @@ const Projects = () => {
               title="Rick and Morty App"
               image={RickandMorty}
               languages={[ReactImg, HTML, CSS, Vite]}
+              content="I used React js, Vite Js, React-Route, Axios, UseForm, UseNavigate, and CSS3 in the
+              development of this application."
               demoUrl="https://rick-and-morty-app-maxc.netlify.app/"
               codeUrl="https://github.com/cereceda1991/finallyRickandMorty.git"
             />
@@ -85,6 +89,8 @@ const Projects = () => {
               title="Pokedex"
               image={Pokedex}
               languages={[ReactImg, HTML, CSS, Js, Vite]}
+              content="I used React js, Vite Js, React-Route, Axios, UseForm, UseNavigate, and CSS3 in the
+              development of this application."
               demoUrl="https://my-pokedex-max-cereceda.netlify.app/#/"
               codeUrl="https://github.com/cereceda1991/Pokedex_App"
             />
@@ -95,6 +101,8 @@ const Projects = () => {
               title="Ecommerce"
               image={Ecommerce}
               languages={[ReactImg, HTML, CSS, Js, Redux]}
+              content="I used React js, Vite Js, React-Route, Axios, UseForm, UseNavigate, Js and CSS3 in the
+              development of this application."
               demoUrl="https://my-ecommerce-react-maxc.netlify.app/#/"
               codeUrl="https://github.com/cereceda1991/ecommerce-react.git"
             />

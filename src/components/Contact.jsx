@@ -3,15 +3,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import './styles/Contact.css'
-import hoverSound from '../assets/sound.mp3';
+import playSound from "../utils/playSound";
 
 
 const Contact = () => {
-
-  const playSound = () => {
-    const audio = new Audio(hoverSound);
-    audio.play();
-  };
 
   const handleFormSubmit = (event) => {
     event.preventDefault();

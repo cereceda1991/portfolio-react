@@ -2,15 +2,9 @@ import Typewriter from "typewriter-effect";
 import { Link } from "react-scroll";
 import Foto from "../assets/fotocarnet.jpg";
 import './styles/Home.css'
-import hoverSound from '../assets/sound.mp3';
-
+import playSound from "../utils/playSound";
 
 const Home = () => {
-
-  const playSound = () => {
-    const audio = new Audio(hoverSound);
-    audio.play();
-  };
 
   return (
     <div name="home" className="container__home">

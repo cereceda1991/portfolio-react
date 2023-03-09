@@ -4,8 +4,8 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import CV from "../assets/CVMaxCereceda.pdf";
 import { Link } from "react-scroll";
 import './styles/Navbar.css'
-import hoverSound from '../assets/sound.mp3';
 import { useState } from "react";
+import playSound from "../utils/playSound";
 
 // const Navbar = () => {
 
@@ -73,11 +73,6 @@ const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
 
   const handleClick = () => setNavOpen(!navOpen);
-
-  const playSound = () => {
-    const audio = new Audio(hoverSound);
-    audio.play();
-  };
 
   return (
     <header className="container__navbar">
