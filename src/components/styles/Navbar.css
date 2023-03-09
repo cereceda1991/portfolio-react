@@ -7,6 +7,7 @@
     background-color: #eeeeee;
     z-index: 20;
     align-items: center;
+
 }
 
 .menu__navbar ul {
@@ -111,7 +112,37 @@
     background-color: #565f69;
 }
 
-@media (max-width: 1024px) {
+/* Mostrar el menú en pantallas grandes */
+@media screen and (min-width: 768px) {
+    .menu__navbar {
+        display: block !important;
+    }
+
+    .menu__toggle {
+        display: none;
+    }
+
+}
+
+/* Ocultar el menú en pantallas pequeñas */
+@media screen and (max-width: 767px) {
+    .menu__navbar {
+        display: none;
+        position: relative;
+    }
+
+    .menu__navbar.open {
+        display: flex;
+        background-color: red;
+        height: 100vh;
+        width: 50%;
+    }
+
+    .menu__toggle {
+        display: block;
+        cursor: pointer;
+    }
+
     .container__social-icons {
         display: none;
     }

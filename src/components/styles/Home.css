@@ -91,3 +91,19 @@
 .home__img {
     width: 100%;
 }
+
+@media (max-width: 700px) {
+    .container__home {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 4rem 1rem 0rem 1rem;
+    }
+
+    .home__info h1,
+    .home__info h2 {
+        font-size: 2rem;
+    }
+
+}

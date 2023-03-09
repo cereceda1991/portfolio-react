@@ -48,20 +48,17 @@ const Projects = () => {
             nextEl: ".swiper-button-next",
           }}
 
-        // breakpoints={{
-        //   340: {
-        //     width: 200,
-        //     slidesPerView: 1,
-        //   },
-        //   768: {
-        //     width: 768,
-        //     slidesPerView: 3,
-        //   },
-        //   1040: {
-        //     width: 1040,
-        //     slidesPerView: 3,
-        //   },
-        // }}
+          breakpoints={{
+            340: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1040: {
+              slidesPerView: 3,
+            },
+          }}
         >
           <SwiperSlide>
             <Project
