@@ -113,7 +113,7 @@ const Navbar = () => {
                     className={activeLink === "contact" ? "active" : ""}
                     onClick={() => {
                       setActiveLink("contact")
-                      handleLinkClick("projects")
+                      handleLinkClick("contact")
                     }}
                   >
                     Contact
