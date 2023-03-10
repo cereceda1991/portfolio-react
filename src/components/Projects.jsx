@@ -1,28 +1,28 @@
 import React from "react";
+import AOS from "aos";
 import { useEffect } from "react";
-
-//resources
-import Pokedex from "../assets/pokedex.png";
-import Weather from "../assets/apiweather.png";
-import RickandMorty from "../assets/rickandmorty.png";
-import ReactImg from "../assets/react.png";
-import HTML from "../assets/html.png";
-import CSS from "../assets/css.png";
-import Js from '../assets/javascript.png'
-import Vite from '../assets/vite.png'
-import Redux from '../assets/redux.png'
-import Ecommerce from '../assets/eco.png'
-
+import Project from "./Project";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 
+//resources
+import RickandMorty from "../assets/rickandmorty.png";
+import Weather from "../assets/apiweather.png";
+import Pokedex from "../assets/pokedex.png";
+import ReactImg from "../assets/react.png";
+import Ecommerce from '../assets/eco.png'
+import Js from '../assets/javascript.png'
+import Redux from '../assets/redux.png'
+import HTML from "../assets/html.png";
+import CSS from "../assets/css.png";
+import Vite from '../assets/vite.png'
+
 // styles
-import "swiper/css";
 import "swiper/css/navigation";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import './styles/Projects.css'
-import Project from "./Project";
+import "aos/dist/aos.css";
+import "swiper/css";
+
 
 const Projects = () => {
   useEffect(() => {
@@ -32,7 +32,6 @@ const Projects = () => {
   return (
 
     <div name="projects" className="container__projects">
-
       <div>
         <div className="swiper-button-prev"></div>
         <div className="swiper-button-next"></div>
@@ -101,7 +100,7 @@ const Projects = () => {
               title="Ecommerce"
               image={Ecommerce}
               languages={[ReactImg, HTML, CSS, Js, Redux]}
-              content="I used React js, Vite Js, React-Route, Axios, UseForm, UseNavigate, Js and CSS3 in the
+              content="I used React js, Vite Js, React-Route, Axios, Redux, UseForm, UseNavigate, Js and CSS3 in the
               development of this application."
               demoUrl="https://my-ecommerce-react-maxc.netlify.app/#/"
               codeUrl="https://github.com/cereceda1991/ecommerce-react.git"

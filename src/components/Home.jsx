@@ -1,13 +1,13 @@
 import Typewriter from "typewriter-effect";
 import { Link } from "react-scroll";
-import Foto from "../assets/fotocarnet.jpg";
+import Foto from "../assets/foto-home.png";
 import './styles/Home.css'
 import playSound from "../utils/playSound";
 
 const Home = () => {
 
   return (
-    <div name="home" className="container__home">
+    <div name="home" className="container__home" >
       <div className="home__info" >
         <p>Hi, my name is </p>
         <h1>

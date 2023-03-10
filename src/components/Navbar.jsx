@@ -4,121 +4,134 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import CV from "../assets/CVMaxCereceda.pdf";
 import { Link } from "react-scroll";
 import './styles/Navbar.css'
-import { useState } from "react";
 import playSound from "../utils/playSound";
-
-// const Navbar = () => {
-
-//   const [nav, setNav] = useState(false);
-//   const handleClick = () => setNav(!nav);
-
-//   const playSound = () => {
-//     const audio = new Audio(hoverSound);
-//     audio.play();
-//   };
-
-//   return (
-//     <header className="container__navbar">
-//       <h1 className="navbar__title">
-//         <Link to="home" smooth={true} duration={1000}>
-//           M <sub>C</sub>
-//         </Link>
-//       </h1>
-
-//       <div onClick={handleClick}>
-//         {!nav ? <>
-//           <FaTimes />
-//           <div className="menu__navbar">
-//             <ul>
-//               <li className="nav__item" onMouseEnter={playSound} onMouseLeave={() => { }}>
-//                 <Link to="home" smooth={true} duration={500}>
-//                   Home
-//                 </Link>
-//               </li>
-//               <li className="nav__item" onMouseEnter={playSound} onMouseLeave={() => { }}>
-//                 <Link to="about" smooth={true} duration={500}>
-//                   About Me
-//                 </Link>
-//               </li>
-//               <li className="nav__item" onMouseEnter={playSound} onMouseLeave={() => { }}>
-//                 <Link to="skills" smooth={true} duration={500}>
-//                   Skill's
-//                 </Link>
-//               </li>
-//               <li className="nav__item" onMouseEnter={playSound} onMouseLeave={() => { }}>
-//                 <Link to="projects" smooth={true} duration={500}>
-//                   Projects
-//                 </Link>
-//               </li>
-//               <li className="nav__item" onMouseEnter={playSound} onMouseLeave={() => { }}>
-//                 <Link to="contact" smooth={true} duration={500}>
-//                   Contact
-//                 </Link>
-//               </li>
-//             </ul>
-//           </div>
-//         </>
-//           : <FaBars />}
-//       </div>
-
-//     </header >
-//   );
-// }
-// export default Navbar;
-
-
-// 
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
-  const [navOpen, setNavOpen] = useState(false);
 
-  const handleClick = () => setNavOpen(!navOpen);
+  const [activeLink, setActiveLink] = useState(null);
+  const [isOpen, setIsOpen] = useState(true);
+
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+    setIsOpen(!isOpen);
+  };
+
+  const handleNavbarClick = () => {
+    setActiveLink(null);
+    setIsOpen(!isOpen);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) { // 768px es un ancho de pantalla de ejemplo para dispositivos pequeños
+        setIsOpen(true);
+      } else {
+        setIsOpen(false);
+      }
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
 
   return (
-    <header className="container__navbar">
-      <h1 className="navbar__title">
+    <div className="container__navbar"
+      onClick={() => {
+        handleNavbarClick()
+      }}>
+      <h1 className="navbar__title" >
         <Link to="home" smooth={true} duration={1000}>
           M <sub>C</sub>
         </Link>
       </h1>
+      <button className="navbar__toggle" onClick={() => setIsOpen(!isOpen)}>
+        {isOpen ?
+          <>
+            <FaTimes className="sandwich__button" />
+            <nav className='menu__navbar '>
+              <ul>
+                <li onMouseEnter={playSound} onMouseLeave={() => { }}>
+                  <Link
+                    to="home"
+                    smooth={true}
+                    duration={500}
+                    className={activeLink === "home" ? "active" : ""}
+                    onClick={() => {
+                      handleLinkClick("home")
+                      setActiveLink("home")
+                    }}
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li onMouseEnter={playSound} onMouseLeave={() => { }}>
+                  <Link
+                    to="about"
+                    smooth={true}
+                    duration={500}
+                    className={activeLink === "about" ? "active" : ""}
+                    onClick={() => {
+                      setActiveLink("about")
+                      handleLinkClick("about")
+                    }}
+                  >
+                    About Me
+                  </Link>
+                </li>
+                <li onMouseEnter={playSound} onMouseLeave={() => { }}>
+                  <Link
+                    to="skills"
+                    smooth={true}
+                    duration={500}
+                    className={activeLink === "skills" ? "active" : ""}
+                    onClick={() => {
+                      setActiveLink("skills")
+                      handleLinkClick("skills")
+                    }}
+                  >
+                    Skill's
+                  </Link>
+                </li>
+                <li onMouseEnter={playSound} onMouseLeave={() => { }}>
+                  <Link
+                    to="projects"
+                    smooth={true}
+                    duration={500}
+                    className={activeLink === "projects" ? "active" : ""}
+                    onClick={() => {
+                      setActiveLink("projects")
+                      handleLinkClick("projects")
+                    }}
+                  >
+                    Projects
+                  </Link>
+                </li>
+                <li onMouseEnter={playSound} onMouseLeave={() => { }}>
+                  <Link
+                    to="contact"
+                    smooth={true}
+                    duration={500}
+                    className={activeLink === "contact" ? "active" : ""}
+                    onClick={() => {
+                      setActiveLink("contact")
+                      handleLinkClick("projects")
+                    }}
+                  >
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </nav>
 
-      <div className="menu__toggle" onClick={handleClick}>
-        <FaBars />
-      </div>
+          </> :
+          <>
+            <FaBars className="close__button" />
+          </>}
 
-      <div className={`menu__navbar ${navOpen ? "open" : ""}`}>
-        <div className="menu__toggle" onClick={handleClick}>
-          <FaTimes />
-        </div>
+      </button>
 
-        <ul>
-          <li className="nav__item" onMouseEnter={playSound} onMouseLeave={() => { }}>
-            <Link to="home" smooth={true} duration={500}>
-              Home
-            </Link>
-          </li>
-          <li className="nav__item" onMouseEnter={playSound} onMouseLeave={() => { }}>
-            <Link to="about" smooth={true} duration={500}>
-              About Me
-            </Link>
-          </li>
-          <li className="nav__item" onMouseEnter={playSound} onMouseLeave={() => { }}>
-            <Link to="skills" smooth={true} duration={500}>
-              Skill's
-            </Link>
-          </li>
-          <li className="nav__item" onMouseEnter={playSound} onMouseLeave={() => { }}>
-            <Link to="projects" smooth={true} duration={500}>
-              Projects
-            </Link>
-          </li>
-          <li className="nav__item" onMouseEnter={playSound} onMouseLeave={() => { }}>
-            <Link to="contact" smooth={true} duration={500}>
-              Contact
-            </Link>
-          </li>
-        </ul>
-      </div>
       <div className="container__social-icons">
         <ul>
           <li className="li__linkedin" onMouseEnter={playSound} onMouseLeave={() => { }}>
@@ -143,7 +156,9 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-    </header>
+    </div >
   );
 };
 export default Navbar
+
+

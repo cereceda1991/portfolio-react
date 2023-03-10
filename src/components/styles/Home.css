@@ -4,6 +4,9 @@
     min-height: 100vh;
     padding: 4rem 10rem;
     justify-content: center;
+    position: relative;
+    /* background-size: cover;
+    background: url('/src/assets/fondo.jpg'); */
 }
 
 .home__info {
@@ -91,6 +94,7 @@
 .home__img {
     width: 100%;
 }
+
 
 @media (max-width: 700px) {
     .container__home {

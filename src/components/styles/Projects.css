@@ -5,19 +5,22 @@
 }
 
 .swiper-button-prev {
-    position: absolute;
-    top: 55%;
-    left: 12%;
     transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 12%;
     z-index: 10;
+
 }
 
 .swiper-button-next {
-    position: absolute;
-    top: 55%;
-    right: 1%;
     transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    margin-left: 1rem;
+    right: 0%;
     z-index: 10;
+
 }
 
 .swiper-slide {

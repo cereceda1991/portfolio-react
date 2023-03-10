@@ -1,15 +1,17 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
+// RESOURCES
+import JavaScript from "../assets/javascript.png";
+import Bootstrap from "../assets/bootstrap.png"
+import Tailwind from "../assets/tailwind.png";
+import ReactImg from "../assets/react.png";
+import Redux from '../assets/redux.png'
+import HTML from "../assets/html.png";
+import Vite from "../assets/vite.png";
+import CSS from "../assets/css.png";
+// CSS
 import "aos/dist/aos.css";
 import './styles/Skills.css'
-import HTML from "../assets/html.png";
-import CSS from "../assets/css.png";
-import JavaScript from "../assets/javascript.png";
-import ReactImg from "../assets/react.png";
-import Tailwind from "../assets/tailwind.png";
-import Vite from "../assets/vite.png";
-import Bootstrap from "../assets/bootstrap.png"
-import Redux from '../assets/redux.png'
 
 const skillsData = [
   { name: "HTML", icon: HTML },
