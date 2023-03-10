@@ -14,18 +14,18 @@ const Navbar = () => {
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
-    setIsOpen(!isOpen);
+    // setIsOpen(!isOpen);
   };
 
   const handleNavbarClick = () => {
     setActiveLink(null);
-    setIsOpen(!isOpen);
   };
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 768) { // 768px es un ancho de pantalla de ejemplo para dispositivos pequeños
+      if (window.innerWidth > 768) {
         setIsOpen(true);
+        setActiveLink(); // llamamos a setActiveLink("home") solo si la pantalla es menor que 768px
       } else {
         setIsOpen(false);
       }
@@ -37,10 +37,7 @@ const Navbar = () => {
 
 
   return (
-    <div className="container__navbar"
-      onClick={() => {
-        handleNavbarClick()
-      }}>
+    <div className="container__navbar" onClick={handleNavbarClick}>
       <h1 className="navbar__title" >
         <Link to="home" smooth={true} duration={1000}>
           M <sub>C</sub>

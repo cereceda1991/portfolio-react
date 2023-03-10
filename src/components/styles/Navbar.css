@@ -166,7 +166,7 @@
 
 @media screen and (max-width: 767px) {
     .menu__navbar ul {
-        position: absolute;
+        position: relative;
         display: flex;
         flex-direction: column;
         right: -1rem;
@@ -177,23 +177,29 @@
 
     .navbar__toggle {
         display: block;
-        width: auto;
+        width: 50%;
         border: none;
         font-size: 2rem;
         position: absolute;
-        right: 1rem;
+        right: 0rem;
         top: 1rem;
+        background-color: transparent;
     }
 
     .close__button {
         display: block;
         cursor: pointer;
+        position: absolute;
+        right: 0;
     }
 
     .sandwich__button {
         display: block;
         cursor: pointer;
+        position: absolute;
+        right: 0;
     }
+
 
 
     .container__social-icons {
