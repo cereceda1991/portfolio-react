@@ -1,0 +1,44 @@
+/* .custom__cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    z-index: 999;
+    pointer-events: none;
+} */
+
+.custom__cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000;
+    mix-blend-mode: difference;
+    z-index: 9999;
+    transform: translate(-10px, -10px);
+    transition: transform 0.1s ease-out;
+}
+
+.cursor__trail {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.cursor__trail-point {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgb(234, 233, 238) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    z-index: 999;
+    pointer-events: none;
+}

@@ -32,6 +32,7 @@ const Skills = () => {
 
   return (
     <div name="skills" className="container__skills" >
+      <h1>Skill's</h1>
       <div className="skill__info" >
         {skillsData.map((skill) => (
           <div className="card__skill" key={skill.name}>

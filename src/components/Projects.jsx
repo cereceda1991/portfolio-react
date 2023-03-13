@@ -15,7 +15,9 @@ import Js from '../assets/javascript.png'
 import Redux from '../assets/redux.png'
 import HTML from "../assets/html.png";
 import CSS from "../assets/css.png";
-import Vite from '../assets/vite.png'
+import Vite from '../assets/vite.png';
+import DrumSounds from '../assets/drum-sounds.png'
+
 
 // styles
 import "swiper/css/navigation";
@@ -104,6 +106,18 @@ const Projects = () => {
               development of this application."
               demoUrl="https://my-ecommerce-react-maxc.netlify.app/#/"
               codeUrl="https://github.com/cereceda1991/ecommerce-react.git"
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <Project
+              title="Drum Sounds"
+              image={DrumSounds}
+              languages={[HTML, CSS, Js]}
+              content="During the development of this application, I used Html, JavaScript Vanilla
+              and CSS3."
+              demoUrl="https://sounds-drums-maxc.netlify.app/"
+              codeUrl="https://github.com/cereceda1991/Drum-Sounds.git"
             />
           </SwiperSlide>
         </Swiper>
