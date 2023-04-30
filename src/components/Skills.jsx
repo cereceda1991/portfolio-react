@@ -9,6 +9,9 @@ import Redux from '../assets/redux.png'
 import HTML from "../assets/html.png";
 import Vite from "../assets/vite.png";
 import CSS from "../assets/css.png";
+import Ts from "../assets/ts.png";
+import Next from "../assets/next.png";
+import Node from "../assets/node.png"
 // CSS
 import "aos/dist/aos.css";
 import './styles/Skills.css'
@@ -21,7 +24,11 @@ const skillsData = [
   { name: "Vite Js", icon: Vite },
   { name: "Tailwind", icon: Tailwind },
   { name: "Bootstrap", icon: Bootstrap },
-  { name: "Redux", icon: Redux }
+  { name: "Redux", icon: Redux },
+  { name: "TypeScript", icon: Ts },
+  { name: "Next Js", icon: Next },
+  { name: "Node Js", icon: Node }
+
 
 ];
 
