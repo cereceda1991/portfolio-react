@@ -16,7 +16,7 @@ import Redux from '../assets/redux.png'
 import HTML from "../assets/html.png";
 import CSS from "../assets/css.png";
 import Vite from '../assets/vite.png';
-import DrumSounds from '../assets/drum-sounds.png'
+import DrumSounds from '../assets/drum.png'
 
 
 // styles
