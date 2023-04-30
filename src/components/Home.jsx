@@ -41,7 +41,7 @@ const Home = () => {
               loop: true,
               typeSpeed: 90,
               backSpeed: 60,
-              strings: ["Max Cereceda", "Commitment", "Dedication"],
+              strings: ["Max Cereceda"],
             }}
           />
         </h1>
