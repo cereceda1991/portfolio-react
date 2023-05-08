@@ -42,6 +42,7 @@
     letter-spacing: .2rem;
     font-weight: 700;
     overflow: hidden;
+    font-family: inherit;
     position: relative;
 }
 

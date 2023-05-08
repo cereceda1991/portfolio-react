@@ -24,6 +24,7 @@
 .navbar__toggle {
     display: block;
     position: absolute;
+    font-family: inherit;
     top: 0;
     right: 0;
     width: 100%;
@@ -42,6 +43,7 @@
     position: absolute;
     top: -1rem;
     right: 0;
+    font-family: inherit;
 }
 
 .menu__navbar ul li {
