@@ -19,7 +19,7 @@
 
 .home__info h1 {
     font-size: 2.5rem;
-    color: #3182ce;
+    color: #3a78f2;
 }
 
 .home__info h2 {
@@ -34,7 +34,7 @@
     font-weight: 600;
     position: relative;
     overflow: hidden;
-    background-color: #3182ce;
+    background-color: #3a78f2;
     border: none;
     color: #fff;
     font-family: inherit;
@@ -97,6 +97,7 @@
 }
 
 .home__img {
+    display: flex;
     width: 100%;
 }
 
