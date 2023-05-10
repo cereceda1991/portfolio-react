@@ -3,35 +3,11 @@ import { Link } from "react-scroll";
 import Foto from "../assets/foto-home.png";
 import './styles/Home.css'
 import playSound from "../utils/playSound";
-// import Cursor from "./Cursor";
-// import { useEffect, useState } from "react";
 
 const Home = () => {
-  // const [position, setPosition] = useState({ x: 0, y: 0 });
-  // const [history, setHistory] = useState([]);
-
-  // useEffect(() => {
-  //   const timer = setInterval(() => {
-  //     setHistory(history.slice(-20));
-  //   }, 100);
-
-  //   return () => clearInterval(timer);
-  // }, [history]);
-
-  // const handleMouseMove = (event) => {
-  //   setPosition({ x: event.clientX, y: event.clientY });
-  //   setHistory([...history, { x: event.clientX, y: event.clientY }]);
-  // };
-
-  // const handleOut = () => {
-  //   setPosition({ x: -10, y: -10 });
-  // };
-
-  // onMouseMove={handleMouseMove} onMouseLeave={handleOut}
 
   return (
     <div className="container__home" name="home">
-      {/* <Cursor position={position} history={history} /> */}
       <div className="home__info" >
         <h2>Hi, I am  </h2>
         <h1>

@@ -6,9 +6,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 
 //resources
-import RickandMorty from "../assets/rickandmorty.png";
-import Weather from "../assets/apiweather.png";
-import Pokedex from "../assets/pokedex.png";
+import RickandMorty from "../assets/rickandmorty.webp";
+import Weather from "../assets/apiweather.webp";
+import Pokedex from "../assets/pokedex.webp";
 import ReactImg from "../assets/react.png";
 import Ecommerce from '../assets/eco.png'
 import Js from '../assets/javascript.png'
