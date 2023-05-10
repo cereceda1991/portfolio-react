@@ -33,19 +33,19 @@ const Home = () => {
     <div className="container__home" name="home">
       {/* <Cursor position={position} history={history} /> */}
       <div className="home__info" >
-        <p>Hi, my name is  </p>
+        <h2>Hi, I am  </h2>
         <h1>
           <Typewriter
             options={{
               autoStart: true,
               loop: true,
               typeSpeed: 90,
-              backSpeed: 60,
-              strings: ["Max Cereceda"],
+              backSpeed: 90,
+              strings: ["Max Cereceda", "Frontend Developer", "Backend Developer", "Full Stack Developer"]
             }}
           />
         </h1>
-        <h2>I'm a Full Stack Dev from Perú</h2>
+        <h2>Based in Perú</h2>
         <Link to="about" smooth={true} duration={500}>
           <button onMouseEnter={playSound} onMouseLeave={() => { }}>
             <span></span>
