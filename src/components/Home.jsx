@@ -17,7 +17,7 @@ const Home = () => {
               loop: true,
               typeSpeed: 90,
               backSpeed: 90,
-              strings: ["Max Cereceda", "Frontend Developer", "Backend Developer", "Full Stack Developer"]
+              strings: ["Frontend Developer", "Backend Developer", "Full Stack Developer", "Max Cereceda"]
             }}
           />
         </h1>
@@ -33,8 +33,7 @@ const Home = () => {
         </Link>
       </div>
       <div className="home__img">
-        <img src={Foto} alt="foto"
-        />
+        {/* <img src={Foto} alt="foto"/> */}
       </div>
     </div>
   );
