@@ -2,10 +2,10 @@ import { FaBars, FaGithub, FaLinkedin, FaTimes } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import CV from "../assets/CVMaxCereceda.pdf";
-import { Link } from "react-scroll";
 import './styles/Navbar.css'
 import playSound from "../utils/playSound";
 import { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -14,18 +14,13 @@ const Navbar = () => {
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
-    // setIsOpen(!isOpen);
-  };
-
-  const handleNavbarClick = () => {
-    setActiveLink(null);
   };
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) {
         setIsOpen(true);
-        setActiveLink(); // llamamos a setActiveLink("home") solo si la pantalla es menor que 768px
+        setActiveLink();
       } else {
         setIsOpen(false);
       }
@@ -37,98 +32,86 @@ const Navbar = () => {
 
 
   return (
-    <div className="container__navbar" onClick={handleNavbarClick}>
+    <div className="container__navbar">
       <h1 className="navbar__title" >
-        <Link to="home" smooth={true} duration={1000}>
-          M <sub>C</sub>
+        <Link to="/">
+          M<sub>C</sub>
         </Link>
       </h1>
-      <button className="navbar__toggle" onClick={() => setIsOpen(!isOpen)}>
-        {isOpen ?
-          <>
-            <FaTimes className="sandwich__button" />
-            <nav className='menu__navbar '>
-              <ul>
-                <li onMouseEnter={playSound} onMouseLeave={() => { }}>
-                  <Link
-                    to="home"
-                    smooth={true}
-                    duration={500}
-                    className={activeLink === "home" ? "active" : ""}
-                    onClick={() => {
-                      handleLinkClick("home")
-                      setActiveLink("home")
-                    }}
-                  >
-                    Home
-                  </Link>
-                </li>
-                <li onMouseEnter={playSound} onMouseLeave={() => { }}>
-                  <Link
-                    to="about"
-                    smooth={true}
-                    duration={500}
-                    className={activeLink === "about" ? "active" : ""}
-                    onClick={() => {
-                      setActiveLink("about")
-                      handleLinkClick("about")
-                    }}
-                  >
-                    About Me
-                  </Link>
-                </li>
-                <li onMouseEnter={playSound} onMouseLeave={() => { }}>
-                  <Link
-                    to="skills"
-                    smooth={true}
-                    duration={500}
-                    className={activeLink === "skills" ? "active" : ""}
-                    onClick={() => {
-                      setActiveLink("skills")
-                      handleLinkClick("skills")
-                    }}
-                  >
-                    Skill's
-                  </Link>
-                </li>
-                <li onMouseEnter={playSound} onMouseLeave={() => { }}>
-                  <Link
-                    to="projects"
-                    smooth={true}
-                    duration={500}
-                    className={activeLink === "projects" ? "active" : ""}
-                    onClick={() => {
-                      setActiveLink("projects")
-                      handleLinkClick("projects")
-                    }}
-                  >
-                    Projects
-                  </Link>
-                </li>
-                <li onMouseEnter={playSound} onMouseLeave={() => { }}>
-                  <Link
-                    to="contact"
-                    smooth={true}
-                    duration={500}
-                    className={activeLink === "contact" ? "active" : ""}
-                    onClick={() => {
-                      setActiveLink("contact")
-                      handleLinkClick("contact")
-                    }}
-                  >
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-
-          </> :
-          <>
-            <FaBars className="close__button" />
-          </>}
-
-      </button>
-
+      <nav className='menu__navbar '>
+        <ul>
+          <li onMouseEnter={playSound} onMouseLeave={() => { }}>
+            <Link
+              to="/"
+              smooth={true}
+              duration={500}
+              className={activeLink === "home" ? "active" : ""}
+              onClick={() => {
+                handleLinkClick("home")
+                setActiveLink("home")
+              }}
+            >
+              Home
+            </Link>
+          </li>
+          <li onMouseEnter={playSound} onMouseLeave={() => { }}>
+            <Link
+              to="/about"
+              smooth={true}
+              duration={500}
+              className={activeLink === "about" ? "active" : ""}
+              onClick={() => {
+                setActiveLink("about")
+                handleLinkClick("about")
+              }}
+            >
+              About Me
+            </Link>
+          </li>
+          <li onMouseEnter={playSound} onMouseLeave={() => { }}>
+            <Link
+              to="/skills"
+              smooth={true}
+              duration={500}
+              className={activeLink === "skills" ? "active" : ""}
+              onClick={() => {
+                setActiveLink("skills")
+                handleLinkClick("skills")
+              }}
+            >
+              Skill's
+            </Link>
+          </li>
+          <li onMouseEnter={playSound} onMouseLeave={() => { }}>
+            <Link
+              to="/projects"
+              smooth={true}
+              duration={500}
+              className={activeLink === "projects" ? "active" : ""}
+              onClick={() => {
+                setActiveLink("projects")
+                handleLinkClick("projects")
+              }}
+            >
+              Projects
+            </Link>
+          </li>
+          <li onMouseEnter={playSound} onMouseLeave={() => { }}>
+            <Link
+              to="/contact"
+              smooth={true}
+              duration={500}
+              className={activeLink === "contact" ? "active" : ""}
+              onClick={() => {
+                setActiveLink("contact")
+                handleLinkClick("contact")
+              }}
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </nav>
       <div className="container__social-icons">
         <ul>
           <li className="li__linkedin" onMouseEnter={playSound} onMouseLeave={() => { }}>

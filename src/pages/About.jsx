@@ -9,7 +9,7 @@ const About = () => {
     AOS.init({ duration: 2000 });
   }, []);
   return (
-    <div name="about" className="container__about">
+    <div className="container__about">
       <div>
         <h1>About Me</h1>
         <h2 data-aos="fade-up" >I'm Max Cereceda</h2>

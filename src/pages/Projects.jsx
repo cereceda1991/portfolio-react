@@ -1,7 +1,7 @@
 import React from "react";
 import AOS from "aos";
 import { useEffect } from "react";
-import Project from "./Project";
+import Project from "../components/Project";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 

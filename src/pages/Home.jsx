@@ -1,15 +1,16 @@
 import Typewriter from "typewriter-effect";
-import { Link } from "react-scroll";
 import Foto from "../assets/foto-home.png";
 import './styles/Home.css'
 import playSound from "../utils/playSound";
+import { Link } from 'react-router-dom';
+
 
 const Home = () => {
 
   return (
-    <div className="container__home" name="home">
-      <div className="home__info" >
-        <h2>Hi, I am  </h2>
+    <main className="container__home">
+      <section className="home__info" >
+        <h2>Hi, I am Peruvian </h2>
         <h1>
           <Typewriter
             options={{
@@ -21,8 +22,11 @@ const Home = () => {
             }}
           />
         </h1>
-        <h2>Based in Perú</h2>
-        <Link to="about" smooth={true} duration={500}>
+        <h3>Solutions Empowering Modern Businesses</h3>
+        <h4>
+          In today's fast-paced digital landscape, businesses need web apps that can adapt to their changing needs. As a full-stack developer, I create specialized, scalable, reliable, and user-friendly solutions. View my portfolio to find out how I can help your business succeed.
+        </h4>
+        <Link to="/about" smooth={true} duration={500}>
           <button onMouseEnter={playSound} onMouseLeave={() => { }}>
             <span></span>
             <span></span>
@@ -31,11 +35,11 @@ const Home = () => {
             About Me
           </button >
         </Link>
-      </div>
-      <div className="home__img">
+      </section>
+      <section className="home__img">
         <img src={Foto} alt="foto" />
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 

@@ -1,10 +1,11 @@
 .container__navbar {
     position: fixed;
     width: 100%;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     padding: 0 1rem;
-    background-color: #eeeeee;
+    background-color: #000;
     z-index: 20;
     align-items: center;
 }
@@ -14,11 +15,13 @@
     font-weight: 600;
     cursor: pointer;
     font-family: 'Teko', sans-serif;
+    color: #fff;
 }
 
 .navbar__title sub {
     vertical-align: sub;
     font-size: 2rem;
+    color: #fff;
 }
 
 .navbar__toggle {
@@ -57,7 +60,7 @@
     margin: 20px 0;
     padding: 10px 20px;
     text-decoration: none;
-    color: #262626;
+    color: #EEEEEE;
     font-family: sans-serif;
     font-size: 18px;
     font-weight: 600;
@@ -72,8 +75,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    /* border-bottom: 2px solid #262626;
-    border-top: 2px solid #262626; */
     transform: scaleY(2);
     opacity: 0;
     transition: 0.3s;
@@ -86,15 +87,17 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #262626;
+    background-color: #fff;
     transform: scale(0);
     opacity: 0;
     transition: 0.3s;
     z-index: -1;
+    color: #000;
 }
 
 .menu__navbar ul li a:hover {
-    color: #fff;
+    background-color: #fff;
+    color: #000;
 }
 
 .menu__navbar ul li a:hover:before {
@@ -108,8 +111,8 @@
 }
 
 .menu__navbar ul li a.active {
-    background-color: #262626;
     color: #fff;
+    border-bottom: 1px solid #fff;
 }
 
 
