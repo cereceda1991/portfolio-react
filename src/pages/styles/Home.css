@@ -109,9 +109,9 @@
 
 .home__img img {
     display: flex;
-    width: 400px;
+    width: 500px;
     aspect-ratio: 1;
-    border-radius: 60% 50%;
+    border-radius: 50% 10%;
 }
 
 @media (max-width: 700px) {
