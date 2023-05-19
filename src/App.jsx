@@ -6,11 +6,33 @@ import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import './App.css'
 
 function App() {
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [showIcon, setShowIcon] = useState(true);
+
+  const toggleNavbar = () => {
+    setShowNavbar(!showNavbar);
+  };
+
+  const toggleIcon = () => {
+    setShowIcon(!showIcon);
+  };
+
+  const handleClick = () => {
+    toggleNavbar()
+    toggleIcon()
+  }
+
   return (
     <div>
-      <Navbar />
+      <button className="icon_navbar" onClick={handleClick}>
+        {showIcon ? <FaTimes /> : <FaBars />}
+      </button>
+      {showNavbar && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
