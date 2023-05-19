@@ -9,20 +9,19 @@ const About = () => {
     AOS.init({ duration: 2000 });
   }, []);
   return (
-    <div className="container__about">
-      <div>
-        <h1>About Me</h1>
-        <h2 data-aos="fade-up" >I'm Max Cereceda</h2>
-        <p data-aos="fade-up">I am a passionate and highly organized young web developer with a proven track record of working effectively in a team-oriented environment. With a clear focus on achieving goals, I bring a strong commitment to my professional growth and a willingness to adapt to new challenges. I am thrilled at the prospect of joining a dynamic team and contributing my skills to create innovative web solutions.</p>
-      </div>
-      <div className="container__phrase" data-aos="fade-up" >
+    <main className="container__about">
+      <section>
+        <h1 data-aos="fade-up" >Hi, I'm Max Cereceda</h1>
+        <p data-aos="fade-up">I am an accomplished and enthusiastic web developer with extensive experience and a strong organizational aptitude. My primary objective is to exceed expectations and achieve outstanding results. I continuously enhance my skills and stay abreast of the latest advancements in web development, ensuring I remain at the forefront of the industry. I am excited to join a dynamic team where I can leverage my expertise to develop innovative, high-impact web solutions</p>
+      </section>
+      <section data-aos="fade-up" className="about__phrase">
         <h2>A phrase I use a lot is:</h2>
-        <div className="about__phrase">
-          <p>"Technology is nothing. What's important is that you have a faith in people, that they're basically good and smart, and if you give them tools, they'll do wonderful things with them".</p>
-          <b>Steve Jobs</b>
-        </div>
-      </div>
-    </div>
+        <p>
+          "Technology is nothing. What's important is that you have a faith in people, that they're basically good and smart, and if you give them tools, they'll do wonderful things with them".
+        </p>
+        <b>Steve Jobs</b>
+      </section>
+    </main>
 
   );
 };

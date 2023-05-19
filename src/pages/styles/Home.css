@@ -42,7 +42,6 @@
     border: none;
     color: #fff;
     font-family: inherit;
-
 }
 
 .home__info button span {
@@ -136,16 +135,11 @@
         border-radius: 50% 10%;
     }
 
-    /* .home__info h1 {
-        font-size: 1.5rem;
+    .home__info button {
+        display: flex;
+        margin: 2rem auto;
+        width: 200px;
+        justify-content: center;
     }
-
-    .home__info h2 {
-        font-size: 1.2rem
-    }
-
-    .home__info h3 {
-        font-size: 1rem
-    } */
 
 }
