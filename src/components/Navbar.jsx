@@ -18,8 +18,8 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 768) {
-        setIsOpen(true);
+      if (window.innerWidth < 768) {
+        setIsOpen(false);
         setActiveLink();
       } else {
         setIsOpen(false);

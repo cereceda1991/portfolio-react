@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <main className="container__home">
       <section className="home__info" >
-        <h2>Hi, I am Peruvian </h2>
+        <h2>Hi, I am Max Cereceda </h2>
         <h1>
           <Typewriter
             options={{
@@ -18,14 +18,14 @@ const Home = () => {
               loop: true,
               typeSpeed: 90,
               backSpeed: 90,
-              strings: ["Frontend Developer", "Backend Developer", "Full Stack Developer", "Max Cereceda"]
+              strings: ["Frontend Developer", "Backend Developer", "Full Stack Developer"]
             }}
           />
         </h1>
         <h3>Solutions Empowering Modern Businesses</h3>
-        <h4>
+        <p>
           In today's fast-paced digital landscape, businesses need web apps that can adapt to their changing needs. As a full-stack developer, I create specialized, scalable, reliable, and user-friendly solutions. View my portfolio to find out how I can help your business succeed.
-        </h4>
+        </p>
         <Link to="/about" smooth={true} duration={500}>
           <button onMouseEnter={playSound} onMouseLeave={() => { }}>
             <span></span>

@@ -1,7 +1,7 @@
 .container__home {
     display: flex;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     padding: 4rem 2rem 0rem 10rem;
     justify-content: space-between;
     background-color: #000;
@@ -25,7 +25,7 @@
     font-size: 2.5rem;
 }
 
-.home__info h4 {
+.home__info p {
     padding-top: 1rem;
     text-align: justify;
 }
@@ -110,22 +110,30 @@
 .home__img img {
     display: flex;
     width: 500px;
-    aspect-ratio: 1;
+    aspect-ratio: 1.2;
     border-radius: 50% 10%;
 }
 
 @media (max-width: 700px) {
     .container__home {
         display: flex;
-        width: 100%;
         flex-direction: column;
-        gap: 2rem;
-        padding: 4rem 1rem 0rem 1rem;
+        width: 100%;
+        gap: 1rem;
+        padding: 5rem 1rem;
     }
 
-    .home__info h1,
-    .home__info h2 {
-        font-size: 2rem;
+    .home__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .home__img img {
+        width: 100%;
+        aspect-ratio: 1;
+        border-radius: 50% 10%;
     }
 
 }
