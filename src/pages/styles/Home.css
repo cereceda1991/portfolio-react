@@ -4,8 +4,6 @@
     min-height: 100vh;
     padding: 4rem 2rem 0rem 10rem;
     justify-content: space-between;
-    background-color: #000;
-    color: #fff;
 }
 
 .home__info {
@@ -40,7 +38,6 @@
     overflow: hidden;
     background-color: #3a78f2;
     border: none;
-    color: #fff;
     font-family: inherit;
 }
 

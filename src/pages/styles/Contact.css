@@ -4,8 +4,6 @@
     padding: 3rem 10rem;
     align-items: center;
     justify-content: center;
-    background-color: #000;
-    color: #fff;
 }
 
 .contact__form {
@@ -25,7 +23,6 @@
     padding: .2rem 1rem;
     font-family: inherit;
     outline-color: #3a78f2;
-    background-color: #000;
     color: #fff;
 }
 
@@ -35,7 +32,6 @@
     font-family: inherit;
     outline-color: #3a78f2;
     min-height: 15vh;
-    background-color: #000;
     color: #fff;
 }
 

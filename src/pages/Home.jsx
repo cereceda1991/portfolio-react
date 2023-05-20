@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <main className="container__home">
       <section className="home__info" >
-        <h2>Hi, I am Max Cereceda </h2>
+        <h2>Hi, I'm Max Cereceda </h2>
         <h1>
           <Typewriter
             options={{
@@ -26,7 +26,7 @@ const Home = () => {
         <p>
           In today's fast-paced digital landscape, businesses need web apps that can adapt to their changing needs. As a full-stack developer, I create specialized, scalable, reliable, and user-friendly solutions. View my portfolio to find out how I can help your business succeed.
         </p>
-        <Link to="/about" smooth={true} duration={500}>
+        <Link to="/about" >
           <button onMouseEnter={playSound} onMouseLeave={() => { }}>
             <span></span>
             <span></span>
@@ -39,6 +39,9 @@ const Home = () => {
       <section className="home__img">
         <img src={Foto} alt="foto" />
       </section>
+
+
+
     </main>
   );
 };
