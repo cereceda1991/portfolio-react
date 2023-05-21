@@ -18,7 +18,7 @@ const Footer = () => {
       </ul>
       <section className="count_visit">Visitor Number <img className="visitor_counter" src="https://counter10.optistats.ovh/private/contadorvisitasgratis.php?c=d2qetxqxgc3glld1cjq1hkbrhcbjs1ws" border="0" title="contador de visitas para web" alt="contador" /></section>
       <ul className="container_copyright">
-        <li>  <h1 className="navbar__title" >
+        <li>  <h1 className="footer__title" >
           <Link to="/">
             M<sub>C</sub>
           </Link>

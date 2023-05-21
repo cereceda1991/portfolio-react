@@ -43,3 +43,23 @@
     height: 2px;
     background-color: #fff;
 }
+
+@media (max-width: 767px) {
+
+    .container__footer {
+        padding: 2rem 1rem;
+    }
+
+    .container_copyright {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__title {
+        display: none;
+    }
+
+
+
+}
