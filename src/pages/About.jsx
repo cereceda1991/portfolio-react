@@ -39,6 +39,7 @@ const About = () => {
           <b>Steve Jobs</b>
         </div>
       </section>
+
       <section className="experiencie__counters" data-aos="fade-right" >
         <div className="card__counter" >
           <ProgressSummary value={500} />
@@ -66,7 +67,7 @@ const About = () => {
 
       </section>
 
-      <section data-aos="fade-left">
+      <section className="section__education" data-aos="fade-left">
         <h1>
           <FaBookReader /> EDUCATION
         </h1>

@@ -8,12 +8,6 @@
     gap: 3rem;
 }
 
-.container__phrase {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
 .aboutme__info p {
     text-align: justify;
     padding-top: 1rem;
@@ -23,26 +17,23 @@
     margin-top: 1rem;
     background-color: #6fc2b0;
     padding: 1rem;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.experiencie__dates {
-    display: flex;
-    justify-content: space-between;
 }
 
 .experiencie__counters {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    padding: 1rem;
+    gap: 1rem
 }
 
 .card__counter {
     width: 200px;
+    height: 100px;
     padding: 1rem;
     border-radius: .5rem;
     background-color: #3a78f2;
-    margin-right: 20px;
     transform: perspective(800px);
     transition: transform 0.3s ease;
 }
@@ -54,12 +45,24 @@
     cursor: zoom-out;
 }
 
+.experiencie__dates {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__education {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: bottom 2rem;
+}
+
 @media (max-width: 700px) {
     .container__about {
         display: flex;
         flex-direction: column;
         width: 100%;
         gap: 1rem;
-        padding: 4rem 2rem 0rem 2rem;
+        padding: 4rem 2rem;
     }
 }

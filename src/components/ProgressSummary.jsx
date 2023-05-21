@@ -9,7 +9,7 @@ const ProgressSummary = ({ value }) => {
                 if (prevCount >= value) {
                     return value;
                 } else {
-                    return prevCount + 50;
+                    return prevCount + 20;
                 }
             });
         }, 100);
