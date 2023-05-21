@@ -16,14 +16,15 @@ const Footer = () => {
         <li><a href="https://github.com/cereceda1991" target="_blank"><FaGithub /></a></li>
         <hr className="hr_line" />
       </ul>
+      <section className="count_visit">Visitor Number <img className="visitor_counter" src="https://counter10.optistats.ovh/private/contadorvisitasgratis.php?c=d2qetxqxgc3glld1cjq1hkbrhcbjs1ws" border="0" title="contador de visitas para web" alt="contador" /></section>
       <ul className="container_copyright">
-        <li>Visitor Number <img className="visitor_counter" src="https://counter10.optistats.ovh/private/contadorvisitasgratis.php?c=d2qetxqxgc3glld1cjq1hkbrhcbjs1ws" border="0" title="contador de visitas para web" alt="contador" /></li>
         <li>  <h1 className="navbar__title" >
           <Link to="/">
             M<sub>C</sub>
           </Link>
         </h1></li>
-        <li className="copyright">© 2023 Max Cereceda.</li>
+        <li className="copyright">©Max Cereceda 2023. All Rights Reserved</li>
+
       </ul>
 
     </footer>

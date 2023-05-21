@@ -1,14 +1,11 @@
 .container__about {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
-    padding: 4rem 10rem;
+    padding: 6rem 10rem;
     min-height: 100vh;
-    gap: 2rem;
-    align-items: center;
-}
-
-.container__about p {
-    text-align: justify;
+    gap: 3rem;
 }
 
 .container__phrase {
@@ -17,11 +14,37 @@
     gap: 1rem;
 }
 
+.aboutme__info p {
+    text-align: justify;
+    padding-top: 1rem;
+}
+
 .about__phrase {
+    margin-top: 1rem;
     background-color: #6fc2b0;
     padding: 1rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
+.experiencie__dates {
+    display: flex;
+    justify-content: space-between;
+}
+
+.experiencie__counters {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    text-align: center;
+}
+
+.card__counter {
+    width: 200px;
+    background-color: #3a78f2;
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
 
 @media (max-width: 700px) {
     .container__about {
