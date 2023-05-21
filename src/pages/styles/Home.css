@@ -1,17 +1,18 @@
 .container__home {
     display: flex;
     width: 100%;
-    min-height: 100vh;
+    height: auto;
     padding: 4rem 2rem 0rem 10rem;
-    justify-content: space-between;
+    gap: 1rem;
 }
 
 .home__info {
     display: flex;
     flex-direction: column;
-    width: 100%;
     justify-content: center;
+    width: 100%;
     text-align: left;
+    /* background-color: red; */
 }
 
 .home__info h1 {
@@ -98,16 +99,15 @@
 
 .home__img {
     display: flex;
-    height: 100%;
     align-items: center;
-    padding: 2rem;
+    /* background-color: rebeccapurple; */
 }
 
 .home__img img {
     display: flex;
-    width: 500px;
-    aspect-ratio: 1.2;
-    border-radius: 50% 10%;
+    width: 418px;
+    aspect-ratio: 0.8;
+    border-radius: 50%
 }
 
 @media (max-width: 700px) {

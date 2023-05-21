@@ -8,6 +8,18 @@
     gap: .3rem;
 }
 
+.footer__title {
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Teko', sans-serif;
+}
+
+.footer__title sub {
+    vertical-align: sub;
+    font-size: 2rem;
+}
+
 .container_copyright {
     display: flex;
     justify-content: space-between;
