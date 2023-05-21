@@ -10,8 +10,8 @@ const Home = () => {
   return (
     <main className="container__home">
       <section className="home__info" >
-        <h2>Hi, I'm Max Cereceda </h2>
-        <h1>
+        <h1>Hi, I'm Max Cereceda </h1>
+        <h2>
           <Typewriter
             options={{
               autoStart: true,
@@ -21,7 +21,7 @@ const Home = () => {
               strings: ["Frontend Developer", "Backend Developer", "Full Stack Developer"]
             }}
           />
-        </h1>
+        </h2>
         <h3>Solutions Empowering Modern Businesses</h3>
         <p>
           In today's fast-paced digital landscape, businesses need web apps that can adapt to their changing needs. As a full-stack developer, I create specialized, scalable, reliable, and user-friendly solutions. View my portfolio to find out how I can help your business succeed.
@@ -32,7 +32,7 @@ const Home = () => {
             <span></span>
             <span></span>
             <span></span>
-            About Me
+            READ MORE
           </button >
         </Link>
       </section>
