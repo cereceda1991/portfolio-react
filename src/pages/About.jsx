@@ -1,12 +1,11 @@
-import React, { useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import './styles/About.css'
 import { FaBookReader } from "react-icons/fa";
 import { MdWorkHistory } from "react-icons/md";
 import { Link } from "react-router-dom";
-import { useInView } from "react-intersection-observer";
+import ProgressSummary from "../components/ProgressSummary";
 
 const About = () => {
 
@@ -14,79 +13,6 @@ const About = () => {
     AOS.init({ duration: 2000 });
   }, []);
 
-  // 
-  const teoriaRef = useRef(null);
-  const practicaRef = useRef(null);
-  const empresasRef = useRef(null);
-  const experienciaRef = useRef(null);
-  const proyectosRef = useRef(null);
-
-  const [inViewRef, inView] = useInView({
-    triggerOnce: true,
-  });
-
-  const [startAnimation, setStartAnimation] = useState(false);
-
-  useEffect(() => {
-    if (inView) {
-      setStartAnimation(true);
-    } else {
-      resetCounters();
-    }
-  }, [inView]);
-
-  useEffect(() => {
-    if (startAnimation) {
-      const animateCounters = () => {
-        let teoria = 0;
-        let practica = 0;
-        let empresas = 0;
-        let experiencia = 0;
-        let proyectos = 0;
-
-        const interval = setInterval(() => {
-          if (teoria < 500) {
-            teoria += 5;
-            teoriaRef.current.textContent = `+${teoria}`;
-          } else {
-            clearInterval(interval);
-          }
-
-          if (practica < 1440) {
-            practica += 10;
-            practicaRef.current.textContent = `+${practica}`;
-          }
-
-          if (empresas < 10) {
-            empresas += 1;
-            empresasRef.current.textContent = `+${empresas}`;
-          }
-
-          if (experiencia < 1) {
-            experiencia += 1;
-            experienciaRef.current.textContent = `+${experiencia}`;
-          }
-
-          if (proyectos < 10) {
-            proyectos += 1;
-            proyectosRef.current.textContent = `+${proyectos}`;
-          }
-        }, 20);
-      };
-
-      animateCounters();
-    } else {
-      resetCounters();
-    }
-  }, [startAnimation]);
-
-  const resetCounters = () => {
-    teoriaRef.current.textContent = "+0";
-    practicaRef.current.textContent = "+0";
-    empresasRef.current.textContent = "+0";
-    experienciaRef.current.textContent = "+0";
-    proyectosRef.current.textContent = "+0";
-  };
   return (
     <main className="container__about">
       <section data-aos="fade-right">
@@ -114,34 +40,28 @@ const About = () => {
         </div>
       </section>
       <section className="experiencie__counters" data-aos="fade-right" >
-        <div className="card__counter" onMouseEnter={() => setStartAnimation(true)}
-          ref={inViewRef} >
-          <h1 ref={teoriaRef}>0</h1>
-          <p>Horas de teoría</p>
+        <div className="card__counter" >
+          <ProgressSummary value={500} />
+          <p>Hours of theory</p>
+        </div>
+        <div className="card__counter">
+          <ProgressSummary value={1440} />
+          <p>Hours of practice</p>
         </div>
 
-        <div className="card__counter" onMouseEnter={() => setStartAnimation(true)}
-          ref={inViewRef}>
-          <h1 ref={practicaRef}>0</h1>
-          <p>Horas de práctica</p>
+        <div className="card__counter">
+          <ProgressSummary value={10} />
+          <p>Satisfied companies</p>
         </div>
 
-        <div className="card__counter" onMouseEnter={() => setStartAnimation(true)}
-          ref={inViewRef}>
-          <h1 ref={empresasRef}>0</h1>
-          <p>Empresas satisfechas</p>
+        <div className="card__counter">
+          <ProgressSummary value={1} />
+          <p>Year of Accumulated Experience</p>
         </div>
 
-        <div className="card__counter" onMouseEnter={() => setStartAnimation(true)}
-          ref={inViewRef} >
-          <h1 ref={experienciaRef}>0</h1>
-          <p>Año de Experiencia Acumulada</p>
-        </div>
-
-        <div className="card__counter" onMouseEnter={() => setStartAnimation(true)}
-          ref={inViewRef} >
-          <h1 ref={proyectosRef}>0</h1>
-          <p>Proyectos terminados</p>
+        <div className="card__counter">
+          <ProgressSummary value={10} />
+          <p>Completed projects</p>
         </div>
 
       </section>
