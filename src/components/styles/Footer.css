@@ -60,17 +60,17 @@
 
 @media (max-width: 767px) {
 
-    .container__footer {
+    .footer {
         padding: 0rem 1rem 1rem 1rem;
     }
 
-    .container_copyright {
+    .footer__copyright {
         margin-top: 1rem;
         display: flex;
         justify-content: center;
     }
 
-    .footer__title {
+    .footer__copyright_title {
         display: none;
     }
 }
