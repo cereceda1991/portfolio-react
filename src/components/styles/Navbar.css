@@ -161,7 +161,8 @@
         right: 0;
         top: 3.5rem;
         min-height: 100vh;
-        background-color: #000;
+        background-color: #1b1b1b;
+
     }
 
     .container__social-icons {
