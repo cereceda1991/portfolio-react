@@ -17,10 +17,9 @@
 }
 
 .footer__divider_line {
-    display: flex;
-    width: 100%;
+    width: 50%;
     border: 2px;
-    height: 2px;
+    height: 10px;
     background-color: #fff;
 }
 
