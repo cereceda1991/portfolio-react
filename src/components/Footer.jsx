@@ -6,8 +6,8 @@ import { FaInstagram, FaYoutube, FaTwitter, FaLinkedin, FaGithub, FaFacebookF } 
 const Footer = () => {
   return (
     <footer className="footer">
-      <span className="footer__divider_line" />
-      <section>
+      <section className="footer__socialmedia_section" >
+        <span className="footer__divider_line" />
         <ul className="footer__socialmedia_icons">
           <li><a href="https://www.facebook.com/max.cereceda" target="_blank"><FaFacebookF /></a></li>
           <li><a href="https://www.instagram.com/cereceda91/" target="_blank"><FaInstagram /></a></li>
@@ -16,8 +16,8 @@ const Footer = () => {
           <li><a href="https://www.linkedin.com/in/maxcereceda/" target="_blank"><FaLinkedin /></a></li>
           <li><a href="https://github.com/cereceda1991" target="_blank"><FaGithub /></a></li>
         </ul>
+        <span className="footer__divider_line" />
       </section>
-      <span className="footer__divider_line" />
       <section className="footer__count_visit">
         <p>Visitor Number</p>
         <img src="https://counter10.optistats.ovh/private/contadorvisitasgratis.php?c=d2qetxqxgc3glld1cjq1hkbrhcbjs1ws" alt="contador" />

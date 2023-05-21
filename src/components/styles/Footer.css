@@ -9,24 +9,30 @@
     gap: .3rem;
 }
 
+.footer__socialmedia_section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer__socialmedia_icons {
     display: flex;
-    justify-content: center;
     gap: 1rem;
     font-size: 2rem;
 }
 
 .footer__divider_line {
-    width: 50%;
-    border: 2px;
-    height: 10px;
-    background-color: #fff;
+    flex-grow: 1;
+    height: 2px;
+    background-color: #DDE6ED;
+    margin: 0 1rem;
 }
 
 .footer__count_visit {
     background-color: #3a78f2;
     text-align: center;
-    margin-top: .3rem;
+    margin-top: 2rem;
 }
 
 .footer__count_visit img {
