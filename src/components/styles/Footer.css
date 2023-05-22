@@ -36,7 +36,7 @@
 .footer__divider_line {
     flex-grow: 1;
     height: 2px;
-    background-color: #6fc2b0;
+    background-color: #fff;
     margin: 0 1rem;
 }
 
@@ -61,6 +61,7 @@
     font-weight: 600;
     cursor: pointer;
     font-family: 'Teko', sans-serif;
+    color: #000;
 }
 
 .footer__copyright_title sub {

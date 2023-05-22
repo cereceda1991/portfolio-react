@@ -3,13 +3,11 @@
     justify-content: center;
     align-items: center;
     font-family: inherit;
-    background-color: #1b1b1b;
     z-index: 20;
 }
 
 .menu__navbar ul {
     display: flex;
-    background-color: #1b1b1b;
 }
 
 .menu__navbar ul li {

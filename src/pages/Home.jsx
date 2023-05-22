@@ -2,7 +2,6 @@ import Typewriter from "typewriter-effect";
 import Foto from "../assets/foto-home.png";
 import './styles/Home.css'
 import playSound from "../utils/playSound";
-import { Link } from 'react-router-dom';
 import SideBar from "../components/SideBar";
 
 
