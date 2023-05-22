@@ -34,7 +34,7 @@ function App() {
         <Logo />
         <Navbar showNavbar={showNavbar} />
       </section>
-      <button className="icon_navbar" onClick={handleClick}>
+      <button className="icon__navbar" onClick={handleClick}>
         {showIcon ? <FaTimes /> : <FaBars />}
       </button>
       <Routes>

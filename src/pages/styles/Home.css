@@ -113,7 +113,6 @@
 .home__img img {
     display: flex;
     width: 400px;
-    aspect-ratio: 0.8;
     border-radius: 50%
 }
 

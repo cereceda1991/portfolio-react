@@ -10,13 +10,13 @@
     background-color: #1b1b1b;
 }
 
-.icon_navbar {
+.icon__navbar {
     display: none;
 }
 
 @media (max-width: 767px) {
 
-    .icon_navbar {
+    .icon__navbar {
         position: fixed;
         display: flex;
         font-size: 2rem;
