@@ -7,7 +7,7 @@
     height: 85px;
     z-index: 20;
     padding: 3rem 0rem;
-    background: #1b1b1b;
+    background: var(--primary-color);
 }
 
 .icon__navbar {

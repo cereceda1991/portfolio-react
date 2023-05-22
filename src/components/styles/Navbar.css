@@ -4,6 +4,7 @@
     align-items: center;
     font-family: inherit;
     z-index: 20;
+    background-color: var(--primary-color);
 }
 
 .menu__navbar ul {
