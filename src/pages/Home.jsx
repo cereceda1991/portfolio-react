@@ -29,15 +29,15 @@ const Home = () => {
         <p>
           In today's fast-paced digital landscape, businesses need web apps that can adapt to their changing needs. As a full-stack developer, I create specialized, scalable, reliable, and user-friendly solutions. View my portfolio to find out how I can help your business succeed.
         </p>
-        <Link to="/about" >
-          <button onMouseEnter={playSound} onMouseLeave={() => { }}>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+        <button onMouseEnter={playSound} onMouseLeave={() => { }}>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <a href="/about">
             READ MORE
-          </button >
-        </Link>
+          </a>
+        </button >
       </section>
       <section className="home__img">
         <img src={Foto} alt="foto" />
