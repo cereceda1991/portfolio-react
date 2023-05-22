@@ -23,6 +23,8 @@
 }
 
 .home__info h2 {
+    display: flex;
+    gap: .5rem;
     color: #3a78f2;
     font-size: 2.5rem;
 }

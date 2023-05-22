@@ -8,12 +8,13 @@ import SideBar from "../components/SideBar";
 
 const Home = () => {
 
+  const welcome = '<Welcome/>';
+
   return (
     <main className="container__home">
       <section className="home__info" >
-        <h1>Welcome,</h1>
-        <h1>I'm a</h1>
-        <h2>
+        <h1>{welcome}</h1>
+        <h2>I'm a
           <Typewriter
             options={{
               autoStart: true,
