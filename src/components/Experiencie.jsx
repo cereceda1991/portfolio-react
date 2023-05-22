@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { useScroll, motion } from "framer-motion";
 import Licon from "./Licon";
-import './styles/experiencie.css'
+import './styles/Experiencie.css'
 import { MdWorkHistory } from "react-icons/md";
 
 const Experiences = [
