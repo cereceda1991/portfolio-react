@@ -1,5 +1,4 @@
 import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
 import { Route, Routes } from 'react-router-dom';
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -9,6 +8,8 @@ import Projects from "./pages/Projects";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import './App.css'
+import Navbar from "./components/Navbar";
+import Logo from "./components/Logo";
 
 function App() {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -28,11 +29,14 @@ function App() {
   }
 
   return (
-    <div>
+    <main>
+      <section className="container__header">
+        <Logo />
+        <Navbar showNavbar={showNavbar} />
+      </section>
       <button className="icon_navbar" onClick={handleClick}>
         {showIcon ? <FaTimes /> : <FaBars />}
       </button>
-      {showNavbar && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -41,7 +45,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
-    </div>
+    </main>
   );
 }
 

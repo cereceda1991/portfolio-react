@@ -1,8 +1,9 @@
 import Typewriter from "typewriter-effect";
-import Foto from "../assets/foto-home.svg";
+import Foto from "../assets/foto-home.png";
 import './styles/Home.css'
 import playSound from "../utils/playSound";
 import { Link } from 'react-router-dom';
+import SideBar from "../components/SideBar";
 
 
 const Home = () => {
@@ -10,7 +11,8 @@ const Home = () => {
   return (
     <main className="container__home">
       <section className="home__info" >
-        <h1>Hi, I'm Max Cereceda </h1>
+        <h1>Welcome,</h1>
+        <h1>I'm a</h1>
         <h2>
           <Typewriter
             options={{
@@ -39,9 +41,7 @@ const Home = () => {
       <section className="home__img">
         <img src={Foto} alt="foto" />
       </section>
-
-
-
+      <SideBar />
     </main>
   );
 };

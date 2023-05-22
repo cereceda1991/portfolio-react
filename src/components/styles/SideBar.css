@@ -1,0 +1,58 @@
+.container__social-icons {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    top: 35%;
+    left: 0;
+}
+
+.container__social-icons li {
+    padding: 0 1rem;
+    width: 160px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -100px;
+    transition-duration: 300ms;
+}
+
+.container__social-icons li:hover {
+    margin-left: -10px;
+}
+
+.container__social-icons a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #cbd5e0;
+    text-decoration: none;
+}
+
+.container__social-icons a:hover {
+    color: #ffffff;
+}
+
+.li__linkedin {
+    background-color: #3a78f2;
+}
+
+.li__github {
+    background-color: #333333;
+}
+
+.li__email {
+    background-color: #6fc2b0;
+}
+
+.li__cv {
+    background-color: #565f69;
+}
+
+@media (max-width: 767px) {
+    .container__social-icons {
+        display: none;
+    }
+
+}
