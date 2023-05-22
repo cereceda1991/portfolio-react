@@ -6,8 +6,7 @@ import { FaBookReader } from "react-icons/fa";
 import { MdWorkHistory } from "react-icons/md";
 import { Link } from "react-router-dom";
 import ProgressSummary from "../components/ProgressSummary";
-import { useScroll, motion } from "framer-motion";
-import Experience from "../components/experiencie";
+import Experience from "../components/Experiencie";
 
 const About = () => {
 
