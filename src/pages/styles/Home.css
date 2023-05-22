@@ -3,9 +3,9 @@
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
     place-items: center;
-    height: calc(100vh - 200px);
-    padding: 3.5rem 1rem 0rem 6rem;
-    gap: 5rem;
+    height: calc(100% - 85px);
+    padding: 5.9rem 1rem 0rem 6rem;
+    gap: 4rem;
     justify-content: space-between;
     max-width: 1440px;
     margin: auto;
@@ -143,6 +143,22 @@
         display: flex;
         margin: 2rem auto;
         justify-content: center;
+    }
+
+    .home__info h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .home__info h2 {
+        font-size: 2rem;
+        margin: auto;
+    }
+
+    .home__info h3 {
+        margin-top: 1rem;
+        font-size: 2rem;
+        text-align: center;
     }
 
 }

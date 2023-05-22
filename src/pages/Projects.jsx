@@ -24,6 +24,7 @@ import "swiper/css/navigation";
 import './styles/Projects.css'
 import "aos/dist/aos.css";
 import "swiper/css";
+import SideBar from "../components/SideBar";
 
 
 const Projects = () => {
@@ -122,6 +123,7 @@ const Projects = () => {
           </SwiperSlide>
         </Swiper>
       </div>
+      <SideBar />
     </div >
   );
 };

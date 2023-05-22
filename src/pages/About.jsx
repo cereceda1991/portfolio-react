@@ -7,6 +7,7 @@ import { MdWorkHistory } from "react-icons/md";
 import { Link } from "react-router-dom";
 import ProgressSummary from "../components/ProgressSummary";
 import Experience from "../components/Experiencie";
+import SideBar from "../components/SideBar";
 
 const About = () => {
 
@@ -118,6 +119,7 @@ const About = () => {
         </p>
       </section>
       <Experience />
+      <SideBar />
     </main>
 
   );

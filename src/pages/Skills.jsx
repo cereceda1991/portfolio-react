@@ -15,6 +15,7 @@ import Node from "../assets/node.png"
 // CSS
 import "aos/dist/aos.css";
 import './styles/Skills.css'
+import SideBar from "../components/SideBar";
 
 const skillsData = [
   { name: "HTML", icon: HTML },
@@ -38,17 +39,18 @@ const Skills = () => {
   }, []);
 
   return (
-    <div name="skills" className="container__skills" >
+    <main className="container__skills" >
       <h1>Skill's</h1>
-      <div className="skill__info" >
+      <section className="skill__info" >
         {skillsData.map((skill) => (
           <div className="card__skill" key={skill.name}>
             <p>{skill.name}</p>
             <img data-aos="fade-up" src={skill.icon} alt={`${skill.name} icon`} />
           </div>
         ))}
-      </div>
-    </div >
+      </section>
+      <SideBar />
+    </main >
   );
 };
 

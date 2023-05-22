@@ -1,7 +1,9 @@
 import React from "react";
+import './styles/ButtonWsp.css'
 import './styles/Footer.css'
 import { Link } from "react-router-dom";
 import { FaInstagram, FaYoutube, FaTwitter, FaLinkedin, FaGithub, FaFacebookF } from "react-icons/fa";
+import Whatsapp from '../assets/icon-whatsapp.svg'
 
 const Footer = () => {
   return (
@@ -29,6 +31,11 @@ const Footer = () => {
           </Link>
         </h1>
         <p>©Max Cereceda 2023. All Rights Reserved</p>
+      </section>
+      <section>
+        <a href="https://wa.me/51928263103" className="btn__whatsapp" target="_blank">
+          <img src={Whatsapp} alt="Contact by WhatsApp" />
+        </a>
       </section>
     </footer >
   );

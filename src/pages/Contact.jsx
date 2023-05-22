@@ -4,7 +4,8 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import './styles/Contact.css'
 import playSound from "../utils/playSound";
-
+import SideBar from "../components/SideBar";
+import './styles/FormContact.css'
 
 const Contact = () => {
 
@@ -25,6 +26,10 @@ const Contact = () => {
       <section>
         <h1>Si deseas obtener más información, puedes ponerte en contacto conmigo a través de este formulario o mediante mis redes sociales. Estaré encantado de responder a tus consultas y brindarte la información que necesites.</h1>
       </section>
+      <div class="login">
+        <h1 class="login__heading">Iniciar sesión</h1>
+        <span class="login__circuit-mask"></span>
+      </div>
       <section>
         <form className="contact__form"
           action="https://getform.io/f/6eafabcb-9fe4-43cf-82bb-03d9a9ec823e"
@@ -50,6 +55,7 @@ const Contact = () => {
           </button>
         </form>
       </section>
+      <SideBar />
     </main>
   );
 };

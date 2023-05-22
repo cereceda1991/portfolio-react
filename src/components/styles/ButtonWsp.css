@@ -1,0 +1,48 @@
+.btn__whatsapp {
+    position: fixed;
+    z-index: 999;
+    bottom: 1.5rem;
+    right: 2rem;
+}
+
+.btn__whatsapp:before,
+.btn__whatsapp:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    background-color: #00e676;
+    opacity: 0;
+    animation: onda 1.7s infinite;
+}
+
+.btn__whatsapp:before {
+    animation-delay: 1s;
+}
+
+.btn__whatsapp:after {
+    animation-delay: 1.3s;
+}
+
+.btn__whatsapp img {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes onda {
+    0% {
+        transform: scale(1);
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(2.5);
+    }
+}
