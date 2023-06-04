@@ -3,6 +3,7 @@ import Foto from "../assets/foto-home.png";
 import './styles/Home.css'
 import playSound from "../utils/playSound";
 import SideBar from "../components/SideBar";
+import { Link } from "react-router-dom";
 
 
 const Home = () => {
@@ -13,7 +14,6 @@ const Home = () => {
     <main className="container__home">
       <section className="home__info" >
         <h1>{welcome}</h1>
-        {/* <h1>I'm Max Cereceda</h1> */}
         <h1>
           <span className="word">
             <span class="letter__name">I</span>
@@ -59,9 +59,9 @@ const Home = () => {
           <span></span>
           <span></span>
           <span></span>
-          <a href="/about">
+          <Link to="/about">
             READ MORE
-          </a>
+          </Link>
         </button >
       </section>
       <section className="home__img">
