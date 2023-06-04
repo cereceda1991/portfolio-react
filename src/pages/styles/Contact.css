@@ -42,8 +42,8 @@
     flex-direction: column;
     justify-content: center;
     font-family: inherit;
-    border: 1px solid #fff;
     border-radius: .3rem;
+    box-shadow: #3a78f2 0px 3px 8px;    
 }
 
 .container__form:before,
