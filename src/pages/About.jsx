@@ -41,7 +41,7 @@ const About = () => {
           <b>Steve Jobs</b>
         </div>
       </section>
-
+{/* 
       <section>
         <h1> I- Imaginative mind, filled with endless possibilities.</h1>
         <br />
@@ -51,7 +51,7 @@ const About = () => {
         <h1> M - Master of creativity, bringing ideas to life.</h1>
         <h1> A - Ambitious goals set, aiming for the highest heights.</h1>
         <h1> X - eXploring uncharted territories, breaking barriers.</h1>
-      </section>
+      </section> */}
 
       <section className="experiencie__counters" data-aos="fade-right" >
         <div className="card__counter" >
@@ -104,20 +104,7 @@ const About = () => {
           ( March 2015-Paused)
         </div>
         <h3>Industrial engineering</h3>
-
-        <h1>
-          <MdWorkHistory /> WORK EXPERIENCIE
-        </h1>
-        <div className="experiencie__dates">
-          <Link to='https://www.nocountry.tech/' target="_blank">
-            <h3>NOCOUNTRY TECH</h3>
-          </Link>
-          (03/2023 - Today)
-        </div>
-        <p>
-          Frontend Web Developer
-        </p>
-      </section>
+          </section>
       <Experience />
       <SideBar />
     </main>
