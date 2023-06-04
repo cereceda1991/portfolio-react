@@ -18,8 +18,23 @@
     width: 100%;
 }
 
+.word {
+    padding: .3rem;
+}
+
+.letter__name {
+    display: inline-block;
+    transition: transform 0.4s;
+}
+
+.letter__name:hover {
+    transform: scale(1.2) skewY(-10deg);
+    cursor: default;
+    color: #3a78f2;
+}
+
 .home__info h1 {
-    font-size: 2.3rem;
+    font-size: 3rem;
 }
 
 .home__info h2 {

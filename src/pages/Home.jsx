@@ -13,14 +13,40 @@ const Home = () => {
     <main className="container__home">
       <section className="home__info" >
         <h1>{welcome}</h1>
-        <h2>I'm a
+        {/* <h1>I'm Max Cereceda</h1> */}
+        <h1>
+          <span className="word">
+            <span class="letter__name">I</span>
+            <span class="letter__name">'</span>
+            <span class="letter__name">m</span>
+          </span>
+          <span className="word">
+            <span class="letter__name"></span>
+            <span class="letter__name">M</span>
+            <span class="letter__name">a</span>
+            <span class="letter__name">x</span>
+            <span class="letter__name"></span>
+          </span>
+          <span className="word">
+            <span class="letter__name">C</span>
+            <span class="letter__name">e</span>
+            <span class="letter__name">r</span>
+            <span class="letter__name">e</span>
+            <span class="letter__name">c</span>
+            <span class="letter__name">e</span>
+            <span class="letter__name">d</span>
+            <span class="letter__name">a</span>
+          </span>
+        </h1>
+
+        <h2>
           <Typewriter
             options={{
               autoStart: true,
               loop: true,
               typeSpeed: 90,
               backSpeed: 90,
-              strings: ["Frontend Developer", "Backend Developer", "Full Stack Developer"]
+              strings: ["Web Developer", "Frontend Developer", "Backend Developer", "Full Stack Developer"]
             }}
           />
         </h2>
