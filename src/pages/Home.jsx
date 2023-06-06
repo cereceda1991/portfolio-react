@@ -16,26 +16,26 @@ const Home = () => {
         <h1>{welcome}</h1>
         <h1>
           <span className="word">
-            <span class="letter__name">I</span>
-            <span class="letter__name">'</span>
-            <span class="letter__name">m</span>
+            <span className="letter__name">I</span>
+            <span className="letter__name">'</span>
+            <span className="letter__name">m</span>
           </span>
           <span className="word">
-            <span class="letter__name"></span>
-            <span class="letter__name">M</span>
-            <span class="letter__name">a</span>
-            <span class="letter__name">x</span>
-            <span class="letter__name"></span>
+            <span className="letter__name"></span>
+            <span className="letter__name">M</span>
+            <span className="letter__name">a</span>
+            <span className="letter__name">x</span>
+            <span className="letter__name"></span>
           </span>
           <span className="word">
-            <span class="letter__name">C</span>
-            <span class="letter__name">e</span>
-            <span class="letter__name">r</span>
-            <span class="letter__name">e</span>
-            <span class="letter__name">c</span>
-            <span class="letter__name">e</span>
-            <span class="letter__name">d</span>
-            <span class="letter__name">a</span>
+            <span className="letter__name">C</span>
+            <span className="letter__name">e</span>
+            <span className="letter__name">r</span>
+            <span className="letter__name">e</span>
+            <span className="letter__name">c</span>
+            <span className="letter__name">e</span>
+            <span className="letter__name">d</span>
+            <span className="letter__name">a</span>
           </span>
         </h1>
 

@@ -1,0 +1,21 @@
+.buttton_handleToggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.buttton_handleToggle:focus {
+  outline: none;
+}
+
+.buttton_handleToggle svg {
+  font-size: 2rem;  
+}
+
+.buttton_handleToggle .sun-icon {
+  color: yellow;
+}
+
+.buttton_handleToggle .moon-icon {
+  color: gray;
+}

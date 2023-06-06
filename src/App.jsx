@@ -8,8 +8,9 @@ import Projects from "./pages/Projects";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import './App.css'
-import Navbar from "./components/Navbar";
 import Logo from "./components/Logo";
+import LigthMode from "./components/LigthMode";
+import Navbar from "./components/NavBar";
 
 function App() {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -32,6 +33,7 @@ function App() {
     <main>
       <section className="container__header">
         <Logo />
+        <LigthMode/>
         <Navbar showNavbar={showNavbar} />
       </section>
       <button className="icon__navbar" onClick={handleClick}>

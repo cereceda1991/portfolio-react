@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&display=swap');
 
-:root {
-  --primary-color: #1b1b1b;
-  --secondary-color: #F6F1F1;
-  --text-color-primary: #fff;
-  --text-color-secondary: #000;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -16,13 +9,22 @@
 
 body {
   font-family: 'Oxanium', cursive;
-  background: var(--primary-color);
-  color: var(--text-color-primary);
+  background: #1b1b1b;
+  color: #fff;
+}
+
+body.Ligth__Mode {
+  background-color: #fff;
+  color: #000;
+}
+
+body.Ligth__Mode a {
+  color: #000;
 }
 
 ul,
 li {
-  padding: 0rem;
+  padding: 0;
   list-style: none;
   cursor: pointer;
 }
@@ -34,7 +36,7 @@ img {
 
 a {
   text-decoration: none;
-  color: var(--text-color-primary);
+  color: #fff;
 }
 
 /* Estilo del scrollbar */
@@ -50,3 +52,5 @@ a {
   background: #3a78f2;
   border-radius: .5rem;
 }
+
+
