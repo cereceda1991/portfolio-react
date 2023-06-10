@@ -1,0 +1,122 @@
+{
+  "home": {
+    "welcome": "<Welcome/>",
+    "title": {
+      "word1": [
+        {
+          "letter": "I",
+          "className": "letter__name"
+        },
+        {
+          "letter": "'",
+          "className": "letter__name"
+        },
+        {
+          "letter": "m",
+          "className": "letter__name"
+        }
+      ],
+      "word2": [
+        {
+          "letter": "M",
+          "className": "letter__name"
+        },
+        {
+          "letter": "a",
+          "className": "letter__name"
+        },
+        {
+          "letter": "x",
+          "className": "letter__name"
+        }
+      ],
+      "word3": [
+        {
+          "letter": "C",
+          "className": "letter__name"
+        },
+        {
+          "letter": "e",
+          "className": "letter__name"
+        },
+        {
+          "letter": "r",
+          "className": "letter__name"
+        },
+        {
+          "letter": "e",
+          "className": "letter__name"
+        },
+        {
+          "letter": "c",
+          "className": "letter__name"
+        },
+        {
+          "letter": "e",
+          "className": "letter__name"
+        },
+        {
+          "letter": "d",
+          "className": "letter__name"
+        },
+        {
+          "letter": "a",
+          "className": "letter__name"
+        }
+      ]
+    },
+    "typewriterStrings": [
+      "Web Developer",
+      "Frontend Developer",
+      "Backend Developer",
+      "Full Stack Developer"
+    ],
+    "slogan": "Solutions Empowering Modern Businesses",
+    "description": "In today's fast-paced digital landscape, businesses need web apps that can adapt to their changing needs. As a full-stack developer, I create specialized, scalable, reliable, and user-friendly solutions. View my portfolio to find out how I can help your business succeed.",
+    "buttonText": "READ MORE"
+  },
+  "navbar": {
+    "links": [
+      {
+        "to": "/",
+        "text": "Home"
+      },
+      {
+        "to": "/about",
+        "text": "About Me"
+      },
+      {
+        "to": "/skills",
+        "text": "Skills"
+      },
+      {
+        "to": "/projects",
+        "text": "Projects"
+      },
+      {
+        "to": "/contact",
+        "text": "Contact"
+      }
+    ]
+  },
+  "contact": {
+    "title": "If you want more information, you can contact me through this form or through my social networks. I will be happy to answer your questions and provide you with the information you need.",
+    "form": {
+      "fullNameLabel": "Full Name:",
+      "fullNamePlaceholder": "Enter a name",
+      "emailLabel": "Email:",
+      "emailPlaceholder": "Enter an email",
+      "messageLabel": "Message:",
+      "messagePlaceholder": "Enter a message",
+      "submitButton": "SEND"
+    }
+  },
+  "footer": {
+    "visitorNumberText": "Visitor Number",
+    "copyRightText": "© Max Cereceda 2023. All Rights Reserved"
+  },
+  "skills": {
+    "completedText": "Acquired skills",
+    "inProgressText": "Technologies in the Learning Process"
+  }
+}

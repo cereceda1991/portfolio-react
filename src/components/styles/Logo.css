@@ -1,4 +1,9 @@
 .logo {
-    width: 290px;
+    width: 250px;
+    height: 80px;
+}
+
+.logo img {
+    width: 50%;
     cursor: pointer;
 }

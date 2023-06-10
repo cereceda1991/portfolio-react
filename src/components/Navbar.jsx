@@ -1,74 +1,56 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react';
 import playSound from '../utils/playSound';
 import { Link } from 'react-router-dom';
-import './styles/Navbar.css'
+import './styles/Navbar.css';
+import { useSelector, useDispatch } from 'react-redux';
+import { setLanguageData } from '../store/languageSlice';
+import axios from 'axios';
 
 const Navbar = ({ showNavbar }) => {
-
+    const dispatch = useDispatch();
+    const languageData = useSelector((state) => state.language);
     const [activeLink, setActiveLink] = useState(null);
+
+    useEffect(() => {
+        if (!languageData) {
+            const url = '/src/languages/data_es.json';
+            axios
+                .get(url)
+                .then((response) => {
+                    const languageData = response.data;
+                    dispatch(setLanguageData(languageData));
+                })
+                .catch((error) => {
+                    console.log(error);
+                });
+        }
+    }, [languageData, dispatch]);
+
+    if (!languageData) {
+        return <div>Cargando datos...</div>;
+    }
+
+    const { links } = languageData.navbar;
 
     return (
         <nav className={`menu__navbar ${showNavbar ? 'open' : ''}`}>
-            <ul >
-                <li onMouseEnter={playSound} onMouseLeave={() => { }}>
-                    <Link
-                        to="/"
-                        className={activeLink === "home" ? "active" : ""}
-                        onClick={() => {
-                            setActiveLink("home")
-                        }}
-                    >
-                        Home
-                    </Link>
-                </li>
-                <li onMouseEnter={playSound} onMouseLeave={() => { }}>
-                    <Link
-                        to="/about"
-                        className={activeLink === "about" ? "active" : ""}
-                        onClick={() => {
-                            setActiveLink("about")
-                        }}
-                    >
-                        About Me
-                    </Link>
-                </li>
-                <li onMouseEnter={playSound} onMouseLeave={() => { }}>
-                    <Link
-                        to="/skills"
-                        className={activeLink === "skills" ? "active" : ""}
-                        onClick={() => {
-                            setActiveLink("skills")
-                        }}
-                    >
-                        Skill's
-                    </Link>
-                </li>
-                <li onMouseEnter={playSound} onMouseLeave={() => { }}>
-                    <Link
-                        to="/projects"
-                        className={activeLink === "projects" ? "active" : ""}
-                        onClick={() => {
-                            setActiveLink("projects")
-                        }}
-                    >
-                        Projects
-                    </Link>
-                </li>
-                <li onMouseEnter={playSound} onMouseLeave={() => { }}>
-                    <Link
-                        to="/contact"
-
-                        className={activeLink === "contact" ? "active" : ""}
-                        onClick={() => {
-                            setActiveLink("contact")
-                        }}
-                    >
-                        Contact
-                    </Link>
-                </li>
+            <ul>
+                {links.map((link, index) => (
+                    <li key={index} onMouseEnter={playSound} onMouseLeave={() => { }}>
+                        <Link
+                            to={link.to}
+                            className={activeLink === index ? 'active' : ''}
+                            onClick={() => {
+                                setActiveLink(index);
+                            }}
+                        >
+                            {link.text}
+                        </Link>
+                    </li>
+                ))}
             </ul>
         </nav>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;

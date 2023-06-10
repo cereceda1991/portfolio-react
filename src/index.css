@@ -7,19 +7,27 @@
   box-sizing: border-box;
 }
 
+:root {
+  --background-color: #1b1b1b;
+  --text-color: #fff;
+  --link-color: #fff;
+  --scrollbar-track-color: #1b1b1b;
+  --scrollbar-thumb-color: #3a78f2;
+}
+
 body {
   font-family: 'Oxanium', cursive;
-  background: #1b1b1b;
-  color: #fff;
+  background: var(--background-color);
+  color: var(--text-color);
 }
 
-body.Ligth__Mode {
-  background-color: #fff;
-  color: #000;
+body.Light__Mode {
+  --background-color: #fff;
+  --text-color: #000;
 }
 
-body.Ligth__Mode a {
-  color: #000;
+body.Light__Mode a {
+  --link-color: #000;
 }
 
 ul,
@@ -36,7 +44,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: var(--link-color);
 }
 
 /* Estilo del scrollbar */
@@ -45,12 +53,10 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1b1b1b;
+  background: var(--scrollbar-track-color);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #3a78f2;
+  background: var(--scrollbar-thumb-color);
   border-radius: .5rem;
 }
-
-

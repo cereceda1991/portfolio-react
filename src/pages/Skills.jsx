@@ -1,103 +1,110 @@
 import React, { useEffect, useState } from "react";
-import AOS from "aos";
-import { FaAngular, FaBootstrap, FaCss3Alt, FaDocker, FaFigma, FaHtml5, FaLaravel, FaNodeJs, FaPython, FaReact, FaVuejs } from "react-icons/fa";
-import { TbBrandNextjs, TbBrandRedux, TbBrandVite } from "react-icons/tb";
-import { SiExpress, SiJavascript, SiPostgresql, SiSvelte, SiTailwindcss, SiTypescript } from "react-icons/si";
-import { DiDjango, DiPhp, DiRuby } from "react-icons/di";
+import './styles/Skills.css';
 
-import "aos/dist/aos.css";
-import './styles/Skills.css'
 import SideBar from "../components/SideBar";
-import { BsGit } from "react-icons/bs";
+import skillsData from "../utils/skillsData";
+import inProcess from "../utils/skillInProcess";
 
-const skillsData = [
-  { name: "HTML", icon: <FaHtml5 />, color: "#F16529" },
-  { name: "CSS", icon: <FaCss3Alt />, color: "#2965F1" },
-  { name: "JavaScript", icon: <SiJavascript />, color: "#F7DF1E" },
-  { name: "React Js", icon: <FaReact />, color: "#61DBFB" },
-  { name: "Vite Js", icon: <TbBrandVite />, color: "rgb(139,109,244,1)" },
-  { name: "Tailwind", icon: <SiTailwindcss />, color: "#38B2AC" },
-  { name: "Bootstrap", icon: <FaBootstrap />, color: "#7952B3" },
-  { name: "Redux", icon: <TbBrandRedux />, color: "#764ABC" },
-  { name: "TypeScript", icon: <SiTypescript />, color: "#3178C6" },
-  { name: "Next Js", icon: <TbBrandNextjs />, color: "#000000" },
-  { name: "Node Js", icon: <FaNodeJs />, color: "#339933" },
-  { name: "Git", icon: <BsGit />, color: "#F05032" },
-  { name: "PostgreSQL", icon: <SiPostgresql />, color: "#336791" },
-  { name: "Figma", icon: <FaFigma />, color: "#F24E1E" },
-  { name: "Express.js", icon: <SiExpress />, color: "#000000" },
-  { name: "Docker", icon: <FaDocker />, color: "#2496ED" }
-];
-
-const inProcess = [
-  { name: "Vue.js", icon: <FaVuejs />, color: "#41B883" },
-  { name: "Angular", icon: <FaAngular />, color: "#DD0031" },
-  { name: "Svelte", icon: <SiSvelte />, color: "#FF3E00" },
-  { name: "Python", icon: <FaPython />, color: "#3776AB" },
-  { name: "Ruby on Rails", icon: <DiRuby />, color: "#CC0000" },
-  { name: "Django", icon: <DiDjango />, color: "#092E20" },
-  { name: "PHP", icon: <DiPhp />,color: "#777BB4" },
-  { name: "Laravel", icon: <FaLaravel />, color: "#FF2D20" },
-];
+import { useDispatch, useSelector } from "react-redux";
+import { setLanguageData } from '../store/languageSlice';
+import axios from "axios";
 
 const Skills = () => {
+  const languageData = useSelector((state) => state.language);
+  const dispatch = useDispatch();
+
   useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
+    // Cargar datos del idioma solo si aún no se han cargado
+    if (!languageData) {
+      // Simulación de carga de datos del JSON
+      const url = '/src/languages/data_es.json';
+      axios
+        .get(url)
+        .then((response) => {
+          const languageData = response.data;
+          dispatch(setLanguageData(languageData));
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
+  }, [languageData, dispatch]);
 
-  const [hoveredIcon, setHoveredIcon] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState(null);
 
-  const handleIconHover = (iconName) => {
-    setHoveredIcon(iconName);
+  const handleCategoryFilter = (category) => {
+    setSelectedCategory(category);
   };
 
-  const handleIconHoverEnd = () => {
-    setHoveredIcon(null);
-  };
+  if (!languageData) {
+    return <div>Cargando datos...</div>;
+  }
+
+  const { completedText, inProgressText } = languageData.skills;
+
+  const filteredSkills = selectedCategory
+    ? skillsData.filter((skill) => skill.category === selectedCategory)
+    : skillsData;
+
+  const filteredInProcess = selectedCategory
+    ? inProcess.filter((skill) => skill.category === selectedCategory)
+    : inProcess;
 
   return (
     <main className="container__skills">
-      <h1>Skill's</h1>
-      <section data-aos="fade-up" className="skill__info">
-        {skillsData.map((skill) => (
-          <div
-            className={`card__skill ${hoveredIcon === skill.name ? "hovered" : ""}`}
-            key={skill.name}
-            onMouseEnter={() => handleIconHover(skill.name)}
-            onMouseLeave={handleIconHoverEnd}
+      <div className="category__filter">
+        <button
+          className={!selectedCategory ? "active" : ""}
+          onClick={() => handleCategoryFilter(null)}
+        >
+          Todas
+        </button>
+        {Array.from(new Set(skillsData.map((skill) => skill.category))).map((category) => (
+          <button
+            className={selectedCategory === category ? "active" : ""}
+            onClick={() => handleCategoryFilter(category)}
+            key={category}
           >
-            <p>{skill.name}</p>
-            <div>
-              {React.cloneElement(skill.icon, {
-                size: 60,
-                color: hoveredIcon === skill.name ?  skill.color: "#676767"
-              })}
-            </div>
-          </div>
+            {category}
+          </button>
         ))}
+      </div>
+      <section>
+        <h1>{completedText}</h1>
+        <div className="skills__container">
+          {filteredSkills.map((skill) => (
+            <div className="card__skill" key={skill.name}>
+              <div className="icon__container">
+                {React.createElement(skill.icon, {
+                  size: 60,
+                  color: skill.color,
+                })}
+              </div>
+              <p>{skill.name}</p>
+            </div>
+          ))}
+        </div>
       </section>
-<h1> In progress</h1>
-      <section data-aos="fade-up" className="skill__info">
-        {inProcess.map((skill) => (
-          <div
-            className={`card__skill ${hoveredIcon === skill.name ? "hovered" : ""}`}
-            key={skill.name}
-            onMouseEnter={() => handleIconHover(skill.name)}
-            onMouseLeave={handleIconHoverEnd}
-          >
-            <p>{skill.name}</p>
-            <div>
-              {React.cloneElement(skill.icon, {
-                size: 60,
-                color: hoveredIcon === skill.name ? "#676767" : skill.color
-              })}
+      <section>
+        <h1>{inProgressText}</h1>
+        <div className="skills__container">
+          {filteredInProcess.map((skill) => (
+            <div className="card__skill" key={skill.name}>
+              <div className="icon__container">
+                {React.createElement(skill.icon, {
+                  size: 60,
+                  color: skill.color,
+                })}
+              </div>
+              <p>{skill.name}</p>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </section>
       <SideBar />
     </main>
   );
-};
+}
 
 export default Skills;
+

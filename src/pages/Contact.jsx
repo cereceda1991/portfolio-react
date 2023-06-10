@@ -1,12 +1,39 @@
-import React from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
-import './styles/Contact.css'
-import SideBar from "../components/SideBar";
-import ButtonModern from "../components/ButtonModern";
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import './styles/Contact.css';
+import SideBar from '../components/SideBar';
+import { setLanguageData } from '../store/languageSlice';
+import axios from 'axios';
+import ButtonModern from '../components/ButtonModern';
 
 const Contact = () => {
+  const languageData = useSelector((state) => state.language);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    // Cargar datos del idioma solo si aún no se han cargado
+    if (!languageData) {
+      // Simulación de carga de datos del JSON
+
+      const url = '/src/languages/data_es.json';
+      axios
+        .get(url)
+        .then((response) => {
+          const languageData = response.data;
+          dispatch(setLanguageData(languageData));
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
+  }, [languageData, dispatch]);
+
+  if (!languageData) {
+    return <div>Cargando datos...</div>;
+  }
+
+  // Accede a la información del idioma en tu componente
+  const { title, form } = languageData.contact;
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
@@ -15,35 +42,31 @@ const Contact = () => {
     form.reset();
   };
 
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
 
   return (
     <main className="container__contact">
       <section>
-        <h1>If you want more information, you can contact me through this form or through my social networks. I will be happy to answer your questions and provide you with the information you need.</h1>
+        <h1>{title}</h1>
       </section>
-      {/* <section className="login">
-        <span className="login__circuit-mask"></span>
-      </section > */}
       <section className="container__form">
         <span className="login__circuit-mask"></span>
-        <form className="contact__form"
+        <form
+          className="contact__form"
           action="https://getform.io/f/6eafabcb-9fe4-43cf-82bb-03d9a9ec823e"
           method="POST"
           onSubmit={handleFormSubmit}
-          data-aos="zoom-out">
+          data-aos="zoom-out"
+        >
+          <label>{form.fullNameLabel}</label>
+          <input type="text" name="name" placeholder={form.fullNamePlaceholder} required />
 
-          <label> Full Name: </label>
-          <input type="text" name="name" placeholder="Enter a name" required />
+          <label>{form.emailLabel}</label>
+          <input type="email" name="email" placeholder={form.emailPlaceholder} required />
 
-          <label> Email: </label>
-          <input type="email" name="email" placeholder="Enter a email" required />
+          <label>{form.messageLabel}</label>
+          <textarea type="text" name="message" placeholder={form.messagePlaceholder} required />
 
-          <label> Message: </label>
-          <textarea type="text" name="message" placeholder="Enter a message" required />
-          <ButtonModern content='SEND' />
+          <ButtonModern type="submit" content={form.submitButton} />
         </form>
       </section>
       <SideBar />

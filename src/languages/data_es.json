@@ -1,0 +1,122 @@
+{
+  "home": {
+    "welcome": "<Bienvenido/>",
+    "title": {
+      "word1": [
+        {
+          "letter": "S",
+          "className": "letter__name"
+        },
+        {
+          "letter": "o",
+          "className": "letter__name"
+        },
+        {
+          "letter": "y",
+          "className": "letter__name"
+        }
+      ],
+      "word2": [
+        {
+          "letter": "M",
+          "className": "letter__name"
+        },
+        {
+          "letter": "a",
+          "className": "letter__name"
+        },
+        {
+          "letter": "x",
+          "className": "letter__name"
+        }
+      ],
+      "word3": [
+        {
+          "letter": "C",
+          "className": "letter__name"
+        },
+        {
+          "letter": "e",
+          "className": "letter__name"
+        },
+        {
+          "letter": "r",
+          "className": "letter__name"
+        },
+        {
+          "letter": "e",
+          "className": "letter__name"
+        },
+        {
+          "letter": "c",
+          "className": "letter__name"
+        },
+        {
+          "letter": "e",
+          "className": "letter__name"
+        },
+        {
+          "letter": "d",
+          "className": "letter__name"
+        },
+        {
+          "letter": "a",
+          "className": "letter__name"
+        }
+      ]
+    },
+    "typewriterStrings": [
+      "Desarrollador Web",
+      "Desarrollador Frontend",
+      "Desarrollador Backend",
+      "Desarrollador Full Stack"
+    ],
+    "slogan": "Soluciones que Empoderan a las Empresas Modernas",
+    "description": "En el rápido y cambiante panorama digital actual, las empresas necesitan aplicaciones web que puedan adaptarse a sus necesidades cambiantes. Como desarrollador full-stack, creo soluciones especializadas, escalables, confiables y amigables para el usuario. Consulta mi portafolio para descubrir cómo puedo ayudar a que tu negocio tenga éxito.",
+    "buttonText": "LEER MÁS"
+  },
+  "navbar": {
+    "links": [
+      {
+        "to": "/",
+        "text": "Inicio"
+      },
+      {
+        "to": "/about",
+        "text": "Sobre mi"
+      },
+      {
+        "to": "/skills",
+        "text": "Habilidades"
+      },
+      {
+        "to": "/projects",
+        "text": "Proyectos"
+      },
+      {
+        "to": "/contact",
+        "text": "Contacto"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Si deseas más información, puedes contactarme a través de este formulario o mediante mis redes sociales. Estaré encantado de responder tus preguntas y proporcionarte la información que necesitas.",
+    "form": {
+      "fullNameLabel": "Nombre completo:",
+      "fullNamePlaceholder": "Ingresa un nombre",
+      "emailLabel": "Correo electrónico:",
+      "emailPlaceholder": "Ingresa un correo electrónico",
+      "messageLabel": "Mensaje:",
+      "messagePlaceholder": "Ingresa un mensaje",
+      "submitButton": "ENVIAR"
+    }
+  },
+  "footer": {
+    "visitorNumberText": "Número de Visitantes",
+    "copyRightText": "© Max Cereceda 2023. Todos los derechos reservados"
+  },
+  "skills": {
+    "completedText": "Habilidades adquiridas",
+    "inProgressText": "Aprendiendo nuevas herramientas"
+  }
+}

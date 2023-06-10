@@ -7,7 +7,7 @@
     height: 85px;
     z-index: 20;
     padding: 3rem 0rem;
-    background: var(--primary-color);
+    background: var(--background-color);
 }
 
 .icon__navbar {
@@ -15,6 +15,9 @@
 }
 
 @media (max-width: 767px) {
+.container__header {
+    padding: 0rem 2rem;
+    }
 
     .icon__navbar {
         position: fixed;
