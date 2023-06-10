@@ -3,8 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 import Logo from "./components/Logo";
-import LigthMode from "./components/LigthMode";
-import Navbar from "./components/NavBar";
+// import LigthMode from "./components/LigthMode";
 import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
@@ -12,10 +11,10 @@ import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
+import Navbar from "./components/NavBar";
 
 import "./App.css";
 import LanguageSelector from "./components/LanguageSelector";
-
 
 function App() {
 
