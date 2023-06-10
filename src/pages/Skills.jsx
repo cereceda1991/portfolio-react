@@ -17,7 +17,7 @@ const Skills = () => {
     // Cargar datos del idioma solo si aún no se han cargado
     if (!languageData) {
       // Simulación de carga de datos del JSON
-      const url = '/src/languages/data_es.json';
+      const url = '../../languages/data_es.json';
       axios
         .get(url)
         .then((response) => {
