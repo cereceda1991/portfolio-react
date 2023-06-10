@@ -3,6 +3,8 @@ import { TbBrandNextjs, TbBrandRedux, TbBrandVite } from "react-icons/tb";
 import { BsGit } from "react-icons/bs";
 import { SiAdobe, SiCanva, SiExpress, SiJavascript, SiPostgresql, SiPostman, SiPowerbi, SiTailwindcss, SiTypescript } from "react-icons/si";
 
+
+
 const skillsData = [
   { name: "HTML", icon: FaHtml5, color: "#F16529", category: "Frontend" },
   { name: "CSS", icon: FaCss3Alt, color: "#2965F1", category: "Frontend" },
@@ -15,7 +17,7 @@ const skillsData = [
   { name: "TypeScript", icon: SiTypescript, color: "#3178C6", category: "Programming languages" },
   { name: "Next Js", icon: TbBrandNextjs, color: "#454545", category: "Frontend" },
   { name: "Node Js", icon: FaNodeJs, color: "#339933", category: "Backend" },
-  { name: "Git", icon: BsGit, color: "#F05032", category: "Control de versiones" },
+  { name: "Git", icon: BsGit, color: "#F05032", category: "Version Control" },
   { name: "PostgreSQL", icon: SiPostgresql, color: "#336791", category: "Backend" },
   { name: "Figma", icon: FaFigma, color: "#F24E1E", category: "Design" },
   { name: "Express.js", icon: SiExpress, color: "#454545", category: "Backend" },

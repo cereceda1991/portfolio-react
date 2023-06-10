@@ -120,6 +120,16 @@
   },
   "skills": {
     "completedText": "Habilidades adquiridas",
-    "inProgressText": "Aprendiendo nuevas herramientas"
+    "inProgressText": "Aprendiendo nuevas herramientas",
+    "category": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobiles",
+      "programming_languages": "Lenguajes de Prog",
+      "version_control": "Control de Versiones",
+      "design": "Diseño",
+      "devops": "DevOps",
+      "data_visualization": "Visualización de datos"
+    }
   }
 }

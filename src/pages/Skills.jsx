@@ -42,6 +42,8 @@ const Skills = () => {
 
   const { completedText, inProgressText } = languageData.skills;
 
+
+
   const filteredSkills = selectedCategory
     ? skillsData.filter((skill) => skill.category === selectedCategory)
     : skillsData;
@@ -57,7 +59,7 @@ const Skills = () => {
           className={!selectedCategory ? "active" : ""}
           onClick={() => handleCategoryFilter(null)}
         >
-          Todas
+          All technologies
         </button>
         {Array.from(new Set(skillsData.map((skill) => skill.category))).map((category) => (
           <button

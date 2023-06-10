@@ -119,7 +119,17 @@
     "copyRightText": "© Max Cereceda 2023. Todos os direitos reservados"
   },
   "skills": {
-    "completedText": "Tecnologias dominadas",
-    "inProgressText": "Tecnologias em processo de aprendizagem"
+    "completedText": "Habilidades Concluídas",
+    "inProgressText": "Habilidades em Andamento",
+    "category": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobile",
+      "programming_languages": "Linguagens de Programação",
+      "version_control": "Controle de Versão",
+      "design": "Design",
+      "devops": "DevOps",
+      "data_visualization": "Visualização de Dados"
+    }
   }
 }

@@ -120,6 +120,16 @@
   },
   "skills": {
     "completedText": "Acquired skills",
-    "inProgressText": "Technologies in the Learning Process"
+    "inProgressText": "Technologies in the Learning Process",
+    "category": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobile",
+      "programming_languages": "Programming Languages",
+      "version_control": "Version Control",
+      "design": "Design",
+      "devops": "DevOps",
+      "data_visualization": "Data Visualization"
+    }
   }
 }
