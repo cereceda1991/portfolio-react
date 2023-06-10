@@ -11,7 +11,7 @@ import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Footer from "./components/Footer";
-import Navbar from "./components/NavBar";
+import NavBar from "./components/NavBar";
 
 import "./App.css";
 import LanguageSelector from "./components/LanguageSelector";
@@ -42,7 +42,7 @@ function App() {
         <Logo />
         <LanguageSelector />
         {/* <LigthMode /> */}
-        <Navbar showNavbar={showNavbar} />
+        <NavBar showNavbar={showNavbar} />
       </section>
       <button className="icon__navbar" onClick={handleClick}>
         {showIcon ? <FaTimes /> : <FaBars />}

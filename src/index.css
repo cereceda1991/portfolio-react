@@ -19,6 +19,7 @@ body {
   font-family: 'Oxanium', cursive;
   background: var(--background-color);
   color: var(--text-color);
+
 }
 
 body.Light__Mode {

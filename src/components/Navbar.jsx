@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { setLanguageData } from '../store/languageSlice';
 import axios from 'axios';
 
-const Navbar = ({ showNavbar }) => {
+const NavBar = ({ showNavbar }) => {
     const dispatch = useDispatch();
     const languageData = useSelector((state) => state.language);
     const [activeLink, setActiveLink] = useState(null);
@@ -53,4 +53,4 @@ const Navbar = ({ showNavbar }) => {
     );
 };
 
-export default Navbar;
+export default NavBar;
