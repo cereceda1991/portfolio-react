@@ -3,7 +3,6 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import './styles/About.css'
 import { FaBookReader } from "react-icons/fa";
-import { MdWorkHistory } from "react-icons/md";
 import { Link } from "react-router-dom";
 import ProgressSummary from "../components/ProgressSummary";
 import Experience from "../components/Experiencie";
@@ -41,18 +40,6 @@ const About = () => {
           <b>Steve Jobs</b>
         </div>
       </section>
-{/* 
-      <section>
-        <h1> I- Imaginative mind, filled with endless possibilities.</h1>
-        <br />
-        <h1> A- Adventurous spirit, always seeking new experiences.</h1>
-        <h1> M - Motivated and determined, ready to achieve greatness.</h1>
-        <br />
-        <h1> M - Master of creativity, bringing ideas to life.</h1>
-        <h1> A - Ambitious goals set, aiming for the highest heights.</h1>
-        <h1> X - eXploring uncharted territories, breaking barriers.</h1>
-      </section> */}
-
       <section className="experiencie__counters" data-aos="fade-right" >
         <div className="card__counter" >
           <ProgressSummary value={500} />
@@ -104,7 +91,7 @@ const About = () => {
           ( March 2015-Paused)
         </div>
         <h3>Industrial engineering</h3>
-          </section>
+      </section>
       <Experience />
       <SideBar />
     </main>

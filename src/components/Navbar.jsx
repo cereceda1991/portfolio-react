@@ -13,7 +13,7 @@ const Navbar = ({ showNavbar }) => {
 
     useEffect(() => {
         if (!languageData) {
-            const url = '/src/languages/data_es.json';
+            const url = '../../languages/data_es.json';
             axios
                 .get(url)
                 .then((response) => {
