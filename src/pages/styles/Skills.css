@@ -8,7 +8,7 @@
     padding: 6rem 2rem 1rem 10rem;
     position: relative;
     gap: 5rem;
-    color:var(--text-color)
+    color: var(--text-color)
 }
 
 .container__skills section {
@@ -26,11 +26,12 @@
     text-decoration: underline 3px #3a78f2;
 }
 
-.skills__container{
+.skills__container {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
 }
+
 .card__skill {
     display: grid;
     width: 120px;
@@ -87,4 +88,19 @@
 .category__filter button.active {
     background-color: #3a78f2;
     color: var(--text-color);
+}
+
+
+@media (max-width: 700px) {
+    .container__skills {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 3rem;
+        padding: 6rem 2rem;
+    }
+
+    .category__filter {
+        display: none;
+    }
 }

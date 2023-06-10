@@ -100,14 +100,17 @@
     ]
   },
   "contact": {
-    "title": "Se você deseja obter mais informações, você pode entrar em contato comigo através deste formulário ou pelas minhas redes sociais. Ficarei feliz em responder às suas perguntas e fornecer as informações que você precisa.",
+    "title": "Vamos Trabalhar Juntos!",
+    "content": "Se você deseja obter mais informações sobre meus projetos e serviços, não hesite em entrar em contato comigo através do formulário de contato ou das minhas redes sociais. Estou disponível para responder às suas perguntas e fornecer as informações que você precisa.",
+    "email": "cereceda1991@gmail.com",
+    "address": "Comas, Lima, Peru",
     "form": {
-      "fullNameLabel": "Nome Completo:",
-      "fullNamePlaceholder": "Insira um nome",
+      "fullNameLabel": "Nome completo:",
+      "fullNamePlaceholder": "Digite um nome",
       "emailLabel": "E-mail:",
-      "emailPlaceholder": "Insira um e-mail",
+      "emailPlaceholder": "Digite um e-mail",
       "messageLabel": "Mensagem:",
-      "messagePlaceholder": "Insira uma mensagem",
+      "messagePlaceholder": "Digite uma mensagem",
       "submitButton": "ENVIAR"
     }
   },

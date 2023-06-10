@@ -100,7 +100,10 @@
     ]
   },
   "contact": {
-    "title": "Si deseas más información, puedes contactarme a través de este formulario o mediante mis redes sociales. Estaré encantado de responder tus preguntas y proporcionarte la información que necesitas.",
+    "title": "¡Trabajemos Juntos!",
+    "content": "Si deseas obtener más información sobre mis proyectos y servicios, no dudes en contactarme utilizando el formulario de contacto o a través de mis redes sociales. Estoy disponible para responder a tus preguntas y brindarte la información que necesitas.",
+    "email": "cereceda1991@gmail.com",
+    "address": "Comas, Lima, Perú",
     "form": {
       "fullNameLabel": "Nombre completo:",
       "fullNamePlaceholder": "Ingresa un nombre",

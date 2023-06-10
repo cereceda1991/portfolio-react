@@ -100,7 +100,10 @@
     ]
   },
   "contact": {
-    "title": "If you want more information, you can contact me through this form or through my social networks. I will be happy to answer your questions and provide you with the information you need.",
+    "title": "Let's Work Together!",
+    "content": "If you want to learn more about my projects and services, feel free to contact me using the contact form or through my social media channels. I'm available to answer your questions and provide you with the information you need.",
+    "email": "cereceda1991@gmail.com",
+    "address": "Comas, Lima, Peru",
     "form": {
       "fullNameLabel": "Full Name:",
       "fullNamePlaceholder": "Enter a name",

@@ -13,6 +13,7 @@ import Projects from "./pages/Projects";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 
+
 import "./App.css";
 import LanguageSelector from "./components/LanguageSelector";
 

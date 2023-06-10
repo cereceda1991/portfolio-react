@@ -5,6 +5,9 @@ import SideBar from '../components/SideBar';
 import { setLanguageData } from '../store/languageSlice';
 import axios from 'axios';
 import ButtonModern from '../components/ButtonModern';
+import { BiMap } from "react-icons/bi";
+import { HiOutlineMail } from 'react-icons/hi';
+
 
 const Contact = () => {
   const languageData = useSelector((state) => state.language);
@@ -33,7 +36,7 @@ const Contact = () => {
   }
 
   // Accede a la información del idioma en tu componente
-  const { title, form } = languageData.contact;
+  const { title, form, email, address, content } = languageData.contact;
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
@@ -45,8 +48,11 @@ const Contact = () => {
 
   return (
     <main className="container__contact">
-      <section>
+      <section className='info__personal'>
         <h1>{title}</h1>
+        <p>{content}</p>
+        <h4><HiOutlineMail /> {email}</h4>
+        <h4 ><BiMap /> {address}</h4>
       </section>
       <section className="container__form">
         <span className="login__circuit-mask"></span>
@@ -55,7 +61,6 @@ const Contact = () => {
           action="https://getform.io/f/6eafabcb-9fe4-43cf-82bb-03d9a9ec823e"
           method="POST"
           onSubmit={handleFormSubmit}
-          data-aos="zoom-out"
         >
           <label>{form.fullNameLabel}</label>
           <input type="text" name="name" placeholder={form.fullNamePlaceholder} required />
