@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 // Define el slice de estado para el idioma
 const languageSlice = createSlice({
   name: 'language',
-  initialState: null,
+  initialState: false,
   reducers: {
     setLanguageData: (state, action) => {
       return action.payload;
