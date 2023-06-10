@@ -11,7 +11,7 @@ import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Footer from "./components/Footer";
-import NavBar from "./components/NavBar";
+import Navbar from "./components/Navbar";
 
 
 import "./App.css";
@@ -36,14 +36,13 @@ function App() {
   };
 
 
-
   return (
     <main>
       <section className="container__header">
         <Logo />
         <LanguageSelector />
         {/* <LigthMode /> */}
-        <NavBar showNavbar={showNavbar} />
+        <Navbar showNavbar={showNavbar} />
       </section>
       <button className="icon__navbar" onClick={handleClick}>
         {showIcon ? <FaTimes /> : <FaBars />}
