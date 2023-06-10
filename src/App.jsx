@@ -4,13 +4,13 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 import Logo from "./components/Logo";
 // import LigthMode from "./components/LigthMode";
-import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
+import Footer from "./components/Footer";
 import Navbar from "./components/NavBar";
 
 import "./App.css";
