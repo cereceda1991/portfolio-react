@@ -196,5 +196,239 @@
         }
       ]
     }
+  },
+  "project": {
+    "title": "My Projects",
+    "projects": [
+      {
+        "id": 1,
+        "title": "Weather App",
+        "image": "/proyectos/Weather.webp",
+        "technologies": [
+          {
+            "name": "React",
+            "image": "/tecnologias/React.png"
+          },
+          {
+            "name": "HTML",
+            "image": "/tecnologias/HTML.png"
+          },
+          {
+            "name": "CSS",
+            "image": "/tecnologias/CSS.png"
+          },
+          {
+            "name": "Vite",
+            "image": "/tecnologias/Vite.png"
+          },
+          {
+            "name": "axios",
+            "image": "/tecnologias/Axios.png"
+          }
+        ],
+        "category": "frontend",
+        "content": "During the development of this application, the following technologies were used: React.js, React-Router, Axios and CSS3. With the help of these tools, I was able to create an engaging and interactive user interface. Additionally, I took advantage of the geolocation capability to consume a weather API and provide accurate and up-to-date weather information based on the user's location. This additional functionality allows you to obtain accurate data on temperature, weather conditions and forecasts to offer a personalized experience.",
+        "demoUrl": "https://max-c-app-weather.netlify.app",
+        "codeUrl": "https://github.com/cereceda1991/weather-app.git"
+      },
+      {
+        "id": 2,
+        "title": "Rick and Morty App",
+        "image": "/proyectos/RickandMorty.webp",
+        "technologies": [
+          {
+            "name": "React",
+            "image": "/tecnologias/React.png"
+          },
+          {
+            "name": "HTML",
+            "image": "/tecnologias/HTML.png"
+          },
+          {
+            "name": "CSS",
+            "image": "/tecnologias/CSS.png"
+          },
+          {
+            "name": "Vite",
+            "image": "/tecnologias/Vite.png"
+          },
+          {
+            "name": "axios",
+            "image": "/tecnologias/Axios.png"
+          }
+        ],
+        "category": "frontend",
+        "content": "In developing this app, I used React.js, Vite.js, React Router, Axios, UseForm, UseNavigate, and CSS3. It was moving to work with these technologies to create an interactive and dynamic experience.One of the outstanding features of my development was the integration of a Rick and Morty API, which allowed me to obtain the necessary information to display it in the application. To manage and render data efficiently, I took advantage of the useState and useEffect hooks.Also, I focused on improving the user interface by implementing smooth animations using CSS3. This added an attractive and pleasing visual touch for the users.I am proud of the end result of this app, as I managed to balance functionality, aesthetics, and user experience.",
+        "demoUrl": "https://rick-and-morty-app-maxc.netlify.app/",
+        "codeUrl": "https://github.com/cereceda1991/finallyRickandMorty.git"
+      },
+      {
+        "id": 3,
+        "title": "Pokedex",
+        "image": "/proyectos/Pokedex.webp",
+        "technologies": [
+          {
+            "name": "React",
+            "image": "/tecnologias/React.png"
+          },
+          {
+            "name": "HTML",
+            "image": "/tecnologias/HTML.png"
+          },
+          {
+            "name": "CSS",
+            "image": "/tecnologias/CSS.png"
+          },
+          {
+            "name": "Vite",
+            "image": "/tecnologias/Vite.png"
+          },
+          {
+            "name": "axios",
+            "image": "/tecnologias/Axios.png"
+          },
+          {
+            "name": "Redux",
+            "image": "/tecnologias/Redux.png"
+          }
+        ],
+        "category": "frontend",
+        "content": "In developing this app, I used React.js, Vite.js, React Router, Axios, UseForm, UseNavigate, CSS3, and Redux Toolkit. Also, I decided to take advantage of the Pokemon API to get the necessary data.It was an exciting challenge to work with all these technologies and tools. Thanks to React.js and Vite.js, I was able to create a highly responsive and fluid user interface that provides a pleasant experience for users.I used React Router to manage the routes and navigation within the application. With Axios, I was able to make requests to the Pokémon API and get the relevant information to display in my app.Also, I decided to incorporate the Redux Toolkit to handle the global state of my application in an organized and scalable way. This allowed me to centralize and share the information between the different components efficiently.",
+        "demoUrl": "https://my-pokedex-max-cereceda.netlify.app/#/",
+        "codeUrl": "https://github.com/cereceda1991/Pokedex_App"
+      },
+      {
+        "id": 4,
+        "title": "Ecommerce",
+        "image": "/proyectos/Ecommerce.webp",
+        "technologies": [
+          {
+            "name": "React",
+            "image": "/tecnologias/React.png"
+          },
+          {
+            "name": "HTML",
+            "image": "/tecnologias/HTML.png"
+          },
+          {
+            "name": "CSS",
+            "image": "/tecnologias/CSS.png"
+          },
+          {
+            "name": "Vite",
+            "image": "/tecnologias/Vite.png"
+          },
+          {
+            "name": "axios",
+            "image": "/tecnologias/Axios.png"
+          },
+          {
+            "name": "Redux",
+            "image": "/tecnologias/Redux.png"
+          }
+        ],
+        "category": "frontend",
+        "content": "During the development of my online store, my main goal was to create a complete and functional e-commerce platform that would give users an exceptional experience. I focused on delivering features like product browsing, shopping cart management, ordering, and profile management efficiently.To guarantee the security and protection of user data, I implemented a route protection system that required user and password authentication to access certain sections of the platform. This provided an additional layer of security and privacy for users by pushing unauthorized access to certain areas.In developing this platform, I made use of the technologies that I had experience with at the time. This allowed me to work efficiently with the products in my store and create a complete and functional platform. I am very satisfied with the end result, as I was able to effectively balance data management with user experience, providing an intuitive and secure platform for making purchases online.The implementation of route protection and the proper use of available technologies contributed greatly to achieving a satisfactory user experience. I am proud of the final result and how I was able to achieve my goal of creating a safe, functional and attractive online store for users.",
+        "demoUrl": "https://my-ecommerce-react-maxc.netlify.app/#/",
+        "codeUrl": "https://github.com/cereceda1991/ecommerce-react.git"
+      },
+      {
+        "id": 5,
+        "title": "Drum Sounds",
+        "image": "/proyectos/DrumSounds.webp",
+        "technologies": [
+          {
+            "name": "HTML",
+            "image": "/tecnologias/HTML.png"
+          },
+          {
+            "name": "CSS",
+            "image": "/tecnologias/CSS.png"
+          },
+          {
+            "name": "JavaScript",
+            "image": "/tecnologias/JavaScript.png"
+          }
+        ],
+        "category": "frontend",
+        "content": "During the development of this app, I used HTML, CSS and vanilla JavaScript. This time, I decided to create a drum app that works with the keyboard keys. Each time you pressed a key, a unique drum sound was played.It was really fun working on this app. I dove into creating the UI using HTML to structure the battery elements and CSS to style them and make them look cool.Then I used vanilla JavaScript to add the key functionality of the app. It was exciting to assign specific drum sounds to each corresponding key using keyboard events. When you pressed a key, the associated sound would play, providing a fun and interactive experience.Developing this app allowed me to explore the interplay between HTML, CSS, and JavaScript, and I really enjoyed creating a playful experience for users. I am very happy with the end result and with how much fun the development process was. I hope users enjoy playing the virtual drum kit as much as I enjoyed creating it.",
+        "demoUrl": "https://sounds-drums-maxc.netlify.app/",
+        "codeUrl": "https://github.com/cereceda1991/Drum-Sounds.git"
+      },
+      {
+        "id": 6,
+        "title": "Verbify",
+        "image": "/proyectos/Verbify.webp",
+        "technologies": [
+          {
+            "name": "HTML",
+            "image": "/tecnologias/HTML.png"
+          },
+          {
+            "name": "CSS",
+            "image": "/tecnologias/CSS.png"
+          },
+          {
+            "name": "TypeScript",
+            "image": "/tecnologias/TypeScript.png"
+          },
+          {
+            "name": "NextJs",
+            "image": "/tecnologias/NextJs.png"
+          },
+          {
+            "name": "Redux",
+            "image": "/tecnologias/Redux.png"
+          },
+          {
+            "name": "React",
+            "image": "/tecnologias/React.png"
+          }
+        ],
+        "category": "frontend",
+        "content": "Developing Verbify was an exciting collaborative project. We used TypeScript, Redux, React, Next.js, and React Router to create a robust and efficient application. Our goal was to address the language barrier in the workplace, specifically English. Verbify offers interactive lessons, grammar exercises, vocabulary tests, and the ability to practice English conversations. Working with colleagues from different disciplines was a rewarding challenge, and I'm proud of Verbify's impact on improving English skills for better job opportunities. It was an exciting project that showcased the power of collaboration and technology.",
+        "demoUrl": "https://verbify.vercel.app/",
+        "codeUrl": "https://github.com/No-Country/c10-44-m-mern"
+      },
+      {
+        "id": 7,
+        "title": "CookMeal",
+        "image": "/proyectos/CookMeal.webp",
+        "technologies": [
+          {
+            "name": "HTML",
+            "image": "/tecnologias/HTML.png"
+          },
+          {
+            "name": "CSS",
+            "image": "/tecnologias/CSS.png"
+          },
+          {
+            "name": "TypeScript",
+            "image": "/tecnologias/TypeScript.png"
+          },
+          {
+            "name": "NextJs",
+            "image": "/tecnologias/NextJs.png"
+          },
+          {
+            "name": "Redux",
+            "image": "/tecnologias/Redux.png"
+          },
+          {
+            "name": "React",
+            "image": "/tecnologias/React.png"
+          },
+          {
+            "name": "Tailwind",
+            "image": "/tecnologias/Tailwind.png"
+          }
+        ],
+        "category": "frontend",
+        "content": "CookMeal is an exciting collaborative app that utilizes AI to create personalized recipes. We use the OpenAI API to generate a variety of recipes based on simple prompts provided by the users. The app is built using the MERN stack, which includes MongoDB, Express, React, and Node.js. This combination allows us to create a complete and efficient web application with a flexible database, robust API, and dynamic user experience. Collaboration played a key role in the development process, leveraging the skills and knowledge of each team member. The integration of AI in CookMeal provides users with a wide range of culinary options tailored to their tastes and preferences. I'm thrilled with the final result and the potential of CookMeal to enhance the culinary experience through innovative technology and human collaboration.",
+        "demoUrl": "https://cookmeal.vercel.app/",
+        "codeUrl": "https://github.com/No-Country/s8-17-ft-node-react"
+      }
+    ]
   }
 }

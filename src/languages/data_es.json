@@ -196,5 +196,239 @@
         }
       ]
     }
+  },
+  "project": {
+    "title": "Mis Proyectos",
+    "projects": [
+      {
+        "id": 1,
+        "title": "Aplicación de Clima",
+        "image": "/proyectos/Weather.webp",
+        "technologies": [
+          {
+            "name": "React",
+            "image": "/tecnologias/React.png"
+          },
+          {
+            "name": "HTML",
+            "image": "/tecnologias/HTML.png"
+          },
+          {
+            "name": "CSS",
+            "image": "/tecnologias/CSS.png"
+          },
+          {
+            "name": "Vite",
+            "image": "/tecnologias/Vite.png"
+          },
+          {
+            "name": "axios",
+            "image": "/tecnologias/Axios.png"
+          }
+        ],
+        "category": "frontend",
+        "content": "Durante el desarrollo de esta aplicación se utilizaron las siguientes tecnologías: React.js, React-Router, Axios y CSS3. Con la ayuda de estas herramientas, pude crear una interfaz de usuario atractiva e interactiva. Además, aproveché la capacidad de geolocalización para consumir una API meteorológica y proporcionar información meteorológica precisa y actualizada en función de la ubicación del usuario. Esta funcionalidad adicional le permite obtener datos precisos sobre temperatura, condiciones climáticas y pronósticos para ofrecer una experiencia personalizada.",
+        "demoUrl": "https://max-c-app-weather.netlify.app",
+        "codeUrl": "https://github.com/cereceda1991/weather-app.git"
+      },
+      {
+        "id": 2,
+        "title": "Rick and Morty App",
+        "image": "/proyectos/RickandMorty.webp",
+        "technologies": [
+          {
+            "name": "React",
+            "image": "/tecnologias/React.png"
+          },
+          {
+            "name": "HTML",
+            "image": "/tecnologias/HTML.png"
+          },
+          {
+            "name": "CSS",
+            "image": "/tecnologias/CSS.png"
+          },
+          {
+            "name": "Vite",
+            "image": "/tecnologias/Vite.png"
+          },
+          {
+            "name": "axios",
+            "image": "/tecnologias/Axios.png"
+          }
+        ],
+        "category": "frontend",
+        "content": "Al desarrollar esta aplicación, utilicé React.js, Vite.js, React Router, Axios, UseForm, UseNavigate y CSS3. Fue emocionante trabajar con estas tecnologías para crear una experiencia interactiva y dinámica. Una de las características sobresalientes de mi desarrollo fue la integración de una API de Rick and Morty, que me permitió obtener la información necesaria para mostrarla en la aplicación. Para administrar y representar los datos de manera eficiente, aproveché los ganchos useState y useEffect. Además, me concentré en mejorar la interfaz de usuario implementando animaciones fluidas usando CSS3. Esto agregó un toque visual atractivo y agradable para los usuarios. Estoy orgulloso del resultado final de esta aplicación, ya que logré equilibrar la funcionalidad, la estética y la experiencia del usuario.",
+        "demoUrl": "https://rick-and-morty-app-maxc.netlify.app/",
+        "codeUrl": "https://github.com/cereceda1991/finallyRickandMorty.git"
+      },
+      {
+        "id": 3,
+        "title": "Aplicación Pokedex",
+        "image": "/proyectos/Pokedex.webp",
+        "technologies": [
+          {
+            "name": "React",
+            "image": "/tecnologias/React.png"
+          },
+          {
+            "name": "HTML",
+            "image": "/tecnologias/HTML.png"
+          },
+          {
+            "name": "CSS",
+            "image": "/tecnologias/CSS.png"
+          },
+          {
+            "name": "Vite",
+            "image": "/tecnologias/Vite.png"
+          },
+          {
+            "name": "axios",
+            "image": "/tecnologias/Axios.png"
+          },
+          {
+            "name": "Redux",
+            "image": "/tecnologias/Redux.png"
+          }
+        ],
+        "category": "frontend",
+        "content": "Al desarrollar esta aplicación, utilicé React.js, Vite.js, React Router, Axios, UseForm, UseNavigate, CSS3 y Redux Toolkit. Además, decidí aprovechar la API de Pokémon para obtener los datos necesarios. Fue un desafío emocionante trabajar con todas estas tecnologías y herramientas. Gracias a React.js y Vite.js, pude crear una interfaz de usuario fluida y altamente receptiva que brinda una experiencia agradable para los usuarios. Usé React Router para administrar las rutas y la navegación dentro de la aplicación. Con Axios, pude realizar solicitudes a la API de Pokémon y obtener la información relevante para mostrar en mi aplicación. Además, decidí incorporar el kit de herramientas Redux para manejar el estado global de mi aplicación de manera organizada y escalable. Esto me permitió centralizar y compartir la información entre los diferentes componentes de manera eficiente.",
+        "demoUrl": "https://my-pokedex-max-cereceda.netlify.app/#/",
+        "codeUrl": "https://github.com/cereceda1991/Pokedex_App"
+      },
+      {
+        "id": 4,
+        "title": "Ecommerce",
+        "image": "/proyectos/Ecommerce.webp",
+        "technologies": [
+          {
+            "name": "React",
+            "image": "/tecnologias/React.png"
+          },
+          {
+            "name": "HTML",
+            "image": "/tecnologias/HTML.png"
+          },
+          {
+            "name": "CSS",
+            "image": "/tecnologias/CSS.png"
+          },
+          {
+            "name": "Vite",
+            "image": "/tecnologias/Vite.png"
+          },
+          {
+            "name": "axios",
+            "image": "/tecnologias/Axios.png"
+          },
+          {
+            "name": "Redux",
+            "image": "/tecnologias/Redux.png"
+          }
+        ],
+        "category": "frontend",
+        "content": "Durante el desarrollo de mi tienda en línea, mi objetivo principal era crear una plataforma de comercio electrónico completa y funcional que brindara a los usuarios una experiencia excepcional. Me concentré en brindar funciones como navegación de productos, administración de carritos de compras, pedidos y administración de perfiles de manera eficiente. Para garantizar la seguridad y protección de los datos de los usuarios, implementé un sistema de protección de rutas que requería autenticación de usuario y contraseña para acceder a ciertas secciones de la plataforma. Esto proporcionó una capa adicional de seguridad y privacidad para los usuarios al impulsar el acceso no autorizado a ciertas áreas. Al desarrollar esta plataforma, hice uso de las tecnologías con las que tenía experiencia en ese momento. Esto me permitió trabajar eficientemente con los productos de mi tienda y crear una plataforma completa y funcional. Estoy muy satisfecho con el resultado final, ya que pude equilibrar de manera efectiva la gestión de datos con la experiencia del usuario, brindando una plataforma intuitiva y segura para realizar compras en línea. La implementación de la protección de rutas y el uso adecuado de las tecnologías disponibles contribuyeron en gran medida a lograr un experiencia de usuario satisfactoria. Estoy orgulloso del resultado final y de cómo pude lograr mi objetivo de crear una tienda en línea segura, funcional y atractiva para los usuarios.",
+        "demoUrl": "https://my-ecommerce-react-maxc.netlify.app/#/",
+        "codeUrl": "https://github.com/cereceda1991/ecommerce-react.git"
+      },
+      {
+        "id": 5,
+        "title": "Drum Sounds",
+        "image": "/proyectos/DrumSounds.webp",
+        "technologies": [
+          {
+            "name": "HTML",
+            "image": "/tecnologias/HTML.png"
+          },
+          {
+            "name": "CSS",
+            "image": "/tecnologias/CSS.png"
+          },
+          {
+            "name": "JavaScript",
+            "image": "/tecnologias/JavaScript.png"
+          }
+        ],
+        "category": "frontend",
+        "content": "Durante el desarrollo de esta aplicación, utilicé HTML, CSS y JavaScript estándar. Esta vez, decidí crear una aplicación de batería que funcione con las teclas del teclado. Cada vez que presionaba una tecla, se reproducía un sonido de batería único. Fue muy divertido trabajar en esta aplicación. Me sumergí en la creación de la interfaz de usuario usando HTML para estructurar los elementos de la batería y CSS para darles estilo y hacer que se vean geniales. Luego usé JavaScript estándar para agregar la funcionalidad clave de la aplicación. Fue emocionante asignar sonidos de batería específicos a cada tecla correspondiente usando eventos de teclado. Cuando presionaba una tecla, se reproducía el sonido asociado, brindando una experiencia divertida e interactiva. El desarrollo de esta aplicación me permitió explorar la interacción entre HTML, CSS y JavaScript, y realmente disfruté creando una experiencia lúdica para los usuarios. Estoy muy contento con el resultado final y con lo divertido que fue el proceso de desarrollo. Espero que los usuarios disfruten tocando la batería virtual tanto como yo disfruté creándola.",
+        "demoUrl": "https://sounds-drums-maxc.netlify.app/",
+        "codeUrl": "https://github.com/cereceda1991/Drum-Sounds.git"
+      },
+      {
+        "id": 6,
+        "title": "Verbify",
+        "image": "/proyectos/Verbify.webp",
+        "technologies": [
+          {
+            "name": "HTML",
+            "image": "/tecnologias/HTML.png"
+          },
+          {
+            "name": "CSS",
+            "image": "/tecnologias/CSS.png"
+          },
+          {
+            "name": "TypeScript",
+            "image": "/tecnologias/TypeScript.png"
+          },
+          {
+            "name": "NextJs",
+            "image": "/tecnologias/NextJs.png"
+          },
+          {
+            "name": "Redux",
+            "image": "/tecnologias/Redux.png"
+          },
+          {
+            "name": "React",
+            "image": "/tecnologias/React.png"
+          }
+        ],
+        "category": "frontend",
+        "content": "El desarrollo de Verbify fue un emocionante proyecto colaborativo. Usamos TypeScript, Redux, React, Next.js y React Router para crear una aplicación robusta y eficiente. Nuestro objetivo era abordar la barrera del idioma en el lugar de trabajo, específicamente el inglés. Verbify ofrece lecciones interactivas, ejercicios de gramática, pruebas de vocabulario y la posibilidad de practicar conversaciones en inglés. Trabajar con colegas de diferentes disciplinas fue un desafío gratificante y estoy orgulloso del impacto de Verbify en la mejora de las habilidades de inglés para mejores oportunidades laborales. Fue un proyecto emocionante que mostró el poder de la colaboración y la tecnología.",
+        "demoUrl": "https://verbify.vercel.app/",
+        "codeUrl": "https://github.com/No-Country/c10-44-m-mern"
+      },
+      {
+        "id": 7,
+        "title": "CookMeal",
+        "image": "/proyectos/CookMeal.webp",
+        "technologies": [
+          {
+            "name": "HTML",
+            "image": "/tecnologias/HTML.png"
+          },
+          {
+            "name": "CSS",
+            "image": "/tecnologias/CSS.png"
+          },
+          {
+            "name": "TypeScript",
+            "image": "/tecnologias/TypeScript.png"
+          },
+          {
+            "name": "NextJs",
+            "image": "/tecnologias/NextJs.png"
+          },
+          {
+            "name": "Redux",
+            "image": "/tecnologias/Redux.png"
+          },
+          {
+            "name": "React",
+            "image": "/tecnologias/React.png"
+          },
+          {
+            "name": "Tailwind",
+            "image": "/tecnologias/Tailwind.png"
+          }
+        ],
+        "category": "frontend",
+        "content": "CookMeal es una emocionante aplicación colaborativa que utiliza IA para crear recetas personalizadas. Usamos la API de OpenAI para generar una variedad de recetas basadas en indicaciones simples proporcionadas por los usuarios. La aplicación se crea con la pila MERN, que incluye MongoDB, Express, React y Node.js. Esta combinación nos permite crear una aplicación web completa y eficiente con una base de datos flexible, una API robusta y una experiencia de usuario dinámica. La colaboración desempeñó un papel clave en el proceso de desarrollo, aprovechando las habilidades y el conocimiento de cada miembro del equipo. La integración de AI en CookMeal brinda a los usuarios una amplia gama de opciones culinarias adaptadas a sus gustos y preferencias. Estoy encantado con el resultado final y el potencial de CookMeal para mejorar la experiencia culinaria a través de tecnología innovadora y colaboración humana.",
+        "demoUrl": "https://cookmeal.vercel.app/",
+        "codeUrl": "https://github.com/No-Country/s8-17-ft-node-react"
+      }
+    ]
   }
 }

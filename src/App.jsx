@@ -1,24 +1,22 @@
-import { useState } from "react";
-import { Route, Routes } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
-import Logo from "./components/Logo";
+import Logo from './components/Logo';
 // import LigthMode from "./components/LigthMode";
 
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Skills from "./pages/Skills";
-import Contact from "./pages/Contact";
-import Projects from "./pages/Projects";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
+import Home from './pages/Home';
+import About from './pages/About';
+import Skills from './pages/Skills';
+import Contact from './pages/Contact';
+import Projects from './pages/Projects';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 
-
-import "./App.css";
-import LanguageSelector from "./components/LanguageSelector";
+import './App.css';
+import LanguageSelector from './components/LanguageSelector';
 
 function App() {
-
   const [showNavbar, setShowNavbar] = useState(true);
   const [showIcon, setShowIcon] = useState(true);
 
@@ -34,7 +32,6 @@ function App() {
     toggleNavbar();
     toggleIcon();
   };
-
 
   return (
     <main>
@@ -61,4 +58,3 @@ function App() {
 }
 
 export default App;
-

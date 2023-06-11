@@ -1,130 +1,246 @@
-import React from "react";
-import AOS from "aos";
-import { useEffect } from "react";
-import Project from "../components/Project";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+// // import React, { useEffect } from 'react';
+// // import Carousel from 'react-bootstrap/Carousel';
+// // import './styles/Projects.css';
+// // import { useDispatch, useSelector } from 'react-redux';
+// // import axios from 'axios';
+// // import { setLanguageData } from '../store/languageSlice';
+// // import ButtonModern from '../components/ButtonModern';
 
-//resources
-import RickandMorty from "../assets/rickandmorty.webp";
-import Weather from "../assets/apiweather.webp";
-import Pokedex from "../assets/pokedex.webp";
-import ReactImg from "../assets/react.png";
-import Ecommerce from '../assets/eco.png'
-import Js from '../assets/javascript.png'
-import Redux from '../assets/redux.png'
-import HTML from "../assets/html.png";
-import CSS from "../assets/css.png";
-import Vite from '../assets/vite.png';
-import DrumSounds from '../assets/drum.png'
+// // const Projects = () => {
+// //   const languageData = useSelector((state) => state.language);
+// //   const dispatch = useDispatch();
 
+// //   useEffect(() => {
+// //     // Cargar datos del idioma solo si aún no se han cargado
+// //     if (!languageData) {
+// //       // Simulación de carga de datos del JSON
 
-// styles
-import "swiper/css/navigation";
-import './styles/Projects.css'
-import "aos/dist/aos.css";
-import "swiper/css";
-import SideBar from "../components/SideBar";
+// //       const url = '../languages/data_en.json';
+// //       axios
+// //         .get(url)
+// //         .then((response) => {
+// //           const languageData = response.data;
+// //           dispatch(setLanguageData(languageData));
+// //         })
+// //         .catch((error) => {
+// //           console.log(error);
+// //         });
+// //     }
+// //   }, [languageData, dispatch]);
 
+// //   if (!languageData) {
+// //     return <div>Cargando datos...</div>;
+// //   }
+
+// //   // Accede a la información del idioma en tu componente
+// //   const { title, project } = languageData.projects;
+
+// //   console.log(project);
+// //   return (
+// //     <div className="container__projects">
+// //       <div>
+// //         <h2>{title}</h2>
+// //       </div>
+// //       <Carousel className="container__carousel" interval={3000}>
+// //         {project.map((project) => (
+// //           <Carousel.Item key={project.id}>
+// //             <div className="project_wrapper">
+// //               <img
+// //                 className="project_image"
+// //                 src={project.image}
+// //                 alt={project.title}
+// //               />
+// //               <div className="project_content">
+// //                 <h1>{project.title}</h1>
+// //                 <p>{project.content}</p>
+// //                 <p>{project.technologies}</p>
+// //               </div>
+// //               <div className="buttons_project">
+// //                 <a
+// //                   href={project.demoUrl}
+// //                   target="_blank"
+// //                   rel="noopener noreferrer"
+// //                 >
+// //                   <ButtonModern content="Demo" />
+// //                 </a>
+// //                 <a
+// //                   href={project.codeUrl}
+// //                   target="_blank"
+// //                   rel="noopener noreferrer"
+// //                 >
+// //                   <ButtonModern content="Code" />
+// //                 </a>
+// //               </div>
+// //             </div>
+// //           </Carousel.Item>
+// //         ))}
+// //       </Carousel>
+// //     </div>
+// //   );
+// // };
+
+// // export default Projects;
+// import React, { useEffect } from 'react';
+// import Carousel from 'react-bootstrap/Carousel';
+// import './styles/Projects.css';
+// import { useDispatch, useSelector } from 'react-redux';
+// import axios from 'axios';
+// import { setLanguageData } from '../store/languageSlice';
+// import ButtonModern from '../components/ButtonModern';
+// import TechnologyImages from '../components/TechnologyImages';
+
+// const Projects = () => {
+//   const languageData = useSelector((state) => state.language);
+//   const dispatch = useDispatch();
+
+//   useEffect(() => {
+//     // Cargar datos del idioma solo si aún no se han cargado
+//     if (!languageData) {
+//       // Simulación de carga de datos del JSON
+
+//       const url = '../languages/data_en.json';
+//       axios
+//         .get(url)
+//         .then((response) => {
+//           const languageData = response.data;
+//           dispatch(setLanguageData(languageData));
+//         })
+//         .catch((error) => {
+//           console.log(error);
+//         });
+//     }
+//   }, [languageData, dispatch]);
+
+//   if (!languageData) {
+//     return <div>Cargando datos...</div>;
+//   }
+
+//   // Accede a la información del idioma en tu componente
+//   const { title, projects } = languageData.project;
+
+//   console.log(projects);
+
+//   return (
+//     <div className="container__projects">
+//       <div>
+//         <h2>{title}</h2>
+//       </div>
+//       <Carousel className="container__carousel" interval={3000}>
+//         {projects.map((project) => (
+//           <Carousel.Item key={project.id}>
+//             <div className="project_wrapper">
+//               <img
+//                 className="project_image"
+//                 src={project.image}
+//                 alt={project.title}
+//               />
+//               <div className="project_content">
+//                 <h1>{project.title}</h1>
+//                 <p>{project.content}</p>
+//                 <TechnologyImages technologies={project.technologies} />
+//               </div>
+//               <div className="buttons_project">
+//                 <a
+//                   href={project.demoUrl}
+//                   target="_blank"
+//                   rel="noopener noreferrer"
+//                 >
+//                   <ButtonModern content="Demo" />
+//                 </a>
+//                 <a
+//                   href={project.codeUrl}
+//                   target="_blank"
+//                   rel="noopener noreferrer"
+//                 >
+//                   <ButtonModern content="Code" />
+//                 </a>
+//               </div>
+//             </div>
+//           </Carousel.Item>
+//         ))}
+//       </Carousel>
+//     </div>
+//   );
+// };
+
+// export default Projects;
+import React, { useEffect } from 'react';
+import Carousel from 'react-bootstrap/Carousel';
+import './styles/Projects.css';
+import { useDispatch, useSelector } from 'react-redux';
+import axios from 'axios';
+import { setLanguageData } from '../store/languageSlice';
+import ButtonModern from '../components/ButtonModern';
+import TechnologyImages from '../components/TechnologyImages';
 
 const Projects = () => {
+  const languageData = useSelector((state) => state.language);
+  const dispatch = useDispatch();
+
   useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
+    if (!languageData) {
+      const url =
+        'https://raw.githubusercontent.com/cereceda1991/myportfolio-react/main/src/languages/data_es.json';
+      axios
+        .get(url)
+        .then((response) => {
+          const languageData = response.data;
+          dispatch(setLanguageData(languageData));
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
+  }, [languageData, dispatch]);
+
+  if (!languageData) {
+    return <div>Cargando datos...</div>;
+  }
+
+  const { title, projects } = languageData.project;
 
   return (
-
-    <div name="projects" className="container__projects">
+    <div className="container__projects">
       <div>
-        <div className="swiper-button-prev"></div>
-        <div className="swiper-button-next"></div>
+        <h2>{title}</h2>
       </div>
-
-      <div>
-        <Swiper
-          data-aos="fade-up"
-          modules={[Navigation, Pagination, Scrollbar, A11y]}
-          slidesPerView={3}
-          navigation={{
-            prevEl: ".swiper-button-prev",
-            nextEl: ".swiper-button-next",
-          }}
-
-          breakpoints={{
-            340: {
-              slidesPerView: 1,
-            },
-            768: {
-              slidesPerView: 2,
-            },
-            1040: {
-              slidesPerView: 3,
-            },
-          }}
-        >
-          <SwiperSlide>
-            <Project
-              title="Weather App"
-              image={Weather}
-              languages={[ReactImg, HTML, CSS, Vite]}
-              content="During the development of this application, I used React js, React-Route, Axios,
-              and CSS3."
-              demoUrl="https://max-c-app-weather.netlify.app"
-              codeUrl="https://github.com/cereceda1991/weather-app.git"
-            />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <Project
-              title="Rick and Morty App"
-              image={RickandMorty}
-              languages={[ReactImg, HTML, CSS, Vite]}
-              content="I used React js, Vite Js, React-Route, Axios, UseForm, UseNavigate, and CSS3 in the
-              development of this application."
-              demoUrl="https://rick-and-morty-app-maxc.netlify.app/"
-              codeUrl="https://github.com/cereceda1991/finallyRickandMorty.git"
-            />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <Project
-              title="Pokedex"
-              image={Pokedex}
-              languages={[ReactImg, HTML, CSS, Js, Vite]}
-              content="I used React js, Vite Js, React-Route, Axios, UseForm, UseNavigate, and CSS3 in the
-              development of this application."
-              demoUrl="https://my-pokedex-max-cereceda.netlify.app/#/"
-              codeUrl="https://github.com/cereceda1991/Pokedex_App"
-            />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <Project
-              title="Ecommerce"
-              image={Ecommerce}
-              languages={[ReactImg, HTML, CSS, Js, Redux]}
-              content="I used React js, Vite Js, React-Route, Axios, Redux, UseForm, UseNavigate, Js and CSS3 in the
-              development of this application."
-              demoUrl="https://my-ecommerce-react-maxc.netlify.app/#/"
-              codeUrl="https://github.com/cereceda1991/ecommerce-react.git"
-            />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <Project
-              title="Drum Sounds"
-              image={DrumSounds}
-              languages={[HTML, CSS, Js]}
-              content="During the development of this application, I used Html, JavaScript Vanilla
-              and CSS3."
-              demoUrl="https://sounds-drums-maxc.netlify.app/"
-              codeUrl="https://github.com/cereceda1991/Drum-Sounds.git"
-            />
-          </SwiperSlide>
-        </Swiper>
-      </div>
-      <SideBar />
-    </div >
+      <Carousel className="container__carousel" interval={3000}>
+        {projects.map((project) => (
+          <Carousel.Item key={project.id}>
+            <div className="project_wrapper">
+              <img
+                className="project_image"
+                src={project.image}
+                alt={project.title}
+              />
+              <div className="project_content">
+                <h1>{project.title}</h1>
+                <p>{project.content}</p>
+                <div className="technology_images">
+                  <TechnologyImages technologies={project.technologies} />
+                </div>
+              </div>
+              <div className="buttons_project">
+                <a
+                  href={project.demoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ButtonModern content="Demo" />
+                </a>
+                <a
+                  href={project.codeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ButtonModern content="Code" />
+                </a>
+              </div>
+            </div>
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </div>
   );
 };
 

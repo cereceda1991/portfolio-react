@@ -16,8 +16,6 @@ const Home = () => {
   useEffect(() => {
     // Cargar datos del idioma solo si aún no se han cargado
     if (!languageData) {
-      // Simulación de carga de datos del JSON
-
       const url =
         'https://raw.githubusercontent.com/cereceda1991/myportfolio-react/main/src/languages/data_es.json';
       axios

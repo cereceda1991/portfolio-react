@@ -1,0 +1,10 @@
+.technology_images {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.technology_images img {
+    width: 50px;
+    border-radius: 1rem;
+}
