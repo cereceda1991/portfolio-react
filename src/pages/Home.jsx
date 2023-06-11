@@ -8,6 +8,7 @@ import SideBar from '../components/SideBar';
 import { Link } from 'react-router-dom';
 import { setLanguageData } from '../store/languageSlice';
 import axios from 'axios';
+import ButtonModern from '../components/ButtonModern';
 
 const Home = () => {
   const languageData = useSelector((state) => state.language);
@@ -79,14 +80,13 @@ const Home = () => {
         </h2>
         <h3>{slogan}</h3>
         <p>{description}</p>
-        <button onMouseEnter={playSound} onMouseLeave={() => {}}>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <Link to="/about">{buttonText}</Link>
-        </button>
+        <h5>
+          <Link to="/about">
+            <ButtonModern content={buttonText} />
+          </Link>
+        </h5>
       </section>
+
       <section className="home__img">
         <img src={Foto} alt="foto" />
       </section>

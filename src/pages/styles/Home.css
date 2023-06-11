@@ -34,7 +34,8 @@
 }
 
 .home__info h1 {
-    font-size: 3rem;
+    font-size: 2.6rem;
+    font-weight: 600;
 }
 
 .home__info h2 {
@@ -42,83 +43,17 @@
     gap: .5rem;
     color: #3a78f2;
     font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.home__info h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .home__info p {
     padding-top: 1rem;
     text-align: justify;
-}
-
-.home__info button {
-    display: flex;
-    width: 350px;
-    margin-top: 2rem;
-    padding: 1rem;
-    border-radius: .1rem;
-    cursor: pointer;
-    font-weight: 800;
-    font-size: 1.2rem;
-    position: relative;
-    overflow: hidden;
-    background-color: #3a78f2;
-    border: none;
-    font-family: inherit;
-    justify-content: center;
-}
-
-.home__info button span {
-    background-color: #fff;
-    position: absolute;
-    transition: .5s;
-}
-
-.home__info button span:nth-child(1) {
-    width: 100%;
-    height: 3px;
-    top: 0;
-    left: -100%;
-}
-
-.home__info button span:nth-child(2) {
-    width: 100%;
-    height: 3px;
-    bottom: 0;
-    right: -100%;
-}
-
-.home__info button span:nth-child(3) {
-    width: 3px;
-    height: 100%;
-    bottom: -100%;
-    left: 0;
-}
-
-.home__info button span:nth-child(4) {
-    width: 3px;
-    height: 100%;
-    top: -100%;
-    right: 0;
-}
-
-.home__info button:hover {
-    color: #fff;
-    background-color: transparent;
-}
-
-.home__info button:hover span:nth-child(1) {
-    left: 0;
-}
-
-.home__info button:hover span:nth-child(2) {
-    right: 0;
-}
-
-.home__info button:hover span:nth-child(3) {
-    bottom: 0;
-}
-
-.home__info button:hover span:nth-child(4) {
-    top: 0;
 }
 
 .home__img {
@@ -171,7 +106,7 @@
 
     .home__info h3 {
         margin-top: 1rem;
-        font-size: 2rem;
+        font-size: 1rem;
         text-align: center;
     }
 
