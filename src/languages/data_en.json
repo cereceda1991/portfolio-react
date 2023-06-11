@@ -131,5 +131,70 @@
       "devops": "DevOps",
       "data_visualization": "Data Visualization"
     }
+  },
+  "about": {
+    "name": "I'm Max Cereceda",
+    "aboutInfo": [
+      "I'm a passionate web developer, with a strong organizational capacity. My main goal is to exceed expectations and achieve exceptional results. I constantly improve my skills and stay updated on the latest advancements in web development to ensure I am at the forefront of the industry.",
+      "In addition to my dedication to web development, I have a passion for enjoying sunsets and finding inspiration in walks in the rain. Science fiction movies captivate me, electronic music gives me a stimulating energy. I am also an avid traveler, which has allowed me to gain a global perspective and enrich my view of the world.",
+      "My proven track record of achievement, combined with my perfectionist approach, problem-solving skills, my constant dedication to keeping up with the latest industry trends, make me an enthusiastic and highly valuable candidate for your team.",
+      "I am excited about the opportunity to contribute to the success of your company. I look forward to the possibility of collaborating and taking our ideas to new heights."
+    ],
+    "phrase": {
+      "title": "A phrase I often use is:",
+      "quote": "Technology is nothing. What's important is that you have a faith in people, that they're basically good and smart, and if you give them tools, they'll do wonderful things with them.",
+      "author": "Steve Jobs"
+    },
+    "paragraphs": [
+      {
+        "title": "Hours of theory",
+        "time": 500
+      },
+      {
+        "title": "Hours of practice",
+        "time": 1440
+      },
+      {
+        "title": "Satisfied companies",
+        "time": 10
+      },
+      {
+        "title": "Year of Accumulated Experience",
+        "time": 1
+      },
+      {
+        "title": "Completed projects",
+        "time": 25
+      }
+    ],
+    "education": {
+      "title": "EDUCATION",
+      "institutions": [
+        {
+          "institution": "ACADEMLO",
+          "link": "https://www.academlo.com/",
+          "date": "(November 2022 - May 2023)",
+          "degree": "Full Stack Web Developer"
+        },
+        {
+          "institution": "UNIVERSIDAD PRIVADA DEL NORTE",
+          "link": "https://www.upn.edu.pe/",
+          "date": "(March 2015-On hold)",
+          "degree": "Industrial Engineering"
+        }
+      ]
+    },
+    "experience": {
+      "title": "WORK EXPERIENCE",
+      "works": [
+        {
+          "positions": "TL & Frontend Developer",
+          "company": "No-Country Tech",
+          "companyLink": "https://www.nocountry.tech/",
+          "time": "March 2023 - Today",
+          "detail": "I led the development of an excellent Verbify web application; an innovative platform to learn English. Using technologies like Next.js, React, TypeScript, and Redux, we create an exceptional user experience. I managed to successfully lead two teams during the project, demonstrating my technical and creative skills"
+        }
+      ]
+    }
   }
 }

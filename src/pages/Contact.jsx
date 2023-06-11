@@ -1,13 +1,19 @@
+// 1. Importaciones de React
 import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import './styles/Contact.css';
-import SideBar from '../components/SideBar';
-import { setLanguageData } from '../store/languageSlice';
+
+// 2. Importaciones de Axios y iconos de React
 import axios from 'axios';
-import ButtonModern from '../components/ButtonModern';
 import { BiMap } from "react-icons/bi";
 import { HiOutlineMail } from 'react-icons/hi';
 
+// 3. Importación de estilos y componentes 
+import './styles/Contact.css';
+import SideBar from '../components/SideBar';
+import ButtonModern from '../components/ButtonModern';
+
+// 4. Importación de acciones y slices de Redux
+import { useSelector, useDispatch } from 'react-redux';
+import { setLanguageData } from '../store/languageSlice';
 
 const Contact = () => {
   const languageData = useSelector((state) => state.language);

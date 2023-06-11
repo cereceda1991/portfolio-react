@@ -1,0 +1,31 @@
+.experience__counters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    gap: 1rem
+}
+
+.card__counter {
+    width: 80%;
+    height: 100px;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: #3a78f2;
+    transform: perspective(800px);
+    transition: transform 0.3s ease;
+}
+
+.card__counter:hover {
+    transform: perspective(500px) rotateY(-30deg) rotateX(5deg) scale(1.15);
+    background-color: #fff;
+    color: black;
+    cursor: zoom-out;
+}
+
+@media (min-width: 700px) {
+    .card__counter {
+        width: 200px;
+    }
+}

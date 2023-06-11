@@ -1,101 +1,57 @@
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
-import './styles/About.css'
-import { FaBookReader } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import ProgressSummary from "../components/ProgressSummary";
-import Experience from "../components/Experiencie";
-import SideBar from "../components/SideBar";
+// 1. Importaciones de estilos y componentes
+import './styles/About.css';
+import SideBar from '../components/SideBar';
+
+// 2. Importaciones de librerías y módulos externos
+import axios from 'axios';
+import { useEffect } from 'react';
+
+// 4. Importación de acciones y slices de Redux
+import { useSelector, useDispatch } from 'react-redux';
+import { setLanguageData } from '../store/languageSlice';
+import ExperienceCounters from '../components/ExperienceCounters';
+import Education from '../components/Education';
+import WorkExperience from '../components/WorkExperience';
+import PersonalInfo from '../components/PersonalInfo';
 
 const About = () => {
+  const languageData = useSelector((state) => state.language);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
+    // Cargar datos del idioma solo si aún no se han cargado
+    if (!languageData) {
+      // Simulación de carga de datos del JSON
+
+      const url = '../../languages/data_es.json';
+      axios
+        .get(url)
+        .then((response) => {
+          const languageData = response.data;
+          dispatch(setLanguageData(languageData));
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
+  }, [languageData, dispatch]);
+
+  if (!languageData) {
+    return <div>Cargando datos...</div>;
+  }
+
+  // Accede a la información del idioma en tu componente
+  const { name, aboutInfo, paragraphs, phrase, education, experience } =
+    languageData.about;
 
   return (
     <main className="container__about">
-      <section data-aos="fade-right">
-        <h1 data-aos="fade-up" >Hi, I'm Max Cereceda</h1>
-        <div className="aboutme__info" data-aos="fade-up">
-          <p>
-            I'm a passionate web developer, with a strong organizational capacity. My main goal is to exceed expectations and achieve exceptional results. I constantly improve my skills and stay updated on the latest advancements in web development to ensure I am at the forefront of the industry.
-          </p>
-          <p>
-            In addition to my dedication to web development, I have a passion for enjoying sunsets and finding inspiration in walks in the rain. Science fiction movies captivate me, electronic music gives me a stimulating energy. I am also an avid traveler, which has allowed me to gain a global perspective and enrich my view of the world.
-          </p>
-          <p>
-            My proven track record of achievement, combined with my perfectionist approach, problem-solving skills, my constant dedication to keeping up with the latest industry trends, make me an enthusiastic and highly valuable candidate for your team.
-          </p>
-          <p>
-            I am excited about the opportunity to contribute to the success of your company. I look forward to the possibility of collaborating and taking our ideas to new heights.
-          </p>
-        </div>
-        <div data-aos="fade-up" className="about__phrase">
-          <h2>A phrase I often use is:</h2>
-          <p>
-            "Technology is nothing. What's important is that you have a faith in people, that they're basically good and smart, and if you give them tools, they'll do wonderful things with them".
-          </p>
-          <b>Steve Jobs</b>
-        </div>
-      </section>
-      <section className="experiencie__counters" data-aos="fade-right" >
-        <div className="card__counter" >
-          <ProgressSummary value={500} />
-          <p>Hours of theory</p>
-        </div>
-        <div className="card__counter">
-          <ProgressSummary value={1440} />
-          <p>Hours of practice</p>
-        </div>
-
-        <div className="card__counter">
-          <ProgressSummary value={10} />
-          <p>Satisfied companies</p>
-        </div>
-
-        <div className="card__counter">
-          <ProgressSummary value={1} />
-          <p>Year of Accumulated Experience</p>
-        </div>
-
-        <div className="card__counter">
-          <ProgressSummary value={10} />
-          <p>Completed projects</p>
-        </div>
-
-      </section>
-
-      <section className="section__education" data-aos="fade-left">
-        <h1>
-          <FaBookReader /> EDUCATION
-        </h1>
-        <div className="experiencie__dates">
-          <h3>
-            <Link to='https://www.academlo.com/' target="_blank">
-              ACADEMLO
-            </Link>
-          </h3>
-          (November 2022 - May 2023)
-        </div>
-        <h3>
-          Full Stack Web Developer
-        </h3>
-        <div className="experiencie__dates">
-          <h3>
-            <Link to='https://www.upn.edu.pe/' target="_blank">
-              UNIVERSIDAD PRIVADA DEL NORTE
-            </Link>
-          </h3>
-          ( March 2015-Paused)
-        </div>
-        <h3>Industrial engineering</h3>
-      </section>
-      <Experience />
+      <PersonalInfo name={name} aboutInfo={aboutInfo} phrase={phrase} />
+      <ExperienceCounters paragraphs={paragraphs} />
+      <Education education={education} />
+      <WorkExperience experience={experience} />
       <SideBar />
     </main>
-
   );
 };
 

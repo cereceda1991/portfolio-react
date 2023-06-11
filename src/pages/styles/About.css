@@ -2,10 +2,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    padding: 6rem 10rem;
-    min-height: 100vh;
+    padding: 6rem 6rem 2rem 6rem;
     gap: 3rem;
+    margin: auto;
+    height: calc(100% - 85px);
+    max-width: 1440px;
 }
 
 .aboutme__info p {
@@ -17,44 +18,25 @@
     margin-top: 1rem;
     background-color: #6fc2b0;
     padding: 1rem;
+    color: #000;
 }
 
-.experiencie__counters {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    padding: 1rem;
-    gap: 1rem
-}
-
-.card__counter {
-    width: 200px;
-    height: 100px;
-    padding: 1rem;
-    border-radius: .5rem;
-    background-color: #3a78f2;
-    transform: perspective(800px);
-    transition: transform 0.3s ease;
-}
-
-.card__counter:hover {
-    transform: perspective(500px) rotateY(-30deg) rotateX(5deg) scale(1.15);
-    background-color: #fff;
-    color: black;
-    cursor: zoom-out;
+.container_dates {
+    display: grid;
+    gap: .5rem;
+    margin-top: 1rem;
 }
 
 .experiencie__dates {
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: .5rem;
 }
 
-.section__education {
+.section_dates {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    margin: bottom 2rem;
 }
 
 @media (max-width: 700px) {
@@ -63,6 +45,6 @@
         flex-direction: column;
         width: 100%;
         gap: 1rem;
-        padding: 4rem 2rem;
+        padding: 6rem 2rem;
     }
 }
