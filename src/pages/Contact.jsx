@@ -3,10 +3,10 @@ import React, { useEffect } from 'react';
 
 // 2. Importaciones de Axios y iconos de React
 import axios from 'axios';
-import { BiMap } from "react-icons/bi";
+import { BiMap } from 'react-icons/bi';
 import { HiOutlineMail } from 'react-icons/hi';
 
-// 3. Importación de estilos y componentes 
+// 3. Importación de estilos y componentes
 import './styles/Contact.css';
 import SideBar from '../components/SideBar';
 import ButtonModern from '../components/ButtonModern';
@@ -24,7 +24,8 @@ const Contact = () => {
     if (!languageData) {
       // Simulación de carga de datos del JSON
 
-      const url = '../../languages/data_es.json';
+      const url =
+        'https://raw.githubusercontent.com/cereceda1991/myportfolio-react/main/src/languages/data_es.json';
       axios
         .get(url)
         .then((response) => {
@@ -51,14 +52,17 @@ const Contact = () => {
     form.reset();
   };
 
-
   return (
     <main className="container__contact">
-      <section className='info__personal'>
+      <section className="info__personal">
         <h1>{title}</h1>
         <p>{content}</p>
-        <h4><HiOutlineMail /> {email}</h4>
-        <h4 ><BiMap /> {address}</h4>
+        <h4>
+          <HiOutlineMail /> {email}
+        </h4>
+        <h4>
+          <BiMap /> {address}
+        </h4>
       </section>
       <section className="container__form">
         <span className="login__circuit-mask"></span>
@@ -69,13 +73,28 @@ const Contact = () => {
           onSubmit={handleFormSubmit}
         >
           <label>{form.fullNameLabel}</label>
-          <input type="text" name="name" placeholder={form.fullNamePlaceholder} required />
+          <input
+            type="text"
+            name="name"
+            placeholder={form.fullNamePlaceholder}
+            required
+          />
 
           <label>{form.emailLabel}</label>
-          <input type="email" name="email" placeholder={form.emailPlaceholder} required />
+          <input
+            type="email"
+            name="email"
+            placeholder={form.emailPlaceholder}
+            required
+          />
 
           <label>{form.messageLabel}</label>
-          <textarea type="text" name="message" placeholder={form.messagePlaceholder} required />
+          <textarea
+            type="text"
+            name="message"
+            placeholder={form.messagePlaceholder}
+            required
+          />
 
           <ButtonModern type="submit" content={form.submitButton} />
         </form>

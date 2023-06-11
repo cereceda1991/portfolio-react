@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import {
   FaInstagram,
   FaYoutube,
@@ -6,15 +6,14 @@ import {
   FaLinkedin,
   FaGithub,
   FaFacebookF,
-} from "react-icons/fa";
-import Whatsapp from "../assets/icon-whatsapp.svg";
-import "./styles/ButtonWsp.css";
-import "./styles/Footer.css";
-import { useDispatch, useSelector } from "react-redux";
+} from 'react-icons/fa';
+import Whatsapp from '../assets/icon-whatsapp.svg';
+import './styles/ButtonWsp.css';
+import './styles/Footer.css';
+import { useDispatch, useSelector } from 'react-redux';
 import { setLanguageData } from '../store/languageSlice';
-import axios from "axios";
-import { useEffect } from "react";
-
+import axios from 'axios';
+import { useEffect } from 'react';
 
 const SocialMediaLink = ({ name, url, icon }) => (
   <li>
@@ -27,33 +26,33 @@ const SocialMediaLink = ({ name, url, icon }) => (
 const Footer = () => {
   const socialMediaIcons = [
     {
-      name: "Facebook",
-      url: "https://www.facebook.com/max.cereceda",
+      name: 'Facebook',
+      url: 'https://www.facebook.com/max.cereceda',
       icon: <FaFacebookF />,
     },
     {
-      name: "Instagram",
-      url: "https://www.instagram.com/cereceda91/",
+      name: 'Instagram',
+      url: 'https://www.instagram.com/cereceda91/',
       icon: <FaInstagram />,
     },
     {
-      name: "YouTube",
-      url: "https://www.youtube.com/channel/UCdh-vS0WSbgOapGrLT9wgvQ",
+      name: 'YouTube',
+      url: 'https://www.youtube.com/channel/UCdh-vS0WSbgOapGrLT9wgvQ',
       icon: <FaYoutube />,
     },
     {
-      name: "Twitter",
-      url: "https://twitter.com/cereceda1991",
+      name: 'Twitter',
+      url: 'https://twitter.com/cereceda1991',
       icon: <FaTwitter />,
     },
     {
-      name: "LinkedIn",
-      url: "https://www.linkedin.com/in/maxcereceda/",
+      name: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/maxcereceda/',
       icon: <FaLinkedin />,
     },
     {
-      name: "GitHub",
-      url: "https://github.com/cereceda1991",
+      name: 'GitHub',
+      url: 'https://github.com/cereceda1991',
       icon: <FaGithub />,
     },
   ];
@@ -61,10 +60,10 @@ const Footer = () => {
   const dispatch = useDispatch();
   const languageData = useSelector((state) => state.language);
 
-
   useEffect(() => {
     if (!languageData) {
-      const url = '../../languages/data_es.json';
+      const url =
+        'https://raw.githubusercontent.com/cereceda1991/myportfolio-react/main/src/languages/data_es.json';
       axios
         .get(url)
         .then((response) => {
@@ -82,8 +81,6 @@ const Footer = () => {
   }
 
   const { visitorNumberText, copyRightText } = languageData.footer;
-
-
 
   return (
     <footer className="footer">

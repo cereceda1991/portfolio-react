@@ -18,8 +18,10 @@ const Home = () => {
     if (!languageData) {
       // Simulación de carga de datos del JSON
 
-      const url = '../../languages/data_es.json';
-      axios.get(url)
+      const url =
+        'https://raw.githubusercontent.com/cereceda1991/myportfolio-react/main/src/languages/data_es.json';
+      axios
+        .get(url)
         .then((response) => {
           const languageData = response.data;
           dispatch(setLanguageData(languageData));
@@ -35,7 +37,8 @@ const Home = () => {
   }
 
   // Accede a la información del idioma en tu componente
-  const { welcome, title, typewriterStrings, slogan, description, buttonText } = languageData.home;
+  const { welcome, title, typewriterStrings, slogan, description, buttonText } =
+    languageData.home;
 
   return (
     <main className="container__home">
@@ -78,7 +81,7 @@ const Home = () => {
         </h2>
         <h3>{slogan}</h3>
         <p>{description}</p>
-        <button onMouseEnter={playSound} onMouseLeave={() => { }}>
+        <button onMouseEnter={playSound} onMouseLeave={() => {}}>
           <span></span>
           <span></span>
           <span></span>

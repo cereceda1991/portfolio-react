@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 import './styles/Skills.css';
 
-import SideBar from "../components/SideBar";
-import skillsData from "../utils/skillsData";
-import inProcess from "../utils/skillInProcess";
+import SideBar from '../components/SideBar';
+import skillsData from '../utils/skillsData';
+import inProcess from '../utils/skillInProcess';
 
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector } from 'react-redux';
 import { setLanguageData } from '../store/languageSlice';
-import axios from "axios";
+import axios from 'axios';
 
 const Skills = () => {
   const languageData = useSelector((state) => state.language);
@@ -17,7 +17,8 @@ const Skills = () => {
     // Cargar datos del idioma solo si aún no se han cargado
     if (!languageData) {
       // Simulación de carga de datos del JSON
-      const url = '../../languages/data_es.json';
+      const url =
+        'https://raw.githubusercontent.com/cereceda1991/myportfolio-react/main/src/languages/data_es.json';
       axios
         .get(url)
         .then((response) => {
@@ -42,8 +43,6 @@ const Skills = () => {
 
   const { completedText, inProgressText } = languageData.skills;
 
-
-
   const filteredSkills = selectedCategory
     ? skillsData.filter((skill) => skill.category === selectedCategory)
     : skillsData;
@@ -56,20 +55,22 @@ const Skills = () => {
     <main className="container__skills">
       <div className="category__filter">
         <button
-          className={!selectedCategory ? "active" : ""}
+          className={!selectedCategory ? 'active' : ''}
           onClick={() => handleCategoryFilter(null)}
         >
           All technologies
         </button>
-        {Array.from(new Set(skillsData.map((skill) => skill.category))).map((category) => (
-          <button
-            className={selectedCategory === category ? "active" : ""}
-            onClick={() => handleCategoryFilter(category)}
-            key={category}
-          >
-            {category}
-          </button>
-        ))}
+        {Array.from(new Set(skillsData.map((skill) => skill.category))).map(
+          (category) => (
+            <button
+              className={selectedCategory === category ? 'active' : ''}
+              onClick={() => handleCategoryFilter(category)}
+              key={category}
+            >
+              {category}
+            </button>
+          )
+        )}
       </div>
       <section>
         <h1>{completedText}</h1>
@@ -106,7 +107,6 @@ const Skills = () => {
       <SideBar />
     </main>
   );
-}
+};
 
 export default Skills;
-
