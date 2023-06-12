@@ -8,11 +8,9 @@ const SocialMediaLink = ({ name, url, icon }) => (
       className="footer__socialmedia_link"
       rel="noopener noreferrer"
     >
-      <div>
-        <p>{icon}</p>
-        <span>{name}</span>
-      </div>
+      <div className="icons">{icon}</div>
     </a>
+    <span>{name}</span>
   </li>
 );
 

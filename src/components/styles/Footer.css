@@ -21,15 +21,6 @@
 .footer__socialmedia_icons {
     display: flex;
     gap: 1rem;
-    font-size: 2rem;
-}
-
-.footer__socialmedia_icons li {
-    transition: transform 0.2s ease;
-}
-
-.footer__socialmedia_icons li:hover {
-    transform: scale(1.1) rotate(5deg);
 }
 
 .footer__divider_line {

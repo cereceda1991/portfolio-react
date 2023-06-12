@@ -1,9 +1,13 @@
 .footer__socialmedia_link {
     display: flex;
+    justify-content: center;
 }
 
-.footer__socialmedia_link span {
-    display: flex;
-    font-size: .3rem;
+.icons {
+    font-size: 2.5rem;
+    transition: transform 0.2s ease;
+}
 
+.icons:hover {
+    transform: scale(1.2) rotate(10deg);
 }
