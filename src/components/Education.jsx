@@ -9,14 +9,14 @@ const Education = ({ education }) => {
         <FaBookReader /> {education.title}
       </h1>
       {education.institutions.map((institution, index) => (
-        <div className="container_dates" key={index}>
-          <div className="experiencie__dates">
-            <h3>
+        <div key={index}>
+          <div className="education_dates">
+            <h2>
               <Link to={institution.link} target="_blank">
                 {institution.institution}
               </Link>
-            </h3>
-            <p> {institution.date}</p>
+            </h2>
+            <span> {institution.date}</span>
           </div>
           <h3>{institution.degree}</h3>
         </div>

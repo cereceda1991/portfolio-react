@@ -102,7 +102,6 @@ const Contact = () => {
             placeholder={form.messagePlaceholder}
             required
           />
-
           <ButtonModern type="submit" content={form.submitButton} />
         </form>
       </section>

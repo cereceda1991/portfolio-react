@@ -1,46 +1,9 @@
 .container__about {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 6rem 6rem 2rem 6rem;
+    width: 100%;
     gap: 3rem;
-    margin: auto;
-    height: calc(100% - 85px);
-    max-width: 1440px;
-}
-
-.container__about h1 {
-    font-size: 1.4rem;
-    font-weight: 600;
-}
-
-.container__about h2 {
-    font-size: 1.6rem;
-}
-
-.container__about h3 {
-    font-size: 1.4rem;
-    font-size: 600;
-}
-
-.about__phrase {
-    margin-top: 1rem;
-    background-color: #6fc2b0;
-    padding: 1rem;
-    color: #000;
-}
-
-.container_dates {
-    display: grid;
-    gap: .5rem;
-    margin-top: 1rem;
-}
-
-.experiencie__dates {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-bottom: .5rem;
+    padding: 7rem 1rem 0rem 1rem;
 }
 
 .section_dates {
@@ -48,14 +11,38 @@
     flex-direction: column;
 }
 
+.section_dates h1 {
+    font-size: 1.5rem;
+}
+
+.section_dates h2 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.section_dates h3 {
+    font-size: 1.2rem;
+}
+
+.section_dates p {
+    text-align: justify;
+}
+
+.education_dates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 
-@media (max-width: 700px) {
+@media (min-width: 1025px) {
     .container__about {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 1rem;
-        padding: 6rem 2rem;
+        display: grid;
+        max-width: 1440px;
+        margin: auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 6rem 6rem 2rem 6rem;
     }
+
 }

@@ -8,6 +8,7 @@
 }
 
 .card__counter {
+    display: grid;
     width: 80%;
     height: 120px;
     padding: 1rem;
@@ -17,15 +18,48 @@
     transition: transform 0.3s ease;
 }
 
+.card__counter h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 .card__counter:hover {
     transform: perspective(500px) rotateY(-30deg) rotateX(5deg) scale(1.15);
     background-color: #fff;
+    border: solid 1px var(--text-color);
     color: black;
     cursor: zoom-out;
 }
 
-@media (min-width: 700px) {
-    .card__counter {
-        width: 200px;
+@keyframes rotateIn {
+    0% {
+        transform: rotate(0deg);
     }
+
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+@media (min-width: 1025px) {
+    .experience__counters {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .card__counter {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 2rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        animation: rotateIn 1s ease-in-out forwards;
+    }
+
 }

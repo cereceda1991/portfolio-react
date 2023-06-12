@@ -8,6 +8,7 @@ const ExperienceCounters = ({ paragraphs }) => {
       {paragraphs.map((paragraph, index) => (
         <div className="card__counter" key={index}>
           <ProgressSummary value={paragraph.time} />
+
           <p>{paragraph.title}</p>
         </div>
       ))}

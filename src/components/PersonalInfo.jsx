@@ -1,8 +1,9 @@
 import React from 'react';
+import './styles/PersonalInfo.css';
 
 const PersonalInfo = ({ name, aboutInfo, phrase }) => {
   return (
-    <section>
+    <section className="info__personal">
       <h1>{name}</h1>
       <div className="aboutme__info">
         {aboutInfo.map((info, index) => (

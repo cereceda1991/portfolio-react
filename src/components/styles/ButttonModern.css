@@ -4,7 +4,7 @@
     padding: 1rem;
     border: none;
     border-radius: .2rem;
-    color: #fff;
+    color: var(--text-color);
     cursor: pointer;
     letter-spacing: .2rem;
     font-weight: 700;
@@ -14,7 +14,7 @@
 }
 
 .buttton__modern span {
-    background-color: #fff;
+    background-color: var(--text-color);
     position: absolute;
     transition: .5s;
 }

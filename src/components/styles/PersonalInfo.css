@@ -1,0 +1,31 @@
+.info__personal h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.info__personal h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.aboutme__info {
+    text-align: justify;
+}
+
+.about__phrase {
+    margin-top: 1rem;
+    background-color: #6fc2b0;
+    padding: 1rem;
+    color: #000;
+}
+
+.about__phrase b {
+    font-size: 1.3rem;
+}
+
+@media (min-width: 1025px) {
+    .info__personal h1 {
+        text-align: left;
+    }
+
+}

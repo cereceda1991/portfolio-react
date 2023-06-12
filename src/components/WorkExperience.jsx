@@ -9,11 +9,11 @@ const WorkExperience = ({ experience }) => {
         <FaBriefcase /> {experience.title}
       </h1>
       {experience.works.map((work, index) => (
-        <div className="container_dates" key={index}>
+        <div key={index}>
           <Link to={work.companyLink} target="_blank">
             <h2> {work.company}</h2>
           </Link>
-          <div className="experiencie__dates">
+          <div>
             <h3>{work.positions}</h3>
             <p>{work.time}</p>
           </div>

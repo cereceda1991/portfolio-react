@@ -41,7 +41,6 @@ const About = () => {
     return <div>Cargando datos...</div>;
   }
 
-  // Accede a la información del idioma en tu componente
   const { name, aboutInfo, paragraphs, phrase, education, experience } =
     languageData.about;
 
