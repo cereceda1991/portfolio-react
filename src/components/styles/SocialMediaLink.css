@@ -1,0 +1,7 @@
+.footer__socialmedia_link {
+    display: flex;
+}
+
+.footer__socialmedia_link span {
+    display: none;
+}

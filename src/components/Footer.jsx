@@ -14,14 +14,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setLanguageData } from '../store/languageSlice';
 import axios from 'axios';
 import { useEffect } from 'react';
-
-const SocialMediaLink = ({ name, url, icon }) => (
-  <li>
-    <a href={url} target="_blank" className="footer__socialmedia_link">
-      <div>{icon}</div>
-    </a>
-  </li>
-);
+import SocialMediaLink from './SocialMediaLink';
 
 const Footer = () => {
   const socialMediaIcons = [
