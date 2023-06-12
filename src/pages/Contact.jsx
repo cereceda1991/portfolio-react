@@ -49,7 +49,7 @@ const Contact = () => {
         <span className="login__circuit-mask"></span>
         <form
           className="contact__form"
-          action="https://getform.io/f/6eafabcb-9fe4-43cf-82bb-03d9a9ec823e"
+          action="https://formspree.io/f/xlekqeez"
           method="POST"
           onSubmit={handleFormSubmit}
         >
