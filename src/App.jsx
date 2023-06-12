@@ -2,12 +2,10 @@ import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
-import Logo from './components/Logo';
-// import LigthMode from "./components/LigthMode";
-
 import Home from './pages/Home';
 import About from './pages/About';
 import Skills from './pages/Skills';
+import Logo from './components/Logo';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import Footer from './components/Footer';
@@ -38,8 +36,8 @@ function App() {
     <main className="container_padre">
       <section className="container__header">
         <Logo />
-        <LanguageSelector />
         <HandleLigthMode />
+        <LanguageSelector />
         <Navbar showNavbar={showNavbar} />
       </section>
       <button className="icon__navbar" onClick={handleClick}>

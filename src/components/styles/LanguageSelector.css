@@ -1,20 +1,13 @@
-.language-selector {
+.language__selector {
   display: flex;
   gap: 1rem;
 }
 
-.flags {
-  display: flex;
+.language__dropdown {
+  font-size: 1.2rem;
+  color: #fff;
 }
 
-.flags img {
-  width: 30px;
-  height: auto;
-  margin-right: 10px;
-  cursor: pointer;
-  transition: transform 500ms ease-in-out;
-}
-
-.flags img:hover {
-  transform: scale(1.2);
+.language__select {
+  margin-left: .5rem;
 }
