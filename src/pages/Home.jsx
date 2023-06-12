@@ -1,34 +1,19 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import Typewriter from 'typewriter-effect';
-import Foto from '../assets/foto-home.webp';
-import './styles/Home.css';
-import SideBar from '../components/SideBar';
 import { Link } from 'react-router-dom';
-import { setLanguageData } from '../store/languageSlice';
-import axios from 'axios';
+
+// Importaciones de componentes y estilos
+import Typewriter from 'typewriter-effect';
 import ButtonModern from '../components/ButtonModern';
+import SideBar from '../components/SideBar';
+import './styles/Home.css';
+
+//Importacion de Imagenes
+import Foto from '../assets/foto-home.webp';
+
+// Importaciones relacionadas con la API
+import { DataApi } from '../api/DataApi';
 
 const Home = () => {
-  const languageData = useSelector((state) => state.language);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    // Cargar datos del idioma solo si aún no se han cargado
-    if (!languageData) {
-      const url =
-        'https://raw.githubusercontent.com/cereceda1991/myportfolio-react/main/src/languages/data_es.json';
-      axios
-        .get(url)
-        .then((response) => {
-          const languageData = response.data;
-          dispatch(setLanguageData(languageData));
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    }
-  }, [languageData, dispatch]);
+  const languageData = DataApi();
 
   if (!languageData) {
     return <div>Cargando datos...</div>;

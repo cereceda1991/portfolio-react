@@ -1,41 +1,18 @@
 // 1. Importaciones de estilos y componentes
-import './styles/About.css';
 import SideBar from '../components/SideBar';
-
-// 2. Importaciones de librerías y módulos externos
-import axios from 'axios';
-import { useEffect } from 'react';
+import './styles/About.css';
 
 // 4. Importación de acciones y slices de Redux
-import { useSelector, useDispatch } from 'react-redux';
-import { setLanguageData } from '../store/languageSlice';
 import ExperienceCounters from '../components/ExperienceCounters';
-import Education from '../components/Education';
 import WorkExperience from '../components/WorkExperience';
 import PersonalInfo from '../components/PersonalInfo';
+import Education from '../components/Education';
+
+// Backend
+import { DataApi } from '../api/DataApi';
 
 const About = () => {
-  const languageData = useSelector((state) => state.language);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    // Cargar datos del idioma solo si aún no se han cargado
-    if (!languageData) {
-      // Simulación de carga de datos del JSON
-
-      const url =
-        'https://raw.githubusercontent.com/cereceda1991/myportfolio-react/main/src/languages/data_es.json';
-      axios
-        .get(url)
-        .then((response) => {
-          const languageData = response.data;
-          dispatch(setLanguageData(languageData));
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    }
-  }, [languageData, dispatch]);
+  const languageData = DataApi();
 
   if (!languageData) {
     return <div>Cargando datos...</div>;

@@ -1,43 +1,17 @@
-// 1. Importaciones de React
-import React, { useEffect } from 'react';
-
-// 2. Importaciones de Axios y iconos de React
-import axios from 'axios';
+// 1. Importaciones de iconos de React
 import { BiMap } from 'react-icons/bi';
 import { HiOutlineMail } from 'react-icons/hi';
 
-// 3. Importación de estilos y componentes
-import './styles/Contact.css';
-import SideBar from '../components/SideBar';
+// 2. Importación de estilos y componentes
 import ButtonModern from '../components/ButtonModern';
+import SideBar from '../components/SideBar';
+import './styles/Contact.css';
 
-// 4. Importación de acciones y slices de Redux
-import { useSelector, useDispatch } from 'react-redux';
-import { setLanguageData } from '../store/languageSlice';
-import { Link } from 'react-router-dom';
+// 3. Backend
+import { DataApi } from '../api/DataApi';
 
 const Contact = () => {
-  const languageData = useSelector((state) => state.language);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    // Cargar datos del idioma solo si aún no se han cargado
-    if (!languageData) {
-      // Simulación de carga de datos del JSON
-
-      const url =
-        'https://raw.githubusercontent.com/cereceda1991/myportfolio-react/main/src/languages/data_es.json';
-      axios
-        .get(url)
-        .then((response) => {
-          const languageData = response.data;
-          dispatch(setLanguageData(languageData));
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    }
-  }, [languageData, dispatch]);
+  const languageData = DataApi();
 
   if (!languageData) {
     return <div>Cargando datos...</div>;

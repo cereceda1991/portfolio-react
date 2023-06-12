@@ -1,39 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './styles/Skills.css';
 
+// Importaciones de componentes y estilos
 import SideBar from '../components/SideBar';
 import skillsData from '../utils/skillsData';
 import inProcess from '../utils/skillInProcess';
 
-import { useDispatch, useSelector } from 'react-redux';
-import { setLanguageData } from '../store/languageSlice';
-import axios from 'axios';
+// Importaciones relacionadas con la API
+import { DataApi } from '../api/DataApi';
 
 const Skills = () => {
-  const languageData = useSelector((state) => state.language);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    if (!languageData) {
-      const url =
-        'https://raw.githubusercontent.com/cereceda1991/myportfolio-react/main/src/languages/data_es.json';
-      axios
-        .get(url)
-        .then((response) => {
-          const languageData = response.data;
-          dispatch(setLanguageData(languageData));
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    }
-  }, [languageData, dispatch]);
-
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   const handleCategoryFilter = (category) => {
     setSelectedCategory(category);
   };
+
+  const languageData = DataApi();
 
   if (!languageData) {
     return <div>Cargando datos...</div>;

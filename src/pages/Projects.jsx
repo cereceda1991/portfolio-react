@@ -1,32 +1,15 @@
-import React, { useEffect } from 'react';
+// Importaciones de componentes y estilos
 import Carousel from 'react-bootstrap/Carousel';
 import './styles/Projects.css';
-import { useDispatch, useSelector } from 'react-redux';
-import axios from 'axios';
-import { setLanguageData } from '../store/languageSlice';
-import ButtonModern from '../components/ButtonModern';
 import TechnologyImages from '../components/TechnologyImages';
+import ButtonModern from '../components/ButtonModern';
 import SideBar from '../components/SideBar';
 
-const Projects = () => {
-  const languageData = useSelector((state) => state.language);
-  const dispatch = useDispatch();
+// Importaciones relacionadas con la API
+import { DataApi } from '../api/DataApi';
 
-  useEffect(() => {
-    if (!languageData) {
-      const url =
-        'https://raw.githubusercontent.com/cereceda1991/myportfolio-react/main/src/languages/data_es.json';
-      axios
-        .get(url)
-        .then((response) => {
-          const languageData = response.data;
-          dispatch(setLanguageData(languageData));
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    }
-  }, [languageData, dispatch]);
+const Projects = () => {
+  const languageData = DataApi();
 
   if (!languageData) {
     return <div>Cargando datos...</div>;
