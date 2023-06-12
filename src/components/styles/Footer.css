@@ -1,17 +1,17 @@
-.footer {
+.container__footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 1440px;
-    height: 200px;
-    padding: 1rem 4rem 0rem 6rem;
-    gap: .3rem;
+    padding: 2rem 0rem;
     margin: auto;
+    margin-top: auto;
+    margin-bottom: 0;
 }
 
-.footer__socialmedia_section {
+.footer__socialmedia {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -53,6 +53,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 0 1rem;
 }
 
 .footer__copyright_title {

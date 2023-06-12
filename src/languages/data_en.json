@@ -455,7 +455,7 @@
         "className": "li__cv",
         "label": "My CV",
         "icon": "BsFillPersonLinesFill",
-        "url": "../assets/CVMaxCereceda.pdf"
+        "url": "/cv/CVMaxCereceda.pdf"
       }
     ]
   }

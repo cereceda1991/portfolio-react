@@ -34,7 +34,7 @@ function App() {
   };
 
   return (
-    <main>
+    <main className="container_padre">
       <section className="container__header">
         <Logo />
         <LanguageSelector />

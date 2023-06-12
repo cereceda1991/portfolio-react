@@ -1,6 +1,8 @@
 .container__projects {
     text-align: center;
     padding: 6rem;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .container__carousel {

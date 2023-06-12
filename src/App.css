@@ -1,3 +1,9 @@
+.container_padre {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .container__header {
     position: fixed;
     display: flex;
@@ -15,8 +21,8 @@
 }
 
 @media (max-width: 767px) {
-.container__header {
-    padding: 0rem 2rem;
+    .container__header {
+        padding: 0rem 2rem;
     }
 
     .icon__navbar {

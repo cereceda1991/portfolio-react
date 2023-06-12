@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Typewriter from 'typewriter-effect';
-import Foto from '../assets/foto-home.png';
+import Foto from '../assets/foto-home.webp';
 import './styles/Home.css';
-import playSound from '../utils/playSound';
 import SideBar from '../components/SideBar';
 import { Link } from 'react-router-dom';
 import { setLanguageData } from '../store/languageSlice';

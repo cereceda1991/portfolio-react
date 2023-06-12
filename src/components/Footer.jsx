@@ -83,8 +83,8 @@ const Footer = () => {
   const { visitorNumberText, copyRightText } = languageData.footer;
 
   return (
-    <footer className="footer">
-      <section className="footer__socialmedia_section">
+    <footer className="container__footer">
+      <section className="footer__socialmedia">
         <span className="footer__divider_line" />
         <ul className="footer__socialmedia_icons">
           {socialMediaIcons.map((socialMedia) => (
