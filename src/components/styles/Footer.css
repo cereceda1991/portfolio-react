@@ -36,10 +36,6 @@
     margin-top: 2rem;
 }
 
-.footer__count_visit img {
-    width: 170px;
-}
-
 .footer__copyright {
     display: flex;
     justify-content: space-between;
