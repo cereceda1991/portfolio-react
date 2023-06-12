@@ -43,8 +43,8 @@ const LanguageSelector = () => {
           className="language__select"
           onChange={(event) => handleLanguageChange(event.target.value)}
         >
-          <option value="en">English</option>
           <option value="es">Español</option>
+          <option value="en">English</option>
           <option value="pt">Português</option>
         </select>
       </div>
