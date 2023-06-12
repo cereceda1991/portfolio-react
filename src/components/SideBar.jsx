@@ -38,8 +38,6 @@ const SideBar = () => {
 
   const { socials } = languageData.sidebar;
 
-  console.log(socials);
-
   return (
     <aside className="container__social-icons">
       <ul>
