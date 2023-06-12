@@ -7,7 +7,7 @@ import SideBar from '../components/SideBar';
 import './styles/Home.css';
 
 //Importacion de Imagenes
-import Foto from '../assets/foto-home.webp';
+import Foto from '/foto-home.webp';
 
 // Importaciones relacionadas con la API
 import { DataApi } from '../api/DataApi';
