@@ -1,7 +1,6 @@
 import './styles/TechnologyImages.css';
 
 const TechnologyImages = ({ technologies }) => {
-  console.log(technologies);
   return (
     <div className="technology_images">
       {technologies.map((technology, index) => (

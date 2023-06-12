@@ -1,18 +1,25 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
-import playSound from '../utils/playSound';
 import './styles/SideBar.css';
+import playSound from '../utils/playSound';
 
+// Importación de Iconos
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi';
+import { BsFillPersonLinesFill } from 'react-icons/bs';
+
+// Importacion de Redux y store
 import { useSelector, useDispatch } from 'react-redux';
 import { setLanguageData } from '../store/languageSlice';
 
 const SideBar = () => {
-  const dispatch = useDispatch();
   const languageData = useSelector((state) => state.language);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     if (!languageData) {
-      const url = '../languages/data_es.json';
+      const url =
+        'https://raw.githubusercontent.com/cereceda1991/myportfolio-react/main/src/languages/data_es.json';
       axios
         .get(url)
         .then((response) => {
@@ -45,7 +52,12 @@ const SideBar = () => {
           >
             <a target="_blank" rel="noopener noreferrer" href={social.url}>
               {social.label}
-              {React.createElement(social.icon, { size: 30 })}
+              {social.icon === 'FaLinkedin' && <FaLinkedin size={30} />}
+              {social.icon === 'FaGithub' && <FaGithub size={30} />}
+              {social.icon === 'HiOutlineMail' && <HiOutlineMail size={30} />}
+              {social.icon === 'BsFillPersonLinesFill' && (
+                <BsFillPersonLinesFill size={30} />
+              )}
             </a>
           </li>
         ))}
