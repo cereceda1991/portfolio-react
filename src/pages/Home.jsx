@@ -79,11 +79,11 @@ const Home = () => {
         </h2>
         <h3>{slogan}</h3>
         <p>{description}</p>
-        <h5>
+        <h4>
           <Link to="/about">
             <ButtonModern content={buttonText} />
           </Link>
-        </h5>
+        </h4>
       </section>
 
       <section className="home__img">

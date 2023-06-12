@@ -3,5 +3,7 @@
 }
 
 .footer__socialmedia_link span {
-    display: none;
+    display: flex;
+    font-size: .3rem;
+
 }
