@@ -2,14 +2,16 @@ import React, { useState, useEffect } from 'react';
 import playSound from '../utils/playSound';
 import { Link } from 'react-router-dom';
 import './styles/Navbar.css';
-import { useSelector, useDispatch } from 'react-redux';
-import { setLanguageData } from '../store/languageSlice';
 import axios from 'axios';
 
+import { useSelector, useDispatch } from 'react-redux';
+import { setLanguageData } from '../store/languageSlice';
+
 const Navbar = ({ showNavbar }) => {
+  const [activeLink, setActiveLink] = useState(null);
+
   const dispatch = useDispatch();
   const languageData = useSelector((state) => state.language);
-  const [activeLink, setActiveLink] = useState(null);
 
   useEffect(() => {
     if (!languageData) {

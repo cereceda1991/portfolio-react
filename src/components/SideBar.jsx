@@ -1,37 +1,57 @@
-import React from 'react'
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import CV from "../assets/CVMaxCereceda.pdf";
-import playSound from "../utils/playSound";
-import './styles/SideBar.css'
+import React, { useEffect } from 'react';
+import axios from 'axios';
+import playSound from '../utils/playSound';
+import './styles/SideBar.css';
+
+import { useSelector, useDispatch } from 'react-redux';
+import { setLanguageData } from '../store/languageSlice';
 
 const SideBar = () => {
-    return (
-        <aside className="container__social-icons">
-            <ul>
-                <li className="li__linkedin" onMouseEnter={playSound} onMouseLeave={() => { }}>
-                    <a target="__blank" href="https://www.linkedin.com/in/maxcereceda/">
-                        Linkedin <FaLinkedin size={30} />
-                    </a>
-                </li>
-                <li className="li__github" onMouseEnter={playSound} onMouseLeave={() => { }}>
-                    <a target="__blank" href="https://github.com/cereceda1991">
-                        Github <FaGithub size={30} />
-                    </a>
-                </li>
-                <li className="li__email" onMouseEnter={playSound} onMouseLeave={() => { }}>
-                    <a target="__blank" href="mailto:cereceda1991@gmail.com">
-                        Email <HiOutlineMail size={30} />
-                    </a>
-                </li>
-                <li className="li__cv" onMouseEnter={playSound} onMouseLeave={() => { }}>
-                    <a target="__blank" href={CV}>
-                        My CV  <BsFillPersonLinesFill size={30} />
-                    </a>
-                </li>
-            </ul>
-        </aside>)
-}
+  const dispatch = useDispatch();
+  const languageData = useSelector((state) => state.language);
 
-export default SideBar
+  useEffect(() => {
+    if (!languageData) {
+      const url = '../languages/data_es.json';
+      axios
+        .get(url)
+        .then((response) => {
+          const languageData = response.data;
+          dispatch(setLanguageData(languageData));
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
+  }, [languageData, dispatch]);
+
+  if (!languageData) {
+    return <div>Cargando datos...</div>;
+  }
+
+  const { socials } = languageData.sidebar;
+
+  console.log(socials);
+
+  return (
+    <aside className="container__social-icons">
+      <ul>
+        {socials.map((social, index) => (
+          <li
+            key={index}
+            className={social.className}
+            onMouseEnter={playSound}
+            onMouseLeave={() => {}}
+          >
+            <a target="_blank" rel="noopener noreferrer" href={social.url}>
+              {social.label}
+              {React.createElement(social.icon, { size: 30 })}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </aside>
+  );
+};
+
+export default SideBar;

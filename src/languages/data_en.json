@@ -430,5 +430,33 @@
         "codeUrl": "https://github.com/No-Country/s8-17-ft-node-react"
       }
     ]
+  },
+  "sidebar": {
+    "socials": [
+      {
+        "className": "li__linkedin",
+        "label": "Linkedin",
+        "icon": "FaLinkedin",
+        "url": "https://www.linkedin.com/in/maxcereceda/"
+      },
+      {
+        "className": "li__github",
+        "label": "Github",
+        "icon": "FaGithub",
+        "url": "https://github.com/cereceda1991"
+      },
+      {
+        "className": "li__email",
+        "label": "Email",
+        "icon": "HiOutlineMail",
+        "url": "mailto:cereceda1991@gmail.com"
+      },
+      {
+        "className": "li__cv",
+        "label": "My CV",
+        "icon": "BsFillPersonLinesFill",
+        "url": "../assets/CVMaxCereceda.pdf"
+      }
+    ]
   }
 }
