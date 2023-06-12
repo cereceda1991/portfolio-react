@@ -15,6 +15,7 @@ import Navbar from './components/Navbar';
 
 import './App.css';
 import LanguageSelector from './components/LanguageSelector';
+import HandleLigthMode from './components/HandleLigthMode';
 
 function App() {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -38,7 +39,7 @@ function App() {
       <section className="container__header">
         <Logo />
         <LanguageSelector />
-        {/* <LigthMode /> */}
+        <HandleLigthMode />
         <Navbar showNavbar={showNavbar} />
       </section>
       <button className="icon__navbar" onClick={handleClick}>

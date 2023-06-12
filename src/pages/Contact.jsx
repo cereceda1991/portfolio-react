@@ -14,6 +14,7 @@ import ButtonModern from '../components/ButtonModern';
 // 4. Importación de acciones y slices de Redux
 import { useSelector, useDispatch } from 'react-redux';
 import { setLanguageData } from '../store/languageSlice';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   const languageData = useSelector((state) => state.language);
@@ -58,7 +59,13 @@ const Contact = () => {
         <h1>{title}</h1>
         <p>{content}</p>
         <h4>
-          <HiOutlineMail /> {email}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="mailto:cereceda1991@gmail.com"
+          >
+            <HiOutlineMail /> {email}
+          </a>
         </h4>
         <h4>
           <BiMap /> {address}

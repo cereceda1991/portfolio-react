@@ -7,36 +7,35 @@
 .container__header {
     position: fixed;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 85px;
     z-index: 20;
     padding: 3rem 0rem;
-    background: var(--background-color);
+    background-color: #1b1b1b;
 }
 
 .icon__navbar {
-    display: none;
+    position: fixed;
+    display: block;
+    font-size: 2rem;
+    top: 1rem;
+    right: .5rem;
+    cursor: pointer;
+    z-index: 500;
+    color: #29a6bb;
+    background-color: #1b1b1b;
+    outline: none;
+    border: none;
 }
 
-@media (max-width: 767px) {
-    .container__header {
-        padding: 0rem 2rem;
+@media (min-width: 1025px) {
+    .icon__navbar {
+        display: none;
     }
 
-    .icon__navbar {
-        position: fixed;
-        display: flex;
-        font-size: 2rem;
-        top: 2rem;
-        right: .5rem;
-        margin-bottom: 1rem;
-        cursor: pointer;
-        z-index: 500;
-        color: #29a6bb;
-        background-color: transparent;
-        border: none;
+    .container__header {
+        justify-content: space-around;
     }
 
 }

@@ -86,6 +86,7 @@ const Skills = () => {
           ))}
         </div>
       </section>
+      <span className="footer__divider_line" />
       <section>
         <h1>{inProgressText}</h1>
         <div className="skills__container">

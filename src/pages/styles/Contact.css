@@ -1,11 +1,9 @@
 .container__contact {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    min-height: calc(100% - 85px);
-    padding: 9rem 5rem 2rem 10rem;
-    max-width: 1440px;
-    gap: 4rem;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 3rem;
+    padding: 7rem 2rem;
 }
 
 .info__personal {
@@ -14,6 +12,11 @@
     text-align: center;
     gap: 2rem;
     justify-content: center;
+}
+
+.info__personal h1 {
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .contact__form {
@@ -25,7 +28,6 @@
     width: 350px;
     padding: 1rem;
     border-radius: .3rem;
-    background-color: rgba(27, 27, 27, 0.9);
 }
 
 .contact__form input,
@@ -34,8 +36,8 @@
     padding: 1rem;
     font-family: inherit;
     outline: none;
-    color: #fff;
-    background: #343434;
+    color: var(--text-color);
+    background: var(--background-color)
 }
 
 .contact__form input:focus,
@@ -59,12 +61,14 @@
 }
 
 
-@media (max-width: 700px) {
+@media (min-width: 1025px) {
     .container__contact {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 3rem;
-        padding: 6rem 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        min-height: calc(100% - 85px);
+        padding: 9rem 5rem 2rem 10rem;
+        max-width: 1440px;
+        gap: 4rem;
+        margin: auto;
     }
 }

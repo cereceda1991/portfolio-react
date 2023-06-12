@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 :root {
   --background-color: #1b1b1b;
   --text-color: #fff;
@@ -16,11 +10,9 @@
 }
 
 body {
-
   font-family: 'Roboto', sans-serif;
   background: var(--background-color);
   color: var(--text-color);
-
 }
 
 h1 {
@@ -28,12 +20,11 @@ h1 {
 }
 
 body.Light__Mode {
-  --background-color: #fff;
-  --text-color: #000;
-}
-
-body.Light__Mode a {
-  --link-color: #000;
+  --background-color: #f9f5f6;
+  --text-color: #1b1b1b;
+  --link-color: #1b1b1b;
+  --scrollbar-track-color: #f9f5f6;
+  --scrollbar-thumb-color: #1b1b1b;
 }
 
 ul,
@@ -53,7 +44,6 @@ a {
   color: var(--link-color);
 }
 
-/* Estilo del scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -64,5 +54,5 @@ a {
 
 ::-webkit-scrollbar-thumb {
   background: var(--scrollbar-thumb-color);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }

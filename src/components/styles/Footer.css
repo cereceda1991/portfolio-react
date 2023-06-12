@@ -29,7 +29,7 @@
 .footer__divider_line {
     flex-grow: 1;
     height: 2px;
-    background-color: #fff;
+    background-color: var(--text-color);
     margin: 0 1rem;
 }
 
