@@ -29,7 +29,7 @@ const Contact = () => {
 
   return (
     <main className="container__contact">
-      <section className="info__personal">
+      <section className="info__contact">
         <h1>{title}</h1>
         <p>{content}</p>
         <h4>
@@ -46,7 +46,6 @@ const Contact = () => {
         </h4>
       </section>
       <section className="container__form">
-        <span className="login__circuit-mask"></span>
         <form
           className="contact__form"
           action="https://formspree.io/f/xlekqeez"

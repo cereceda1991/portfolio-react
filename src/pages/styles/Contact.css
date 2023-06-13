@@ -6,7 +6,7 @@
     padding: 7rem 2rem;
 }
 
-.info__personal {
+.info__contact {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -14,7 +14,7 @@
     justify-content: center;
 }
 
-.info__personal h1 {
+.info__contact h1 {
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
