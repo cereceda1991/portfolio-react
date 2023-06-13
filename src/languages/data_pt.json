@@ -192,7 +192,7 @@
           "company": "No-Country Tech",
           "companyLink": "https://www.nocountry.tech/",
           "time": "Março 2023 - Atualmente",
-          "detail": "Liderai o desenvolvimento de um excelente aplicativo web Verbify; uma plataforma inovadora para aprender inglês. Utilizando tecnologias como Next.js, React, TypeScript e Redux, criamos uma experiência excepcional para o usuário. Consegui liderar com sucesso duas equipes durante o projeto, demonstrando minhas habilidades técnicas e criativas."
+          "detail": "Na NoCountry, atualmente ocupo o cargo de Desenvolvedor Full-Stack na equipe de desenvolvimento de aplicativos web para a indústria Fintech. Nessa posição, trabalhei com a stack tecnológica MERN (MongoDB, Express, React e Node.js) para criar soluções web de alta qualidade. Minhas principais responsabilidades incluem participar do design e desenvolvimento completo de aplicativos web, tanto no Backend quanto no Frontend. Colaboro de perto com equipes multidisciplinares para compreender os requisitos do projeto e criar soluções inovadoras e eficientes."
         }
       ]
     }
@@ -455,7 +455,7 @@
         "className": "li__cv",
         "label": "currículo",
         "icon": "BsFillPersonLinesFill",
-        "url": "../assets/CVMaxCereceda.pdf"
+        "url": "/cv/CvMaxCerecedaPortugues.pdf"
       }
     ]
   }
