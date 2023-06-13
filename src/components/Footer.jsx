@@ -92,12 +92,10 @@ const Footer = () => {
         <span className="footer__divider_line" />
       </section>
       <section className="footer__count_visit">
-        <p>{visitorNumberText}</p>
+        <h1>{visitorNumberText}</h1>
         <img
-          src="https://counter10.optistats.ovh/private/contadorvisitasgratis.php?c=d2qetxqxgc3glld1cjq1hkbrhcbjs1ws"
+          src="https://counter10.optistats.ovh/private/contadorvisitasgratis.php?c=9f8phypqz42nealq88usqmmkhgzj823h"
           alt="contador"
-          width={128}
-          height={32}
         />
       </section>
       <section className="footer__copyright">

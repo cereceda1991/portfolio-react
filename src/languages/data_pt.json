@@ -115,7 +115,7 @@
     }
   },
   "footer": {
-    "visitorNumberText": "Número de Visitantes",
+    "visitorNumberText": "Você é o visitante Nº",
     "copyRightText": "© Max Cereceda 2023. Todos os direitos reservados"
   },
   "skills": {

@@ -62,9 +62,27 @@
     }
 
     .footer__count_visit {
-        display: block;
-        background-color: #3a78f2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--background-color);
         margin-top: 2rem;
+        border-radius: .5rem;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border: solid 3px #383838;
+    }
+
+    .footer__count_visit h1 {
+        text-align: center;
+        align-items: center;
+        padding: .2rem;
+        color: var(--text-color);
+    }
+
+    .footer__count_visit img {
+        width: 100%;
     }
 
     .footer__copyright {
