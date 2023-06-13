@@ -28,7 +28,7 @@
     text-align: justify;
 }
 
-.education_dates {
+.subsection_dates {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

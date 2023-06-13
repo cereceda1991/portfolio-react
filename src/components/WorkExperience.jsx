@@ -13,7 +13,7 @@ const WorkExperience = ({ experience }) => {
           <Link to={work.companyLink} target="_blank">
             <h2> {work.company}</h2>
           </Link>
-          <div>
+          <div className="subsection_dates">
             <h3>{work.positions}</h3>
             <p>{work.time}</p>
           </div>

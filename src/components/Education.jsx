@@ -10,7 +10,7 @@ const Education = ({ education }) => {
       </h1>
       {education.institutions.map((institution, index) => (
         <div key={index}>
-          <div className="education_dates">
+          <div className="subsection_dates">
             <h2>
               <Link to={institution.link} target="_blank">
                 {institution.institution}
