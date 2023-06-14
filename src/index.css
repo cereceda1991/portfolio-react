@@ -1,5 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@font-face {
+  font-family: 'Teko';
+  src: url('./assets/fonts/Teko/Teko-Regular.ttf'),
+    url('./assets/fonts/Teko/Teko-SemiBold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto/Roboto-Regular.ttf'),
+    url('./assets/fonts/Roboto/Roboto-Bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   --background-color: #1b1b1b;
