@@ -1,9 +1,13 @@
-.logo {
-    width: 100px;
-    height: 80px;
+.logo_title {
+    display: block;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Teko', sans-serif;
+    color: #fff;
 }
 
-.logo img {
-    width: 100%;
-    cursor: pointer;
+.logo_title sub {
+    vertical-align: sub;
+    font-size: 3rem;
+    margin-left: .3rem;
 }

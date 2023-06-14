@@ -2,9 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './styles/Navbar.css';
 
-// Importaciones de utilidad
-import playSound from '../utils/playSound';
-
 // Importaciones de la API
 import { DataApi } from '../api/DataApi';
 
@@ -22,7 +19,7 @@ const Navbar = ({ showNavbar }) => {
     <nav className={`menu__navbar ${showNavbar ? 'open' : ''}`}>
       <ul>
         {links.map((link, index) => (
-          <li key={index} onMouseEnter={playSound} onMouseLeave={() => {}}>
+          <li key={index}>
             <Link
               to={link.to}
               className={activeLink === index ? 'active' : ''}

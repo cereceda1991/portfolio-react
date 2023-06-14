@@ -1,16 +1,14 @@
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo1.png'
-import './styles/Logo.css'
-
+import './styles/Logo.css';
 
 const Logo = () => {
-    return (
-        <section className="logo">
-            <Link to="/">
-                <img src={logo} alt='logo' />
-            </Link>
-        </section>
-    )
-}
+  return (
+    <section className="logo">
+      <h1 className="logo_title">
+        M<sub>C</sub>
+      </h1>
+    </section>
+  );
+};
 
-export default Logo
+export default Logo;

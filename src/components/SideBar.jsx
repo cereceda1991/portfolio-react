@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
 import './styles/SideBar.css';
-import playSound from '../utils/playSound';
 
 // Importación de Iconos
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
@@ -42,12 +41,7 @@ const SideBar = () => {
     <aside className="container__social-icons">
       <ul>
         {socials.map((social, index) => (
-          <li
-            key={index}
-            className={social.className}
-            onMouseEnter={playSound}
-            onMouseLeave={() => {}}
-          >
+          <li key={index} className={social.className}>
             <a target="_blank" rel="noopener noreferrer" href={social.url}>
               {social.label}
               {social.icon === 'FaLinkedin' && <FaLinkedin size={30} />}

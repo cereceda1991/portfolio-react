@@ -1,98 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-
-:root {
-  --background-color: #1b1b1b;
-  --text-color: #fff;
-  --link-color: #fff;
-  --scrollbar-track-color: #1b1b1b;
-  --scrollbar-thumb-color: #3a78f2;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  background: var(--background-color);
-  color: var(--text-color);
-}
-
-h1 {
-  font-size: 1rem;
-}
-
-body.Light__Mode {
-  --background-color: #f9f5f6;
-  --text-color: #1b1b1b;
-  --link-color: #1b1b1b;
-  --scrollbar-track-color: #f9f5f6;
-  --scrollbar-thumb-color: #1b1b1b;
-  animation: 4s cubic-bezier(.25, 1, .30, 1) wipe-out-down both 1s color-change, 2s fade-out;
-  ;
-
-}
-
-ul,
-li {
-  padding: 0;
-  list-style: none;
-  cursor: pointer;
-}
-
-img {
-  display: block;
-  width: 100%;
-}
-
-a {
-  text-decoration: none;
-  color: var(--link-color);
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--scrollbar-track-color);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--scrollbar-thumb-color);
-  border-radius: 0.5rem;
-}
-
-@keyframes wipe-out-down {
-  from {
-    clip-path: inset(0 0 0 0);
-  }
-
-  to {
-    clip-path: inset(100% 0 0 0);
-  }
-}
-
-@keyframes color-change {
-  0% {
-    background-color: #1b1b1b;
-    color: #fff;
-  }
-
-  100% {
-    background-color: var(--background-color);
-    color: var(--text-color);
-  }
-}
-
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-    display: none;
-  }
-} */
-
 @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
@@ -120,8 +25,6 @@ body.Light__Mode {
   --link-color: #1b1b1b;
   --scrollbar-track-color: #f9f5f6;
   --scrollbar-thumb-color: #1b1b1b;
-  animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
-
 }
 
 ul,
@@ -141,8 +44,13 @@ a {
   color: var(--link-color);
 }
 
+a:hover {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 15px;
 }
 
 ::-webkit-scrollbar-track {
@@ -152,14 +60,4 @@ a {
 ::-webkit-scrollbar-thumb {
   background: var(--scrollbar-thumb-color);
   border-radius: 0.5rem;
-}
-
-@keyframes wipe-in-right {
-  from {
-    clip-path: inset(0 100% 0 0);
-  }
-
-  to {
-    clip-path: inset(0 0 0 0);
-  }
 }
