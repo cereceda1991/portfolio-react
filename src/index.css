@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Teko';
   src: url('./assets/fonts/Teko/Teko-Regular.ttf'),
-    url('./assets/fonts/Teko/Teko-SemiBold.ttf');
+    url('./assets/fonts/Teko/Teko-Bold.ttf');
   font-weight: normal;
   font-style: normal;
 }

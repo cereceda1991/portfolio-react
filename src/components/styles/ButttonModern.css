@@ -7,7 +7,7 @@
     color: var(--text-color);
     cursor: pointer;
     letter-spacing: .2rem;
-    font-weight: 700;
+    font-weight: bold;
     overflow: hidden;
     font-family: inherit;
     position: relative;
