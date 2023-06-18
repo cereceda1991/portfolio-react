@@ -4,6 +4,12 @@
     gap: 1rem;
 }
 
+.container__projects h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+
 
 @media (min-width:1025px) {
     .container__projects {

@@ -21,8 +21,8 @@ const Projects = () => {
   return (
     <section className="container__projects">
       <h1 className="container__projects-title">{title}</h1>
-      <SideBar />
       <Slider projects={projects} />
+      <SideBar />
     </section>
   );
 };

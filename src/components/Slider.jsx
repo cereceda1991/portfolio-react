@@ -3,6 +3,7 @@ import './styles/Slider.css';
 
 import TechnologyImages from './TechnologyImages';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import ButtonModern from './ButtonModern';
 
 const Slider = ({ projects }) => {
   const [slideNumber, setSlideNumber] = useState(0);
@@ -35,19 +36,25 @@ const Slider = ({ projects }) => {
           key={index}
           className={`slide ${index === slideNumber ? 'active' : ''}`}
         >
-          <img
-            className="project_img"
-            src={project.image}
-            alt={project.title}
-          />
+          <img className="slider_img" src={project.image} alt={project.title} />
           <div className="info">
             <h2>{project.title}</h2>
+            {/* <p>{project.content}</p> */}
             <TechnologyImages technologies={project.technologies} />
+            <div className="slider_info-buttons">
+              <a href={project.codeUrl} target="_blank">
+                <ButtonModern content="REPO" />
+              </a>
+              <a href={project.demoUrl} target="_blank">
+                <ButtonModern content="DEMO" />
+              </a>
+            </div>
           </div>
         </div>
       ))}
       <div className="navigation">
         <FaChevronLeft className="prev-btn" onClick={goToPrevSlide} />
+
         <FaChevronRight className="next-btn" onClick={goToNextSlide} />
       </div>
       <div className="navigation-visibility">
