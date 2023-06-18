@@ -108,7 +108,7 @@ const Footer = () => {
       </section>
       <section>
         <a
-          href="https://wa.me/51928263103"
+          href="https://wa.me/51928263103?text=Hola%20Max,%20vi%20tu%20trabajo%20y%20me%20gustar%C3%ADa%20saber%20mas%20sobre%20ti."
           className="btn__whatsapp"
           target="_blank"
           rel="noopener noreferrer"
