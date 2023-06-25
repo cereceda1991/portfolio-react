@@ -13,7 +13,7 @@ const Slider = ({ projects }) => {
       setSlideNumber((prevSlideNumber) =>
         prevSlideNumber === projects.length - 1 ? 0 : prevSlideNumber + 1
       );
-    }, 4000);
+    }, 6000);
     return () => clearInterval(interval);
   }, [projects]);
 
