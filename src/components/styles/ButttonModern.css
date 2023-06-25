@@ -1,6 +1,6 @@
 .buttton__modern {
     margin-top: 1rem;
-    background-color: #3a78f2;
+    background-color: var(--secondary-color);
     padding: 1rem;
     border: none;
     border-radius: .2rem;

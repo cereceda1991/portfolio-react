@@ -14,7 +14,7 @@
 
 .about__phrase {
     margin-top: 1rem;
-    background-color: #6fc2b0;
+    background-color: var(--terciary-color);
     padding: 1rem;
     color: #000;
 }

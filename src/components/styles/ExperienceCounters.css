@@ -13,7 +13,7 @@
     height: 120px;
     padding: 1rem;
     border-radius: .5rem;
-    background-color: #3a78f2;
+    background-color: var(--secondary-color);
     transform: perspective(800px);
     transition: transform 0.3s ease;
 }

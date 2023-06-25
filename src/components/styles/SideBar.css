@@ -35,7 +35,7 @@
 }
 
 .li__linkedin {
-    background-color: #3a78f2;
+    background-color: var(--secondary-color);
 }
 
 .li__github {
@@ -43,7 +43,7 @@
 }
 
 .li__email {
-    background-color: #6fc2b0;
+    background-color: var(--terciary-color);
 }
 
 .li__cv {

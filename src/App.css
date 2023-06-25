@@ -13,7 +13,7 @@
     align-items: center;
     z-index: 20;
     gap: 1rem;
-    background-color: #1b1b1b;
+    background-color: var(--background-fixed);
 }
 
 .icon__navbar {
@@ -24,8 +24,8 @@
     right: .5rem;
     cursor: pointer;
     z-index: 500;
-    color: #29a6bb;
-    background-color: #1b1b1b;
+    color: var(--secondary-color);
+    background-color: var(--background-color);
     outline: none;
     border: none;
 }

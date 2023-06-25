@@ -5,7 +5,7 @@
     align-items: center;
     font-family: inherit;
     z-index: 20;
-    background-color: #1b1b1b;
+    background-color: var(--background-fixed);
 }
 
 .menu__navbar ul {

@@ -26,7 +26,7 @@
 .letter__name:hover {
     transform: scale(1.2) skewY(-10deg);
     cursor: default;
-    color: #3a78f2;
+    color: var(--secondary-color);
 }
 
 .home__info h1 {
@@ -37,7 +37,7 @@
 .home__info h2 {
     font-size: 2rem;
     font-weight: 600;
-    color: #3a78f2;
+    color: var(--secondary-color);
 }
 
 .home__info h3 {

@@ -23,7 +23,7 @@
     text-transform: uppercase;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    text-decoration: underline 3px #3a78f2;
+    text-decoration: underline 3px var(--secondary-color);
 }
 
 .skills__container {
@@ -78,7 +78,7 @@
 }
 
 .category__filter button.active {
-    background-color: #3a78f2;
+    background-color: var(--secondary-color);
     color: var(--text-color);
 }
 

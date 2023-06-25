@@ -43,7 +43,7 @@
 
 .contact__form input:focus,
 .contact__form textarea:focus {
-    box-shadow: 0 0 7px #3a78f2;
+    box-shadow: 0 0 7px var(--secondary-color);
 
 }
 

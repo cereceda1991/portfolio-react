@@ -18,6 +18,9 @@
 
 :root {
   --background-color: #1b1b1b;
+  --background-fixed: #1b1b1b;
+  --secondary-color: #3a78f2;
+  --terciary-color: #6fc2b0;
   --text-color: #fff;
   --link-color: #fff;
   --scrollbar-track-color: #1b1b1b;
