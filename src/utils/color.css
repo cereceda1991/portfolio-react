@@ -1,0 +1,44 @@
+.paleta1 {
+    --background-color: #1b1b1b;
+    --background-fixed: #1b1b1b;
+    --secondary-color: #3a78f2;
+    --terciary-color: #6fc2b0;
+    --text-color: #f9f5f6;
+    --link-color: #f9f5f6;
+}
+
+.paleta2 {
+    --background-color: #1f2126;
+    --background-fixed: #1f2126;
+    --secondary-color: #f2b63d;
+    --terciary-color: #ff0000;
+    --text-color: #ffffff;
+    --link-color: #ffffff;
+}
+
+.paleta3 {
+    --background-color: #0a061a;
+    --background-fixed: #0a061a;
+    --secondary-color: #4d1489;
+    --terciary-color: #fe6700;
+    --text-color: #fefefe;
+    --link-color: #fefefe;
+}
+
+.paleta4 {
+    --background-color: #212121;
+    --background-fixed: #212121;
+    --secondary-color: #d39245;
+    --terciary-color: #101010;
+    --text-color: #fff;
+    --link-color: #fff;
+}
+
+.paleta5 {
+    --background-color: #000;
+    --background-fixed: #000;
+    --secondary-color: #fcbc03;
+    --terciary-color: #1b1b1b;
+    --text-color: #fff;
+    --link-color: #fff;
+}

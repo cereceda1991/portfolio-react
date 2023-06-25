@@ -21,10 +21,8 @@
   --background-fixed: #1b1b1b;
   --secondary-color: #3a78f2;
   --terciary-color: #6fc2b0;
-  --text-color: #fff;
-  --link-color: #fff;
-  --scrollbar-track-color: #1b1b1b;
-  --scrollbar-thumb-color: #3a78f2;
+  --text-color: #f9f5f6;
+  --link-color: #f9f5f6;
 }
 
 body {
@@ -72,10 +70,10 @@ a:hover {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--scrollbar-track-color);
+  background: var(--background-fixed);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--scrollbar-thumb-color);
+  background: var(--secondary-color);
   border-radius: 0.5rem;
 }
