@@ -40,7 +40,9 @@ const Slider = ({ projects }) => {
           <div className="info">
             <h2>{project.title}</h2>
             {/* <p>{project.content}</p> */}
-            <TechnologyImages technologies={project.technologies} />
+            <div className="container_technologies">
+              <TechnologyImages technologies={project.technologies} />
+            </div>
             <div className="slider_info-buttons">
               <a href={project.codeUrl} target="_blank">
                 <ButtonModern content="REPO" />

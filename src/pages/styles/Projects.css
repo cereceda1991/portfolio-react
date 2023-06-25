@@ -1,15 +1,13 @@
 .container__projects {
     display: grid;
-    padding: 7rem 1rem;
-    gap: 1rem;
+    padding: 7rem 0;
+    gap: .5rem;
 }
 
 .container__projects h1 {
     font-size: 2.5rem;
     font-weight: 600;
 }
-
-
 
 @media (min-width:1025px) {
     .container__projects {
