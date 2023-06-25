@@ -16,7 +16,7 @@ import LanguageSelector from './components/LanguageSelector';
 import HandleLigthMode from './components/HandleLigthMode';
 
 function App() {
-  const [showNavbar, setShowNavbar] = useState(true);
+  const [showNavbar, setShowNavbar] = useState(false);
   const [showIcon, setShowIcon] = useState(true);
 
   const toggleNavbar = () => {
@@ -41,7 +41,7 @@ function App() {
         <Navbar showNavbar={showNavbar} />
       </section>
       <button className="icon__navbar" onClick={handleClick}>
-        {showIcon ? <FaTimes /> : <FaBars />}
+        {showIcon ? <FaBars /> : <FaTimes />}
       </button>
 
       <Routes>
