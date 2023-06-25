@@ -1,6 +1,7 @@
 .menu__navbar {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     font-family: inherit;
     z-index: 20;
