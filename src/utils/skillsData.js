@@ -21,8 +21,9 @@ import {
   SiTailwindcss,
   SiMongodb,
   SiTypescript,
+  SiSwagger,
 } from 'react-icons/si';
-import { DiPhp } from 'react-icons/di';
+import { DiPhp,DiMysql} from 'react-icons/di';
 import { FaLaravel } from 'react-icons/fa';
 
 const skillsData = [
@@ -75,6 +76,13 @@ const skillsData = [
   { name: 'Postman', icon: SiPostman, color: '#FF6C37', category: 'DevOps' },
   { name: 'MongoDB', icon: SiMongodb, color: '#4DB33D', category: 'Backend' },
   { name: 'Git', icon: BsGit, color: '#F05032', category: 'Version Control' },
+  { name: 'Swagger', icon: SiSwagger, color: '#85EA2D', category: 'Backend' },
+  {
+    name: 'MySQL',
+    icon: DiMysql,
+    color: '#4479A1',
+    category: 'Backend',
+  },
   {
     name: 'Power BI',
     icon: SiPowerbi,
