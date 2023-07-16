@@ -1,19 +1,11 @@
 import { Link } from 'react-router-dom';
-import {
-  FaInstagram,
-  FaYoutube,
-  FaTwitter,
-  FaLinkedin,
-  FaGithub,
-  FaFacebookF,
-} from 'react-icons/fa';
-import Whatsapp from '../assets/icon-whatsapp.svg';
-import './styles/ButtonWsp.css';
-import './styles/Footer.css';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import Whatsapp from '../assets/icon-whatsapp.svg';
 import { setLanguageData } from '../store/languageSlice';
 import axios from 'axios';
-import { useEffect } from 'react';
+import './styles/ButtonWsp.css';
+import './styles/Footer.css';
 
 const Footer = () => {
   const dispatch = useDispatch();
@@ -39,18 +31,22 @@ const Footer = () => {
     return <div>Cargando datos...</div>;
   }
 
-  const { visitorNumberText, copyRightText, testimonials } = languageData.footer;
+  const { visitorNumberText, copyRightText, testimonials } =
+    languageData.footer;
+
+  console.log(testimonials);
 
   return (
     <footer className="container__footer">
       <section className="footer__testimonials">
-        <h3>Testimonios</h3>
-        {testimonials.map((testimonial) => (
-          <div key={testimonial.id} className="testimonial">
-            <p>{testimonial.testimonial}</p>
-            <p className="testimonial__name">{testimonial.name}</p>
-          </div>
-        ))}
+      {testimonials.map((testimonial) => (
+  <div key={testimonial.id} className="testimonial">
+    <img src={testimonial.photoUrl} alt={testimonial.name} className="testimonial__photo" />
+    <p>{testimonial.testimonial}</p>
+    <p className="testimonial__name">{testimonial.name}</p>
+  </div>
+))}
+
       </section>
       <section className="footer__count_visit">
         <h1>{visitorNumberText}</h1>

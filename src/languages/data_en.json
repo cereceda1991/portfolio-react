@@ -115,9 +115,26 @@
     }
   },
   "footer": {
-    "visitorNumberText": "You are visitor N°",
-    "copyRightText": "© Max Cereceda 2023. All Rights Reserved"
-  },
+    "visitorNumberText": "You are visitor number",
+    "copyRightText": "© Max Cereceda 2023. All rights reserved",
+    "testimonials": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "testimonial": "Max's work is incredible! He always exceeds my expectations and delivers high-quality results. I would highly recommend him."
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "testimonial": "Max is an exceptional talent. His creativity and technical skills are impressive. I'm extremely happy with the project he did for me."
+      },
+      {
+        "id": 3,
+        "name": "Mike Johnson",
+        "testimonial": "Working with Max was a wonderful experience. He is professional, friendly, and always willing to listen. I would definitely hire him again in the future."
+      }
+    ]
+  },  
   "skills": {
     "completedText": "Acquired skills",
     "inProgressText": "Technologies in the Learning Process",

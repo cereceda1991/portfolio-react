@@ -11,26 +11,21 @@
     margin-bottom: 0;
 }
 
-.footer__socialmedia {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-.footer__socialmedia_icons {
+.footer__testimonials {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+    background-color: red;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.footer__divider_line {
-    flex-grow: 1;
-    height: 2px;
-    background-color: var(--text-color);
-    margin: 0 1rem;
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
 }
 
 .footer__count_visit {
@@ -91,4 +86,6 @@
         width: 100%;
         padding: 0 1rem;
     }
+
+
 }

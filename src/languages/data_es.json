@@ -114,28 +114,26 @@
       "submitButton": "ENVIAR"
     }
   },
-  "footer": {
-    "visitorNumberText": "Eres el visitante N°",
-    "copyRightText": "© Max Cereceda 2023. Todos los derechos reservados",
-    "testimonials": [
-      {
-        "id": 1,
-        "name": "John Doe",
-        "testimonial": "¡El trabajo de Max es increíble! Siempre supera mis expectativas y entrega resultados de alta calidad. Lo recomendaría sin dudarlo."
-      },
-      {
-        "id": 2,
-        "name": "Jane Smith",
-        "testimonial": "Max es un talento excepcional. Su creatividad y habilidades técnicas son impresionantes. Estoy muy contenta con el proyecto que realizó para mí."
-      },
-      {
-        "id": 3,
-        "name": "Mike Johnson",
-        "testimonial": "Trabajar con Max fue una experiencia maravillosa. Es profesional, amigable y siempre está dispuesto a escuchar. Sin duda, lo contrataría de nuevo en el futuro."
-      }
-    ]
-  },
-  
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Elizabeth León- Diseñadora UX/UI",
+      "testimonial": "¡El trabajo de Max es increíble! Siempre supera mis expectativas y entrega resultados de alta calidad. Lo recomendaría sin dudarlo.",
+      "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U054DFJSR2T-3ea5ea0b27f6-512"
+    },
+    {
+      "id": 2,
+      "name": "Yenifer Ramírez- Project Manager",
+      "testimonial": "Max es un talento excepcional. Su creatividad y habilidades técnicas son impresionantes. Estoy muy contenta con el proyecto que realizó para mí.",
+      "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U040WM4U2DC-b96518bf221e-512"
+    },
+    {
+      "id": 3,
+      "name": "Cristian Gomez",
+      "testimonial": "Trabajar con Max fue una experiencia maravillosa. Es profesional, amigable y siempre está dispuesto a escuchar. Sin duda, lo contrataría de nuevo en el futuro.",
+      "photoUrl": "https://avatars.githubusercontent.com/u/67226453?v=4"
+    }
+  ],
   "skills": {
     "completedText": "Habilidades adquiridas",
     "inProgressText": "Aprendiendo nuevas herramientas",
