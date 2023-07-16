@@ -34,20 +34,20 @@ const Footer = () => {
   const { visitorNumberText, copyRightText, testimonials } =
     languageData.footer;
 
-  console.log(testimonials);
 
   return (
     <footer className="container__footer">
       <section className="footer__testimonials">
-      {testimonials.map((testimonial) => (
-  <div key={testimonial.id} className="testimonial">
-    <img src={testimonial.photoUrl} alt={testimonial.name} className="testimonial__photo" />
-    <p>{testimonial.testimonial}</p>
-    <p className="testimonial__name">{testimonial.name}</p>
-  </div>
-))}
-
+        {testimonials.map((testimonial) => (
+          <div key={testimonial.id} className="testimonial">
+            <img src={testimonial.photoUrl} alt={testimonial.name} className="testimonial__photo" />
+            <p>{testimonial.testimonial}</p>
+            <p className="testimonial__name">{testimonial.name}</p>
+            <img src={testimonial.country} alt={testimonial.name} className="testimonial__flag" />
+          </div>
+        ))}
       </section>
+
       <section className="footer__count_visit">
         <h1>{visitorNumberText}</h1>
         <img

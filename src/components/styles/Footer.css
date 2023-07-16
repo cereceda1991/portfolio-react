@@ -16,18 +16,27 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    background-color: red;
+    background-color: #0003;
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .testimonial {
     display: flex;
+    place-items: center;
+    justify-content: center;
     flex-direction: column;
     width: 200px;
 }
 
+.testimonial__photo{
+border-radius: 50%;
+
+width: 100px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 .footer__count_visit {
     display: none;
 }

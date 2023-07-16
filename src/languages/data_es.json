@@ -120,23 +120,33 @@
     "testimonials": [
       {
         "id": 1,
-        "name": "Elizabeth León- Diseñadora UX/UI",
+        "name": "Elizabeth León",
+        "position": "Diseñadora UX/UI",
+        "country": "https://i.ibb.co/Ln0vhg4/AR.png",
         "testimonial": "¡El trabajo de Max es increíble! Siempre supera mis expectativas y entrega resultados de alta calidad. Lo recomendaría sin dudarlo.",
-        "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U054DFJSR2T-3ea5ea0b27f6-512"
+        "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U054DFJSR2T-3ea5ea0b27f6-512",
+        "linkedinUrl": "https://www.linkedin.com/in/elizabeth-leon"
       },
       {
         "id": 2,
-        "name": "Yenifer Ramírez- Project Manager",
+        "name": "Yenifer Ramírez",
+        "position": "Project Manager",
+        "country": "https://i.ibb.co/276DbnR/VE.png",
         "testimonial": "Max es un talento excepcional. Su creatividad y habilidades técnicas son impresionantes. Estoy muy contenta con el proyecto que realizó para mí.",
-        "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U040WM4U2DC-b96518bf221e-512"
+        "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U040WM4U2DC-b96518bf221e-512",
+        "linkedinUrl": "https://www.linkedin.com/in/yenifer-ramirez"
       },
       {
         "id": 3,
         "name": "Cristian Gomez",
-        "testimonial": "Trabajar con Max fue una experiencia maravillosa. Es profesional, amigable y siempre está dispuesto a escuchar. Sin duda, lo contrataría de nuevo en el futuro.",
-        "photoUrl": "https://avatars.githubusercontent.com/u/67226453?v=4"
+        "position": "Desarrollador Frontend",
+        "country": "https://i.ibb.co/Ln0vhg4/AR.png",
+        "testimonial": "Trabajar con Max fue una experiencia maravillosa. Es un profesional amigable y siempre dispuesto a escuchar. Definitivamente, estaría encantado de trabajar con él nuevamente en el futuro.",
+        "photoUrl": "https://avatars.githubusercontent.com/u/67226453?v=4",
+        "linkedinUrl": "https://www.linkedin.com/in/cristian-gomez"
       }
     ]
+    
   },
   
   "skills": {
