@@ -1,8 +1,8 @@
 .menu__navbar {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
+    flex-wrap: wrap;
     font-family: inherit;
     z-index: 20;
     background-color: var(--background-fixed);
@@ -10,11 +10,15 @@
 
 .menu__navbar ul {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
 }
 
 .menu__navbar ul li {
     list-style: none;
-    width: max-content;
+    margin: 0;
 }
 
 .menu__navbar ul li a {
@@ -77,8 +81,6 @@
     border-bottom: 1px solid #fff;
 }
 
-
-
 @media (max-width: 767px) {
     .menu__navbar {
         position: fixed;
@@ -97,9 +99,10 @@
     }
 
     .menu__navbar ul {
-        padding: 1rem;
-        gap: 1rem;
         flex-direction: column;
+        margin: 0;
+        gap: 1rem;
+        background-color: aqua;
     }
 
     .menu__navbar ul li {

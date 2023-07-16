@@ -14,42 +14,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setLanguageData } from '../store/languageSlice';
 import axios from 'axios';
 import { useEffect } from 'react';
-import SocialMediaLink from './SocialMediaLink';
 
 const Footer = () => {
-  const socialMediaIcons = [
-    {
-      name: 'Facebook',
-      url: 'https://www.facebook.com/max.cereceda',
-      icon: <FaFacebookF />,
-    },
-    {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/cereceda91/',
-      icon: <FaInstagram />,
-    },
-    {
-      name: 'YouTube',
-      url: 'https://www.youtube.com/channel/UCdh-vS0WSbgOapGrLT9wgvQ',
-      icon: <FaYoutube />,
-    },
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/cereceda1991',
-      icon: <FaTwitter />,
-    },
-    {
-      name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/maxcereceda/',
-      icon: <FaLinkedin />,
-    },
-    {
-      name: 'GitHub',
-      url: 'https://github.com/cereceda1991',
-      icon: <FaGithub />,
-    },
-  ];
-
   const dispatch = useDispatch();
   const languageData = useSelector((state) => state.language);
 
@@ -73,23 +39,18 @@ const Footer = () => {
     return <div>Cargando datos...</div>;
   }
 
-  const { visitorNumberText, copyRightText } = languageData.footer;
+  const { visitorNumberText, copyRightText, testimonials } = languageData.footer;
 
   return (
     <footer className="container__footer">
-      <section className="footer__socialmedia">
-        <span className="footer__divider_line" />
-        <ul className="footer__socialmedia_icons">
-          {socialMediaIcons.map((socialMedia) => (
-            <SocialMediaLink
-              key={socialMedia.name}
-              name={socialMedia.name}
-              url={socialMedia.url}
-              icon={socialMedia.icon}
-            />
-          ))}
-        </ul>
-        <span className="footer__divider_line" />
+      <section className="footer__testimonials">
+        <h3>Testimonios</h3>
+        {testimonials.map((testimonial) => (
+          <div key={testimonial.id} className="testimonial">
+            <p>{testimonial.testimonial}</p>
+            <p className="testimonial__name">{testimonial.name}</p>
+          </div>
+        ))}
       </section>
       <section className="footer__count_visit">
         <h1>{visitorNumberText}</h1>
@@ -99,7 +60,7 @@ const Footer = () => {
         />
       </section>
       <section className="footer__copyright">
-        <h1 className="footer__copyright_title">
+        <h1 className="footer__logo">
           <Link to="/">
             M<sub>C</sub>
           </Link>
@@ -113,7 +74,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={Whatsapp} alt="Contact by WhatsApp" />
+          <img src={Whatsapp} alt="Contacto por WhatsApp" />
         </a>
       </section>
     </footer>
