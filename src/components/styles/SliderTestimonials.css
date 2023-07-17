@@ -36,12 +36,18 @@
     transition: display 0.3s ease-in-out;
     gap: 1rem;
     margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 
-.testimonial.active,
+.testimonial.active {
+    display: flex;
+    opacity: 1;
+}
+
 .testimonial.previous,
 .testimonial.next {
     display: flex;
+    opacity: .6;
 }
 
 .testimonial h1 {
@@ -102,4 +108,30 @@
 
 .slider-button:hover {
     background-color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .slider-container {
+        padding-left: 0;
+        justify-content: flex-start;
+    }
+
+    .testimonial-slider {
+        transform: translateX(calc(-100% * var(--current-slide)));
+        width: calc(100% * var(--testimonial-count));
+    }
+
+    .testimonial.active {
+        display: flex;
+    }
+
+    .testimonial.previous,
+    .testimonial.next {
+        display: none;
+    }
+
+    .testimonial {
+        width: calc(100% / var(--testimonial-count));
+        margin: 0 1rem;
+    }
 }

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './styles/SliderTestimonials.css';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
@@ -13,6 +13,32 @@ const SliderTestimonials = ({ testimonials }) => {
   const handlePrevSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide === 0 ? testimonials.length - 1 : prevSlide - 1));
   };
+
+  useEffect(() => {
+    const updateTestimonialCount = () => {
+      const windowWidth = window.innerWidth;
+      let testimonialCount = 3; // Establecer valor predeterminado para pantallas de escritorio
+
+      if (windowWidth <= 768) {
+        testimonialCount = 1; // Establecer valor para pantallas móviles
+      }
+
+      document.documentElement.style.setProperty('--testimonial-count', testimonialCount);
+    };
+
+    // Actualizar el valor inicial al montar el componente
+    updateTestimonialCount();
+
+    const resizeHandler = () => {
+      updateTestimonialCount();
+    };
+
+    window.addEventListener('resize', resizeHandler);
+
+    return () => {
+      window.removeEventListener('resize', resizeHandler);
+    };
+  }, []);
 
   return (
     <div className="slider_testimonials">

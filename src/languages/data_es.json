@@ -126,18 +126,18 @@
         "country": "https://i.ibb.co/Ln0vhg4/AR.png",
         "testimonial": "¡El trabajo de Max es increíble! Siempre supera mis expectativas y entrega resultados de alta calidad. Lo recomendaría sin dudarlo.",
         "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U054DFJSR2T-3ea5ea0b27f6-512",
-        "linkedinUrl": "https://www.linkedin.com/in/elizabeth-leon",
-        "githubUrl": "https://www.linkedin.com/in/elizabeth-leon"
+        "linkedinUrl": "https://www.linkedin.com/in/elizabethleonperez/",
+        "githubUrl": "https://github.com/ElizabethLeonPerez"
       },
       {
         "id": 2,
         "name": "Yenifer Ramírez",
         "position": "Project Manager",
         "country": "https://i.ibb.co/276DbnR/VE.png",
-        "testimonial": "Max es un talento excepcional. Su creatividad y habilidades técnicas son impresionantes. Estoy muy contenta con el proyecto que realizó para mí.",
+        "testimonial": "Recomiendo a Max con gratitud. Su iniciativa y habilidad para realizar un trabajo excepcional siempre impresionan. Como Project Manager, contar con él fue un verdadero plus para nuestro equipo.",
         "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U040WM4U2DC-b96518bf221e-512",
-        "linkedinUrl": "https://www.linkedin.com/in/yenifer-ramirez",
-        "githubUrl": "https://www.linkedin.com/in/elizabeth-leon"
+        "linkedinUrl": "https://www.linkedin.com/in/yeniferrosana/",
+        "githubUrl": "https://github.com/yeniferrosana"
       },
       {
         "id": 3,
@@ -146,63 +146,62 @@
         "country": "https://i.ibb.co/Ln0vhg4/AR.png",
         "testimonial": "Trabajar con Max fue una experiencia maravillosa. Es un profesional amigable y siempre dispuesto a escuchar. Definitivamente, estaría encantado de trabajar con él nuevamente en el futuro.",
         "photoUrl": "https://avatars.githubusercontent.com/u/67226453?v=4",
-        "linkedinUrl": "https://www.linkedin.com/in/cristian-gomez",
-        "githubUrl": "https://www.linkedin.com/in/elizabeth-leon"
+        "linkedinUrl": "https://www.linkedin.com/in/cristiangomezdev/",
+        "githubUrl": "https://github.com/cristiangomezdev"
       },
       {
         "id": 4,
         "name": "Erik Perez",
         "position": "Director académico",
-        "country": "https://i.ibb.co/7yyThMk/US.png",
+        "country": "https://i.ibb.co/7yyThMk/MX.png",
         "testimonial": "Max es un talento excepcional en el desarrollo web. Su habilidad para trabajar tanto en el front-end como en el back-end es impresionante. Siempre cumple con los plazos y produce un código de alta calidad.",
         "photoUrl": "https://ca.slack-edge.com/T04B725G8TB-U04BJ55FHSL-e5ce6dd816ec-512",
-        "linkedinUrl": "https://www.linkedin.com/in/sara-lopez",
-        "githubUrl": "https://github.com/sara-lopez"
+        "linkedinUrl": "https://www.linkedin.com/in/erik-perez-alvarez/",
+        "githubUrl": ""
       },
       {
         "id": 5,
         "name": "Lorenzo Rueda",
         "position": "Ingeniero de Software",
-        "country": "https://i.ibb.co/MGpSfKJ/MX.png",
+        "country": "https://i.ibb.co/MGpSfKJ/AR.png",
         "testimonial": "Max es un desarrollador altamente competente. Sus habilidades técnicas y su capacidad para resolver problemas son excepcionales. Siempre encuentra soluciones efectivas y entrega resultados de calidad.",
         "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U055HNSNZC0-c4a5215a1474-512",
-        "linkedinUrl": "https://www.linkedin.com/in/carlos-morales",
-        "githubUrl": "https://github.com/carlos-morales"
+        "linkedinUrl": "https://www.linkedin.com/in/lorenzo-rueda-582758263/",
+        "githubUrl": "https://github.com/zightcode"
       },
       {
         "id": 6,
         "name": "Lucia Pinna",
         "position": "Diseñadora UX/UI",
-        "country": "https://i.ibb.co/64Qz4LP/BR.png",
+        "country": "https://i.ibb.co/64Qz4LP/AR.png",
         "testimonial": "Max es un desarrollador muy talentoso. Su capacidad para comprender tanto el diseño como la implementación técnica es impresionante. Trabajar con él siempre ha sido una experiencia fluida y productiva.",
         "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U05C29Q39HB-0d27fa529f29-512",
-        "linkedinUrl": "https://www.linkedin.com/in/isabella-silva",
-        "githubUrl": "https://github.com/isabella-silva"
+        "linkedinUrl": "https://www.linkedin.com/in/lucia-pinna/",
+        "githubUrl": ""
       },
       {
         "id": 7,
         "name": "Dario Elguero ",
         "position": "Desarrollador Frontend",
-        "country": "https://i.ibb.co/4pgg3Tc/US.png",
+        "country": "https://i.ibb.co/4pgg3Tc/AR.png",
         "testimonial": "He tenido el placer de colaborar con Max en varios proyectos de desarrollo. Su conocimiento y habilidades como desarrollador son sobresalientes. Siempre aporta soluciones técnicas sólidas y cumple con los requisitos del proyecto.",
         "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U04FMD0KRC1-466d09173211-512",
-        "linkedinUrl": "https://www.linkedin.com/in/michael-johnson",
-        "githubUrl": "https://github.com/michael-johnson"
+        "linkedinUrl": "https://www.linkedin.com/in/dario-elguero/",
+        "githubUrl": "https://github.com/Dario-Elguero"
       },
       {
         "id": 8,
         "name": "Adlai Bermejo",
         "position": "Administrador de espacio de trabajo",
-        "country": "https://i.ibb.co/1sZdXx0/FR.png",
+        "country": "https://i.ibb.co/1sZdXx0/MX.png",
         "testimonial": "Max es un desarrollador altamente competente y versátil. Su capacidad para abordar tanto los aspectos técnicos como los de negocio de un proyecto es impresionante. Siempre entrega resultados de calidad y es un gran colaborador en equipo.",
         "photoUrl": "https://ca.slack-edge.com/T04B725G8TB-U04AWTHE7D2-41cc8d4d50e1-512",
-        "linkedinUrl": "https://www.linkedin.com/in/sophie-martin",
-        "githubUrl": "https://github.com/sophie-martin"
+        "linkedinUrl": "https://www.linkedin.com/in/adlai-bermejo-785b15180/",
+        "githubUrl": ""
       }
       
     ]    
   },
-
   "skills": {
     "completedText": "Habilidades adquiridas",
     "inProgressText": "Aprendiendo nuevas herramientas",

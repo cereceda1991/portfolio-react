@@ -102,7 +102,6 @@
         flex-direction: column;
         margin: 0;
         gap: 1rem;
-        background-color: aqua;
     }
 
     .menu__navbar ul li {

@@ -11,6 +11,7 @@
 .container_title{
     font-size: 2rem;
     margin-bottom: 120px;
+    text-align: center;
 }
 
 .footer__count_visit {
