@@ -56,6 +56,7 @@ const SliderTestimonials = ({ testimonials }) => {
               >
                 <img src={testimonial.photoUrl} alt={testimonial.name} className="testimonial__photo" />
                 <p>{testimonial.position}</p>
+                <img src={testimonial.country} alt={testimonial.name} className="testimonial__country" />
                 <h1>{testimonial.name}</h1>
                 <span>{testimonial.testimonial}</span>
                 <div className="container_testimonials-social">

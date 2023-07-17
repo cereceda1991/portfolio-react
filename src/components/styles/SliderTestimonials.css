@@ -67,6 +67,11 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.testimonial__country{
+width: 30px;
+margin: 0;
+}
+
 .container_testimonials-social {
     display: flex;
     justify-content: center;
