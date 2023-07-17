@@ -55,9 +55,11 @@ const SliderTestimonials = ({ testimonials }) => {
                 className={`testimonial ${isActive ? 'active' : ''} ${isPrevious ? 'previous' : ''} ${isNext ? 'next' : ''}`}
               >
                 <img src={testimonial.photoUrl} alt={testimonial.name} className="testimonial__photo" />
-                <p>{testimonial.position}</p>
+                <p className='testimonial_position'>{testimonial.position}</p>
+                <div className='container_country'>
+                  <h1 className='testimonial_name'>{testimonial.name}</h1>
                 <img src={testimonial.country} alt={testimonial.name} className="testimonial__country" />
-                <h1>{testimonial.name}</h1>
+                  </div>
                 <span>{testimonial.testimonial}</span>
                 <div className="container_testimonials-social">
                   <a href={testimonial.linkedinUrl} target="_blank" rel="noopener noreferrer" className="social_linkedin">
