@@ -6,6 +6,8 @@ import { setLanguageData } from '../store/languageSlice';
 import axios from 'axios';
 import './styles/ButtonWsp.css';
 import './styles/Footer.css';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+
 
 const Footer = () => {
   const dispatch = useDispatch();
@@ -14,7 +16,7 @@ const Footer = () => {
   useEffect(() => {
     if (!languageData) {
       const url =
-        'https://raw.githubusercontent.com/cereceda1991/myportfolio-react/main/src/languages/data_es.json';
+        'https://github.com/cereceda1991/myportfolio-react/blob/main/src/languages/data_es.json';
       axios
         .get(url)
         .then((response) => {
@@ -31,23 +33,31 @@ const Footer = () => {
     return <div>Cargando datos...</div>;
   }
 
-  const { visitorNumberText, copyRightText, testimonials } =
+  const { visitorNumberText, copyRightText,title, testimonials } =
     languageData.footer;
+  console.log(testimonials);
 
-
-  return (
+return (
     <footer className="container__footer">
-      <section className="footer__testimonials">
+    <h1 className='container_title'>{title}</h1>
+    <section className="footer__testimonials">
         {testimonials.map((testimonial) => (
           <div key={testimonial.id} className="testimonial">
-            <img src={testimonial.photoUrl} alt={testimonial.name} className="testimonial__photo" />
+              <img src={testimonial.photoUrl} alt={testimonial.name} className="testimonial__photo" />
+              <p> {testimonial.position}</p>            
+              <h1>{testimonial.name}</h1>              
             <p>{testimonial.testimonial}</p>
-            <p className="testimonial__name">{testimonial.name}</p>
-            <img src={testimonial.country} alt={testimonial.name} className="testimonial__flag" />
-          </div>
+            <div className='container_testimonials-social'>
+            <a href={testimonial.linkedinUrl} target="_blank" rel="noopener noreferrer" className='social_linkedin'>
+              <FaLinkedin/>
+            </a>
+            <a href={testimonial.githubUrl} target="_blank" rel="noopener noreferrer" className='social_FaGithub'>
+              <FaGithub/>
+            </a>
+            </div>
+            </div>           
         ))}
       </section>
-
       <section className="footer__count_visit">
         <h1>{visitorNumberText}</h1>
         <img

@@ -5,64 +5,90 @@
     align-items: center;
     width: 100%;
     max-width: 1440px;
-    padding: 1rem;
     margin: auto;
-    margin-top: auto;
-    margin-bottom: 0;
+    margin-top: 8rem;
 }
 
 .footer__testimonials {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
-    background-color: #0003;
+    gap: 2rem;
     width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
 }
 
 .testimonial {
     display: flex;
     place-items: center;
-    justify-content: center;
+    position: relative;
     flex-direction: column;
-    width: 200px;
+    text-align: center;
+    padding: 1rem;
+    width: 250px;
+    background-color: #fff8;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
 }
 
-.testimonial__photo{
-border-radius: 50%;
-
-width: 100px;
-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.container_title{
+    font-size: 2rem;
+    margin-bottom: 9rem;
 }
+
+.testimonial h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #383838;
+}
+
+.testimonial p {
+    margin-top: 2rem;
+    color: #383838;
+}
+
+.testimonial__photo {
+    border-radius: 50%;
+    top: -7rem;
+    position: absolute;
+    width: 150px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container_testimonials-social {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+}
+
+.social_linkedin {
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+}
+
+.social_FaGithub {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
 .footer__count_visit {
     display: none;
 }
 
-.footer__copyright {
-    text-align: center;
-    width: 100%;
-}
-
-.footer__copyright_title {
+.footer__logo {
     display: none;
 }
 
 @media (min-width: 1025px) {
-    .footer__copyright_title {
-        display: block;
-        font-size: 2rem;
-        font-weight: 600;
-        cursor: pointer;
-        font-family: 'Teko', sans-serif;
-        color: #000;
+    .container__footer {
+        padding: 7rem 1rem 0rem 6rem;
+        max-width: 1440px;
     }
 
-    .footer__copyright_title sub {
-        vertical-align: sub;
-        font-size: 2rem;
+    .footer__copyright {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 1rem;
     }
 
     .footer__count_visit {
@@ -89,12 +115,17 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         width: 100%;
     }
 
-    .footer__copyright {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        padding: 0 1rem;
+    .footer__logo {
+        display: block;
+        font-size: 2rem;
+        font-weight: 600;
+        cursor: pointer;
+        font-family: 'Teko', sans-serif;
+        color: #000;
     }
 
-
+    .footer__logo sub {
+        vertical-align: sub;
+        font-size: 2rem;
+    }
 }
