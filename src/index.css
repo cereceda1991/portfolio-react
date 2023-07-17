@@ -21,6 +21,7 @@
   --background-fixed: #1b1b1b;
   --secondary-color: #3a78f2;
   --terciary-color: #6fc2b0;
+  --quaternary-color:#fff8;
   --text-color: #f9f5f6;
   --link-color: #f9f5f6;
 }
@@ -37,6 +38,7 @@ h1 {
 
 body.Light__Mode {
   --background-color: #f9f5f6;
+  --quaternary-color:#0003;
   --text-color: #1b1b1b;
   --link-color: #1b1b1b;
   --scrollbar-track-color: #f9f5f6;

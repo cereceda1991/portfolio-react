@@ -148,7 +148,58 @@
         "photoUrl": "https://avatars.githubusercontent.com/u/67226453?v=4",
         "linkedinUrl": "https://www.linkedin.com/in/cristian-gomez",
         "githubUrl": "https://www.linkedin.com/in/elizabeth-leon"
+      },
+      {
+        "id": 4,
+        "name": "Sara Lopez",
+        "position": "Gerente de Proyectos",
+        "country": "https://i.ibb.co/7yyThMk/US.png",
+        "testimonial": "Max es un talento excepcional en el desarrollo web. Su habilidad para trabajar tanto en el front-end como en el back-end es impresionante. Siempre cumple con los plazos y produce un código de alta calidad.",
+        "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U040KTB0N26-2e9995a18a18-512",
+        "linkedinUrl": "https://www.linkedin.com/in/sara-lopez",
+        "githubUrl": "https://github.com/sara-lopez"
+      },
+      {
+        "id": 5,
+        "name": "Carlos Morales",
+        "position": "Ingeniero de Software",
+        "country": "https://i.ibb.co/MGpSfKJ/MX.png",
+        "testimonial": "Max es un desarrollador Full Stack altamente competente. Sus habilidades técnicas y su capacidad para resolver problemas son excepcionales. Siempre encuentra soluciones efectivas y entrega resultados de calidad.",
+        "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U0416DJ43QE-3b0a3d61f228-512",
+        "linkedinUrl": "https://www.linkedin.com/in/carlos-morales",
+        "githubUrl": "https://github.com/carlos-morales"
+      },
+      {
+        "id": 6,
+        "name": "Isabella Silva",
+        "position": "Diseñadora UX/UI",
+        "country": "https://i.ibb.co/64Qz4LP/BR.png",
+        "testimonial": "Max es un desarrollador Full Stack muy talentoso. Su capacidad para comprender tanto el diseño como la implementación técnica es impresionante. Trabajar con él siempre ha sido una experiencia fluida y productiva.",
+        "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U040MCZAF44-5e8a0dd52c1d-512",
+        "linkedinUrl": "https://www.linkedin.com/in/isabella-silva",
+        "githubUrl": "https://github.com/isabella-silva"
+      },
+      {
+        "id": 7,
+        "name": "Michael Johnson",
+        "position": "Arquitecto de Software",
+        "country": "https://i.ibb.co/4pgg3Tc/US.png",
+        "testimonial": "He tenido el placer de colaborar con Max en varios proyectos de desarrollo. Su conocimiento y habilidades como desarrollador Full Stack son sobresalientes. Siempre aporta soluciones técnicas sólidas y cumple con los requisitos del proyecto.",
+        "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U040HCMEGFD-530b4007d131-512",
+        "linkedinUrl": "https://www.linkedin.com/in/michael-johnson",
+        "githubUrl": "https://github.com/michael-johnson"
+      },
+      {
+        "id": 8,
+        "name": "Sophie Martin",
+        "position": "Analista de Sistemas",
+        "country": "https://i.ibb.co/1sZdXx0/FR.png",
+        "testimonial": "Max es un desarrollador Full Stack altamente competente y versátil. Su capacidad para abordar tanto los aspectos técnicos como los de negocio de un proyecto es impresionante. Siempre entrega resultados de calidad y es un gran colaborador en equipo.",
+        "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U0417GF04FY-877c2ed9a5f4-512",
+        "linkedinUrl": "https://www.linkedin.com/in/sophie-martin",
+        "githubUrl": "https://github.com/sophie-martin"
       }
+      
     ]    
   },
 

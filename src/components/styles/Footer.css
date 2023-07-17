@@ -6,68 +6,11 @@
     width: 100%;
     max-width: 1440px;
     margin: auto;
-    margin-top: 8rem;
-}
-
-.footer__testimonials {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    width: 100%;
-}
-
-.testimonial {
-    display: flex;
-    place-items: center;
-    position: relative;
-    flex-direction: column;
-    text-align: center;
-    padding: 1rem;
-    width: 250px;
-    background-color: #fff8;
-    border-radius: .5rem;
-    margin-bottom: 2rem;
 }
 
 .container_title{
     font-size: 2rem;
-    margin-bottom: 9rem;
-}
-
-.testimonial h1 {
-    font-weight: 600;
-    font-size: 1.5rem;
-    color: #383838;
-}
-
-.testimonial p {
-    margin-top: 2rem;
-    color: #383838;
-}
-
-.testimonial__photo {
-    border-radius: 50%;
-    top: -7rem;
-    position: absolute;
-    width: 150px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.container_testimonials-social {
-    display: flex;
-    gap: .5rem;
-    justify-content: center;
-}
-
-.social_linkedin {
-    font-size: 1.8rem;
-    color: var(--secondary-color);
-}
-
-.social_FaGithub {
-    font-size: 1.8rem;
-    color: var(--primary-color);
+    margin-bottom: 120px;
 }
 
 .footer__count_visit {

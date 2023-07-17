@@ -6,7 +6,7 @@ import { setLanguageData } from '../store/languageSlice';
 import axios from 'axios';
 import './styles/ButtonWsp.css';
 import './styles/Footer.css';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import SliderTestimonials from './SliderTestimonials';
 
 
 const Footer = () => {
@@ -33,31 +33,14 @@ const Footer = () => {
     return <div>Cargando datos...</div>;
   }
 
-  const { visitorNumberText, copyRightText,title, testimonials } =
+  const { visitorNumberText, copyRightText, title, testimonials } =
     languageData.footer;
   console.log(testimonials);
 
-return (
+  return (
     <footer className="container__footer">
-    <h1 className='container_title'>{title}</h1>
-    <section className="footer__testimonials">
-        {testimonials.map((testimonial) => (
-          <div key={testimonial.id} className="testimonial">
-              <img src={testimonial.photoUrl} alt={testimonial.name} className="testimonial__photo" />
-              <p> {testimonial.position}</p>            
-              <h1>{testimonial.name}</h1>              
-            <p>{testimonial.testimonial}</p>
-            <div className='container_testimonials-social'>
-            <a href={testimonial.linkedinUrl} target="_blank" rel="noopener noreferrer" className='social_linkedin'>
-              <FaLinkedin/>
-            </a>
-            <a href={testimonial.githubUrl} target="_blank" rel="noopener noreferrer" className='social_FaGithub'>
-              <FaGithub/>
-            </a>
-            </div>
-            </div>           
-        ))}
-      </section>
+      <h1 className='container_title'>{title}</h1>
+      <SliderTestimonials testimonials={testimonials}/>
       <section className="footer__count_visit">
         <h1>{visitorNumberText}</h1>
         <img

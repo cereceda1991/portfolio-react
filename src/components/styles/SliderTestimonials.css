@@ -1,0 +1,87 @@
+.slider_testimonials {
+    position: relative;
+}
+
+.slider-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    margin-right: 2rem;
+    padding: 1rem;
+    background-color: var(--quaternary-color);
+    border-radius: .5rem;
+    color: #000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.testimonial.active {
+    opacity: 1;
+}
+
+.testimonial h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.testimonial p {
+    margin-top: 2rem;
+}
+
+.testimonial__photo {
+    border-radius: 50%;
+    position: absolute;
+    width: 150px;
+    top: -110px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container_testimonials-social {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: .5rem;
+}
+
+.social_linkedin {
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+}
+
+.social_FaGithub {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.slider-button.prev {
+    left: 1rem;
+}
+
+.slider-button.next {
+    right: 1rem;
+}
+
+.slider-button:hover {
+    background-color: var(--secondary-color);
+}
