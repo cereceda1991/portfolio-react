@@ -117,6 +117,7 @@
   "footer": {
     "visitorNumberText": "Eres el visitante N°",
     "copyRightText": "© Max Cereceda 2023. Todos los derechos reservados",
+    "title":"Lo que opinan clientes y compañeros",
     "testimonials": [
       {
         "id": 1,
@@ -125,7 +126,8 @@
         "country": "https://i.ibb.co/Ln0vhg4/AR.png",
         "testimonial": "¡El trabajo de Max es increíble! Siempre supera mis expectativas y entrega resultados de alta calidad. Lo recomendaría sin dudarlo.",
         "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U054DFJSR2T-3ea5ea0b27f6-512",
-        "linkedinUrl": "https://www.linkedin.com/in/elizabeth-leon"
+        "linkedinUrl": "https://www.linkedin.com/in/elizabeth-leon",
+        "githubUrl": "https://www.linkedin.com/in/elizabeth-leon"
       },
       {
         "id": 2,
@@ -134,7 +136,8 @@
         "country": "https://i.ibb.co/276DbnR/VE.png",
         "testimonial": "Max es un talento excepcional. Su creatividad y habilidades técnicas son impresionantes. Estoy muy contenta con el proyecto que realizó para mí.",
         "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U040WM4U2DC-b96518bf221e-512",
-        "linkedinUrl": "https://www.linkedin.com/in/yenifer-ramirez"
+        "linkedinUrl": "https://www.linkedin.com/in/yenifer-ramirez",
+        "githubUrl": "https://www.linkedin.com/in/elizabeth-leon"
       },
       {
         "id": 3,
@@ -143,12 +146,12 @@
         "country": "https://i.ibb.co/Ln0vhg4/AR.png",
         "testimonial": "Trabajar con Max fue una experiencia maravillosa. Es un profesional amigable y siempre dispuesto a escuchar. Definitivamente, estaría encantado de trabajar con él nuevamente en el futuro.",
         "photoUrl": "https://avatars.githubusercontent.com/u/67226453?v=4",
-        "linkedinUrl": "https://www.linkedin.com/in/cristian-gomez"
+        "linkedinUrl": "https://www.linkedin.com/in/cristian-gomez",
+        "githubUrl": "https://www.linkedin.com/in/elizabeth-leon"
       }
-    ]
-    
+    ]    
   },
-  
+
   "skills": {
     "completedText": "Habilidades adquiridas",
     "inProgressText": "Aprendiendo nuevas herramientas",
