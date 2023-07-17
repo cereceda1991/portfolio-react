@@ -117,25 +117,90 @@
   "footer": {
     "visitorNumberText": "Você é o visitante número",
     "copyRightText": "© Max Cereceda 2023. Todos os direitos reservados",
+    "title": "Depoimentos: Vozes da Experiência",
     "testimonials": [
       {
         "id": 1,
-        "name": "João Silva",
-        "testimonial": "O trabalho do Max é incrível! Sempre supera minhas expectativas e entrega resultados de alta qualidade. Eu o recomendaria sem hesitar."
+        "name": "Elizabeth León",
+        "position": "Designer UX/UI",
+        "country": "https://i.ibb.co/Ln0vhg4/AR.png",
+        "testimonial": "O trabalho do Max é incrível! Sempre supera minhas expectativas e entrega resultados de alta qualidade. Eu o recomendaria sem hesitar.",
+        "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U054DFJSR2T-3ea5ea0b27f6-512",
+        "linkedinUrl": "https://www.linkedin.com/in/elizabeth-leon",
+        "githubUrl": "https://www.linkedin.com/in/elizabeth-leon"
       },
       {
         "id": 2,
-        "name": "Maria Santos",
-        "testimonial": "Max é um talento excepcional. Sua criatividade e habilidades técnicas são impressionantes. Estou muito satisfeita com o projeto que ele fez para mim."
+        "name": "Yenifer Ramírez",
+        "position": "Gerente de Projeto",
+        "country": "https://i.ibb.co/276DbnR/VE.png",
+        "testimonial": "Max é um talento excepcional. Sua criatividade e habilidades técnicas são impressionantes. Estou muito feliz com o projeto que ele fez para mim.",
+        "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U040WM4U2DC-b96518bf221e-512",
+        "linkedinUrl": "https://www.linkedin.com/in/yenifer-ramirez",
+        "githubUrl": "https://www.linkedin.com/in/elizabeth-leon"
       },
       {
         "id": 3,
-        "name": "Carlos Oliveira",
-        "testimonial": "Trabalhar com o Max foi uma experiência maravilhosa. Ele é profissional, amigável e sempre disposto a ouvir. Certamente o contrataria novamente no futuro."
+        "name": "Cristian Gomez",
+        "position": "Desenvolvedor Backend",
+        "country": "https://i.ibb.co/Ln0vhg4/AR.png",
+        "testimonial": "Trabalhar com o Max foi uma experiência maravilhosa. Ele é um profissional amigável e sempre disposto a ouvir. Eu definitivamente ficaria feliz em trabalhar com ele novamente no futuro.",
+        "photoUrl": "https://avatars.githubusercontent.com/u/67226453?v=4",
+        "linkedinUrl": "https://www.linkedin.com/in/cristian-gomez",
+        "githubUrl": "https://www.linkedin.com/in/elizabeth-leon"
+      },
+      {
+        "id": 4,
+        "name": "Erik Perez",
+        "position": "Diretor Acadêmico",
+        "country": "https://i.ibb.co/7yyThMk/US.png",
+        "testimonial": "Max é um talento excepcional no desenvolvimento web. Sua habilidade para trabalhar tanto no front-end quanto no back-end é impressionante. Ele sempre cumpre prazos e produz um código de alta qualidade.",
+        "photoUrl": "https://ca.slack-edge.com/T04B725G8TB-U04BJ55FHSL-e5ce6dd816ec-512",
+        "linkedinUrl": "https://www.linkedin.com/in/sara-lopez",
+        "githubUrl": "https://github.com/sara-lopez"
+      },
+      {
+        "id": 5,
+        "name": "Lorenzo Rueda",
+        "position": "Engenheiro de Software",
+        "country": "https://i.ibb.co/MGpSfKJ/MX.png",
+        "testimonial": "Max é um desenvolvedor altamente competente. Suas habilidades técnicas e sua capacidade de resolver problemas são excepcionais. Ele sempre encontra soluções eficazes e entrega resultados de qualidade.",
+        "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U055HNSNZC0-c4a5215a1474-512",
+        "linkedinUrl": "https://www.linkedin.com/in/carlos-morales",
+        "githubUrl": "https://github.com/carlos-morales"
+      },
+      {
+        "id": 6,
+        "name": "Lucia Pinna",
+        "position": "Designer UX/UI",
+        "country": "https://i.ibb.co/64Qz4LP/BR.png",
+        "testimonial": "Max é um desenvolvedor muito talentoso. Sua capacidade de entender tanto o design quanto a implementação técnica é impressionante. Trabalhar com ele sempre foi uma experiência fluída e produtiva.",
+        "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U05C29Q39HB-0d27fa529f29-512",
+        "linkedinUrl": "https://www.linkedin.com/in/isabella-silva",
+        "githubUrl": "https://github.com/isabella-silva"
+      },
+      {
+        "id": 7,
+        "name": "Dario Elguero",
+        "position": "Desenvolvedor Frontend",
+        "country": "https://i.ibb.co/4pgg3Tc/US.png",
+        "testimonial": "Tive o prazer de colaborar com o Max em vários projetos de desenvolvimento. Seu conhecimento e habilidades como desenvolvedor são excelentes. Ele sempre traz soluções técnicas sólidas e atende aos requisitos do projeto.",
+        "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U04FMD0KRC1-466d09173211-512",
+        "linkedinUrl": "https://www.linkedin.com/in/michael-johnson",
+        "githubUrl": "https://github.com/michael-johnson"
+      },
+      {
+        "id": 8,
+        "name": "Adlai Bermejo",
+        "position": "Administrador do Espaço de Trabalho",
+        "country": "https://i.ibb.co/1sZdXx0/FR.png",
+        "testimonial": "Max é um desenvolvedor altamente competente e versátil. Sua capacidade de abordar tanto os aspectos técnicos quanto os de negócio de um projeto é impressionante. Ele sempre entrega resultados de qualidade e é um ótimo colaborador em equipe.",
+        "photoUrl": "https://ca.slack-edge.com/T04B725G8TB-U04AWTHE7D2-41cc8d4d50e1-512",
+        "linkedinUrl": "https://www.linkedin.com/in/sophie-martin",
+        "githubUrl": "https://github.com/sophie-martin"
       }
     ]
-  }
-  ,
+  },
   "skills": {
     "completedText": "Habilidades Concluídas",
     "inProgressText": "Habilidades em Andamento",
