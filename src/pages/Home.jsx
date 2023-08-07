@@ -13,6 +13,11 @@ import Foto from '/foto-home.webp';
 import { DataApi } from '../api/DataApi';
 
 const Home = () => {
+  
+  const handleUpClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const languageData = DataApi();
 
   if (!languageData) {
@@ -65,7 +70,7 @@ const Home = () => {
         <h3>{slogan}</h3>
         <p>{description}</p>
         <h4>
-          <Link to="/about">
+          <Link to="/about" onClick={handleUpClick}>
             <ButtonModern content={buttonText} />
           </Link>
         </h4>
