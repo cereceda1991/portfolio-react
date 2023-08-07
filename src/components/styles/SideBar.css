@@ -4,6 +4,7 @@
     flex-direction: column;
     top: 35%;
     left: 0;
+    z-index: 5;
 }
 
 .container__social-icons li {
