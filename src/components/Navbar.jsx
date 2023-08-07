@@ -15,6 +15,10 @@ const Navbar = ({ showNavbar }) => {
 
   const { links } = languageData.navbar;
 
+  const handleUpClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <nav className={`menu__navbar ${showNavbar ? 'open' : ''}`}>
       <ul>
@@ -25,6 +29,7 @@ const Navbar = ({ showNavbar }) => {
               className={activeLink === index ? 'active' : ''}
               onClick={() => {
                 setActiveLink(index);
+                handleUpClick()
               }}
             >
               {link.text}
