@@ -200,11 +200,11 @@
         "githubUrl": ""
       }
     ],
-    "chat":{
-      "contentMessageInit":"Ingresa tu nombre",
-      "buttonInit":"Iniciar Chat",
-      "SenderSystem":"Sistema",
-      "contentInput":"Escribe un mensaje"
+    "chat": {
+      "contentMessageInit": "Digite seu nome",
+      "buttonInit": "Iniciar Conversa",
+      "SenderSystem": "Sistema",
+      "contentInput": "Escreva uma mensagem"
     }
   },
   "skills": {

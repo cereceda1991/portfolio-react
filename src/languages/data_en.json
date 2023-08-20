@@ -117,7 +117,7 @@
   "footer": {
     "visitorNumberText": "You are visitor number",
     "copyRightText": "© Max Cereceda 2023. All rights reserved.",
-    "title":"Testimonials: Voices of Experience",
+    "title": "Testimonials: Voices of Experience",
     "testimonials": [
       {
         "id": 1,
@@ -200,11 +200,11 @@
         "githubUrl": ""
       }
     ],
-    "chat":{
-      "contentMessageInit":"Ingresa tu nombre",
-      "buttonInit":"Iniciar Chat",
-      "SenderSystem":"Sistema",
-      "contentInput":"Escribe un mensaje"
+    "chat": {
+      "contentMessageInit": "Enter your name",
+      "buttonInit": "Start Chat",
+      "SenderSystem": "System",
+      "contentInput": "Write a message"
     }
   },
   "skills": {
