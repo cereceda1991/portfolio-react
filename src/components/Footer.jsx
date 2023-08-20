@@ -7,6 +7,7 @@ import axios from 'axios';
 import './styles/ButtonWsp.css';
 import './styles/Footer.css';
 import SliderTestimonials from './SliderTestimonials';
+import ChatApp from './ChatApp';
 
 
 const Footer = () => {
@@ -33,9 +34,8 @@ const Footer = () => {
     return <div>Cargando datos...</div>;
   }
 
-  const { visitorNumberText, copyRightText, title, testimonials } =
+  const { visitorNumberText, copyRightText, title, testimonials, chat} =
     languageData.footer;
-  console.log(testimonials);
 
   return (
     <footer className="container__footer">
@@ -66,6 +66,7 @@ const Footer = () => {
           <img src={Whatsapp} alt="Contacto por WhatsApp" />
         </a>
       </section>
+      <ChatApp chat={chat} />
     </footer>
   );
 };
