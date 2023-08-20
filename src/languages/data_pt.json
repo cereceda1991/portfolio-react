@@ -204,6 +204,7 @@
       "contentMessageInit": "Digite seu nome",
       "buttonInit": "Iniciar Conversa",
       "SenderSystem": "Sistema",
+      "MessageSystem": "entrou na conversa",
       "contentInput": "Escreva uma mensagem"
     }
   },

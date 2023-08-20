@@ -204,6 +204,7 @@
       "contentMessageInit": "Enter your name",
       "buttonInit": "Start Chat",
       "SenderSystem": "System",
+      "MessageSystem": "has joined the conversation",
       "contentInput": "Write a message"
     }
   },

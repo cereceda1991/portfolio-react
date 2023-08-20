@@ -40,7 +40,7 @@ const ChatApp = ({chat}) => {
   const handleNameSubmit = () => {
     if (senderName.trim() !== '' && socket && socket.connected) {
       setIsNameSet(true);
-      sendSystemNotification(`${senderName} se ha unido a la conversación`);
+      sendSystemNotification(`${senderName} ${chat.MessageSystem}`);
     }
   };
 
@@ -96,12 +96,12 @@ const ChatApp = ({chat}) => {
                 type="text"
                 value={senderName}
                 onChange={(e) => setSenderName(e.target.value)}
-                placeholder="Ingresa tu nombre..."
+                placeholder={chat.contentMessageInit}
                 className="name-input__input"
                 onKeyDown ={handleKeyDown}
               />
               <button onClick={handleNameSubmit} className="name-input__button">
-                Iniciar Chat
+            {chat.buttonInit}
               </button>
             </div>
           ) : (
@@ -119,7 +119,7 @@ const ChatApp = ({chat}) => {
                   type="text"
                   value={inputMessage}
                   onChange={(e) => setInputMessage(e.target.value)}
-                  placeholder="Escribe un mensaje..."
+                  placeholder={chat.contentInput}
                   className="input-area__input"
                   onKeyDown ={handleKeyDown}
                 />
