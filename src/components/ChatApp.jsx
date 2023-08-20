@@ -13,7 +13,7 @@ const ChatApp = ({chat}) => {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    const newSocket = io('http://localhost:3001', {
+    const newSocket = io('https://backportfolio.up.railway.app', {
       transports: ['websocket'],
       reconnection: true,
     });
@@ -76,8 +76,6 @@ const ChatApp = ({chat}) => {
   const closeChat = () => {
     setIsChatOpen(false);
   };
-
-  console.log(chat);
 
   return (
     <div className="chat-container">
