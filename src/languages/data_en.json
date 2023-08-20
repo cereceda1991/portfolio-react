@@ -199,7 +199,13 @@
         "linkedinUrl": "https://www.linkedin.com/in/adlai-bermejo-785b15180/",
         "githubUrl": ""
       }
-    ]    
+    ],
+    "chat":{
+      "contentMessageInit":"Ingresa tu nombre",
+      "buttonInit":"Iniciar Chat",
+      "SenderSystem":"Sistema",
+      "contentInput":"Escribe un mensaje"
+    }
   },
   "skills": {
     "completedText": "Acquired skills",
