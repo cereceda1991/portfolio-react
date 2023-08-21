@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 import './styles/ChatApp.css';
-import { HiChatAlt2, HiOutlineX } from 'react-icons/hi';
+import { HiChatAlt2 } from 'react-icons/hi';
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { FiSend } from "react-icons/fi";
 import notificationSound from '../assets/alert.mp3';

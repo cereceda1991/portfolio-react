@@ -1,34 +1,16 @@
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
 import Whatsapp from '../assets/icon-whatsapp.svg';
-import { setLanguageData } from '../store/languageSlice';
-import axios from 'axios';
 import './styles/ButtonWsp.css';
 import './styles/Footer.css';
 import SliderTestimonials from './SliderTestimonials';
 import ChatApp from './ChatApp';
 
+// Importaciones relacionadas con la API
+import { DataApi } from '../api/DataApi';
 
 const Footer = () => {
-  const dispatch = useDispatch();
-  const languageData = useSelector((state) => state.language);
 
-  useEffect(() => {
-    if (!languageData) {
-      const url =
-        'https://github.com/cereceda1991/myportfolio-react/blob/main/src/languages/data_es.json';
-      axios
-        .get(url)
-        .then((response) => {
-          const languageData = response.data;
-          dispatch(setLanguageData(languageData));
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    }
-  }, [languageData, dispatch]);
+  const languageData = DataApi();
 
   if (!languageData) {
     return <div>Cargando datos...</div>;

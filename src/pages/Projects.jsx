@@ -16,9 +16,7 @@ const Projects = () => {
 
   const { title, projects } = languageData.project;
 
-  console.log(languageData.project);
-
-  return (
+return (
     <section className="container__projects">
       <h1 className="container__projects-title">{title}</h1>
       <Slider projects={projects} />
