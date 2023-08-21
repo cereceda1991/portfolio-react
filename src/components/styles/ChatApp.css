@@ -95,7 +95,9 @@
 
 .close-chat-button {
     color: red;
+    font-size: 30px;
 }
+
 
 .open-chat-button:hover,
 .close-chat-button:hover {
