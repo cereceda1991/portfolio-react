@@ -1,4 +1,3 @@
-/* Chat Container */
 .chat-container {
     display: flex;
     flex-direction: column;
@@ -53,6 +52,10 @@
 }
 
 .message-item {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    flex-wrap: wrap;
     margin-bottom: 5px;
     padding: 10px;
     border-radius: 5px;
