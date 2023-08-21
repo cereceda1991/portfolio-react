@@ -12,6 +12,7 @@ const ChatApp = ({chat}) => {
   const [isNameSet, setIsNameSet] = useState(false);
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [socket, setSocket] = useState(null);
+  const [unreadMessages, setUnreadMessages] = useState(0);
 
   useEffect(() => {
     const newSocket = io('https://backportfolio.up.railway.app', {
@@ -24,6 +25,9 @@ const ChatApp = ({chat}) => {
       setSocket(newSocket);
       newSocket.on('newNotification', (notification) => {
         setMessages((prevMessages) => [...prevMessages, notification]);
+        if (!isChatOpen) {
+          setUnreadMessages((prevUnread) => prevUnread + 1);
+        }
       });
     });
 
@@ -69,11 +73,18 @@ const ChatApp = ({chat}) => {
 
       socket.emit('notification', newMessage);
       setInputMessage('');
+      const audio = new Audio(notificationSound);
+      audio.play();
     }
   };
 
   const toggleChat = () => {
-    setIsChatOpen((prevIsChatOpen) => !prevIsChatOpen);
+    setIsChatOpen((prevIsChatOpen) => {
+      if (prevIsChatOpen) {
+        setUnreadMessages(0);
+      }
+      return !prevIsChatOpen;
+    });
   };
 
   const closeChat = () => {
@@ -85,6 +96,9 @@ const ChatApp = ({chat}) => {
       {!isChatOpen ? (
         <button onClick={toggleChat} className="open-chat-button">
           <HiChatAlt2 />
+          {unreadMessages > 0 && (
+            <span className="unread-counter">{unreadMessages}</span>
+          )}
         </button>
       ) : (
         <div className="chat-open">
