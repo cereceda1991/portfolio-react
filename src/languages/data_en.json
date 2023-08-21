@@ -201,6 +201,7 @@
       }
     ],
     "chat": {
+      "title":"Let's Communicate!",
       "contentMessageInit": "Enter your name",
       "buttonInit": "Start Chat",
       "SenderSystem": "System",

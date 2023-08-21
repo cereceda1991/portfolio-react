@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 import './styles/ChatApp.css';
 import { HiChatAlt2, HiOutlineX } from 'react-icons/hi';
+import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { FiSend } from "react-icons/fi";
 import notificationSound from '../assets/alert.mp3';
 
-const ChatApp = ({chat}) => {
+const ChatApp = ({ chat }) => {
   const [messages, setMessages] = useState([]);
   const [inputMessage, setInputMessage] = useState('');
   const [senderName, setSenderName] = useState('');
@@ -46,7 +47,7 @@ const ChatApp = ({chat}) => {
     if (senderName.trim() !== '' && socket && socket.connected) {
       setIsNameSet(true);
       const audio = new Audio(notificationSound);
-        audio.play();
+      audio.play();
       sendSystemNotification(`${senderName} ${chat.MessageSystem}`);
     }
   };
@@ -56,7 +57,7 @@ const ChatApp = ({chat}) => {
       sendMessage();
     }
   }
-  
+
   const sendSystemNotification = (message) => {
     socket.emit('notification', {
       message,
@@ -100,11 +101,16 @@ const ChatApp = ({chat}) => {
             <span className="unread-counter">{unreadMessages}</span>
           )}
         </button>
-      ) : (
-        <div className="chat-open">
+      ) : (<>
+        <div className='chat-header'>
+          <h1>
+            {chat.title}
+          </h1>
           <button onClick={closeChat} className="close-chat-button">
-            <HiOutlineX />
+            <MdOutlineArrowForwardIos />
           </button>
+        </div>
+        <div className="chat-open">
           {!isNameSet ? (
             <div className="name-input">
               <input
@@ -113,10 +119,10 @@ const ChatApp = ({chat}) => {
                 onChange={(e) => setSenderName(e.target.value)}
                 placeholder={chat.contentMessageInit}
                 className="name-input__input"
-                onKeyDown ={handleKeyDown}
+                onKeyDown={handleKeyDown}
               />
               <button onClick={handleNameSubmit} className="name-input__button">
-            {chat.buttonInit}
+                {chat.buttonInit}
               </button>
             </div>
           ) : (
@@ -136,7 +142,7 @@ const ChatApp = ({chat}) => {
                   onChange={(e) => setInputMessage(e.target.value)}
                   placeholder={chat.contentInput}
                   className="input-area__input"
-                  onKeyDown ={handleKeyDown}
+                  onKeyDown={handleKeyDown}
                 />
                 <button onClick={sendMessage} className="input-area__button">
                   <SendIcon />
@@ -145,11 +151,12 @@ const ChatApp = ({chat}) => {
             </div>
           )}
         </div>
+      </>
       )}
     </div>
   );
 };
 
-const SendIcon = () => <FiSend/>;
+const SendIcon = () => <FiSend />;
 
 export default ChatApp;

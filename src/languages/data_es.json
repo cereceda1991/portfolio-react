@@ -202,6 +202,7 @@
       
     ],
     "chat":{
+      "title":"¡Comuniquémonos!",
       "contentMessageInit":"Ingresa tu nombre",
       "buttonInit":"Iniciar Chat",
       "SenderSystem":"Sistema",

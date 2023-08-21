@@ -3,19 +3,37 @@
     flex-direction: column;
     align-items: center;
     position: fixed;
-    right: 2rem;
-    padding: 1rem 0rem 0rem;
-    bottom: 100px;
+    right: 1.5rem;
+    bottom: 7rem;
     z-index: 100;
-    border-radius: 0.3rem;
-    max-height: 50vh;
-    overflow-y: auto;
+    max-height: 60vh;
 }
 
-.chat-open{
+.chat-header {
+    width: 100%;
+    position: sticky;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--background-color);
-    border-radius: .5rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: .5rem .5rem 0rem 0rem;
+}
+
+.chat-header h1{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.chat-open {
+    background-color: var(--background-color);
+    overflow-y: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 0rem 0rem .5rem .5rem;
 }
 
 /* Input and Button Styles */
@@ -30,7 +48,7 @@
     border-radius: 0.3rem;
 }
 
-.name-input__button{
+.name-input__button {
     background-color: var(--secondary-color);
 }
 
@@ -48,7 +66,6 @@
 .message-list {
     overflow-y: auto;
     padding: 10px;
-    margin-bottom: 10px;
 }
 
 .message-item {
@@ -82,7 +99,7 @@
 .open-chat-button,
 .close-chat-button {
     border: none;
-    font-size: 48px;
+    font-size: 4rem;
     border-radius: 0.3rem;
     background-color: transparent;
     cursor: pointer;
@@ -95,11 +112,6 @@
 
 .close-chat-button {
     color: red;
+    transform: rotate(90deg);
     font-size: 30px;
-}
-
-
-.open-chat-button:hover,
-.close-chat-button:hover {
-    transform: scale(1.01);
 }

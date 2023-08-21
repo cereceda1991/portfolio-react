@@ -201,6 +201,7 @@
       }
     ],
     "chat": {
+      "title":"Vamos nos Comunicar!",
       "contentMessageInit": "Digite seu nome",
       "buttonInit": "Iniciar Conversa",
       "SenderSystem": "Sistema",
