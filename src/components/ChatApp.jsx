@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 import './styles/ChatApp.css';
 import { HiChatAlt2, HiOutlineX } from 'react-icons/hi';
-import { FiSend} from "react-icons/fi";
+import { FiSend } from "react-icons/fi";
+import notificationSound from '../assets/alert.mp3';
 
 const ChatApp = ({chat}) => {
   const [messages, setMessages] = useState([]);
@@ -40,6 +41,8 @@ const ChatApp = ({chat}) => {
   const handleNameSubmit = () => {
     if (senderName.trim() !== '' && socket && socket.connected) {
       setIsNameSet(true);
+      const audio = new Audio(notificationSound);
+        audio.play();
       sendSystemNotification(`${senderName} ${chat.MessageSystem}`);
     }
   };
