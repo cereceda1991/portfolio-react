@@ -29,19 +29,12 @@
     border: none;
 }
 
-
-/* Estilos para dispositivos de escritorio */
-@media (min-width: 768px) {
-    .icon__navbar {
-        display: none;
-    }
-
-    .container__header {
-        padding: 1rem 2rem 1rem 0rem;
-    }
+.container__header {
+    padding: 0 2rem;
 }
 
-@media (min-width: 1025px) {
+/* Estilos para dispositivos de escritorio */
+@media (min-width: 1000px) {
     .icon__navbar {
         display: none;
     }
@@ -49,5 +42,4 @@
     .container__header {
         justify-content: space-around;
     }
-
 }
