@@ -21,7 +21,7 @@
   --background-fixed: #1b1b1b;
   --secondary-color: #3a78f2;
   --terciary-color: #6fc2b0;
-  --quaternary-color:#fff8;
+  --quaternary-color: #fff8;
   --text-color: #f9f5f6;
   --link-color: #f9f5f6;
 }
@@ -30,15 +30,24 @@ body {
   font-family: 'Roboto', sans-serif;
   background: var(--background-color);
   color: var(--text-color);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
   font-size: 1rem;
+  margin: 0;
 }
 
 body.Light__Mode {
   --background-color: #f9f5f6;
-  --quaternary-color:#0003;
+  --quaternary-color: #0003;
   --text-color: #1b1b1b;
   --link-color: #1b1b1b;
   --scrollbar-track-color: #f9f5f6;

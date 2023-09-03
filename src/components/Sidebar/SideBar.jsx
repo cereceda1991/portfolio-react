@@ -1,35 +1,15 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
-import './styles/SideBar.css';
+import './SideBar.css';
 
 // Importación de Iconos
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-
-// Importacion de Redux y store
-import { useSelector, useDispatch } from 'react-redux';
-import { setLanguageData } from '../store/languageSlice';
+import { DataApi } from '../../api/DataApi';
 
 const SideBar = () => {
-  const languageData = useSelector((state) => state.language);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    if (!languageData) {
-      const url =
-        'https://raw.githubusercontent.com/cereceda1991/myportfolio-react/main/src/languages/data_es.json';
-      axios
-        .get(url)
-        .then((response) => {
-          const languageData = response.data;
-          dispatch(setLanguageData(languageData));
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    }
-  }, [languageData, dispatch]);
+  const languageData = DataApi();
 
   if (!languageData) {
     return <div>Cargando datos...</div>;

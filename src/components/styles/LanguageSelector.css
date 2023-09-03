@@ -4,7 +4,9 @@
 }
 
 .language__dropdown {
-  font-size: 1.2rem;
+  display: block;
+  align-items: center;
+  font-size: 1.1rem;
   color: #fff;
 }
 
@@ -12,7 +14,9 @@
   margin-left: .5rem;
   border-radius: .5rem;
   padding: .3rem;
+  font-size: 1.2rem;
   color: #000;
+  outline: none;
   background-color: #f9f5f6;
   box-shadow: rgba(245, 243, 243, 0.35) 5px 5px 15px;
 }

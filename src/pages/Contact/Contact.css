@@ -1,9 +1,8 @@
 .container__contact {
     display: flex;
     flex-direction: column;
-    width: 100%;
     gap: 3rem;
-    padding: 7rem 2rem;
+    margin: auto;
 }
 
 .info__contact {
@@ -66,8 +65,7 @@
     .container__contact {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        min-height: calc(100% - 85px);
-        padding: 9rem 5rem 2rem 10rem;
+        padding: 1rem 0rem 2rem 6rem;
         max-width: 1440px;
         gap: 4rem;
         margin: auto;

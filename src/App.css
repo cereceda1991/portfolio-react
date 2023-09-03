@@ -2,16 +2,18 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    width: 100%;
 }
 
 .container__header {
-    position: fixed;
+    position: sticky;
     display: flex;
-    width: 100%;
-    height: 85px;
+    gap: 2rem;
     align-items: center;
+    height: 85px;
     z-index: 20;
-    gap: 1rem;
+    top: 0;
+    width: 100%;
     background-color: var(--background-fixed);
 }
 
@@ -29,12 +31,15 @@
     border: none;
 }
 
-.container__header {
-    padding: 0 2rem;
-}
-
 /* Estilos para dispositivos de escritorio */
 @media (min-width: 1000px) {
+    .container__header {
+        max-width: 2160px;
+        margin: auto;
+        padding: 0;
+        top: 0;
+    }
+
     .icon__navbar {
         display: none;
     }

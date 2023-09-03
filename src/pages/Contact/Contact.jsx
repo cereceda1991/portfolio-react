@@ -3,12 +3,11 @@ import { BiMap } from 'react-icons/bi';
 import { HiOutlineMail } from 'react-icons/hi';
 
 // 2. Importación de estilos y componentes
-import ButtonModern from '../components/ButtonModern';
-import SideBar from '../components/SideBar';
-import './styles/Contact.css';
+import ButtonModern from '../../components/ButtonModern';
+import './Contact.css';
 
 // 3. Backend
-import { DataApi } from '../api/DataApi';
+import { DataApi } from '../../api/DataApi';
 
 const Contact = () => {
   const languageData = DataApi();
@@ -78,7 +77,6 @@ const Contact = () => {
           <ButtonModern type="submit" content={form.submitButton} />
         </form>
       </section>
-      <SideBar />
     </main>
   );
 };

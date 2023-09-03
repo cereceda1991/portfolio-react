@@ -93,7 +93,7 @@ const ChatApp = ({ chat }) => {
   };
 
   return (
-    <div className="chat-container">
+    <section className="chat-container">
       {!isChatOpen ? (
         <button onClick={toggleChat} className="open-chat-button">
           <HiChatAlt2 />
@@ -153,7 +153,7 @@ const ChatApp = ({ chat }) => {
         </div>
       </>
       )}
-    </div>
+    </section>
   );
 };
 

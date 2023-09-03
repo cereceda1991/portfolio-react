@@ -2,19 +2,19 @@ import { useState } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
-import Home from './pages/Home';
-import About from './pages/About';
-import Skills from './pages/Skills';
-import Logo from './components/Logo';
-import Contact from './pages/Contact';
-import Projects from './pages/Projects';
-import Footer from './components/Footer';
-import Navbar from './components/Navbar';
-
 import './App.css';
-import LanguageSelector from './components/LanguageSelector';
+import Logo from './components/Logo';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer/Footer';
 import HandleLigthMode from './components/HandleLigthMode';
+import LanguageSelector from './components/LanguageSelector';
 import ErrorBoundary from './components/Error/ErrorBoundary';
+
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Skills from './pages/Skills/Skills';
+import Projects from './pages/Projects/Projects';
+import Contact from './pages/Contact/Contact';
 
 function App() {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -56,7 +56,8 @@ function App() {
           </Routes>
           <Footer />
         </main>
-      </ErrorBoundary>      </>
+      </ErrorBoundary>
+    </>
   );
 }
 

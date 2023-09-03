@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
-import './styles/Skills.css';
+import './Skills.css';
 
 // Importaciones de componentes y estilos
-import SideBar from '../components/SideBar';
-import skillsData from '../utils/skillsData';
-import inProcess from '../utils/skillInProcess';
+import skillsData from '../../utils/skillsData';
+import inProcess from '../../utils/skillInProcess';
 
 // Importaciones relacionadas con la API
-import { DataApi } from '../api/DataApi';
+import { DataApi } from '../../api/DataApi';
 
 const Skills = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -86,7 +85,6 @@ const Skills = () => {
           ))}
         </div>
       </section>
-      <SideBar />
     </main>
   );
 };

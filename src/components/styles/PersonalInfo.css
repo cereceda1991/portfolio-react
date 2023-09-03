@@ -1,6 +1,7 @@
 .info__personal h1 {
     font-size: 1.8rem;
     font-weight: 600;
+    margin: 1rem 0rem;
 }
 
 .info__personal h2 {
@@ -9,6 +10,9 @@
 }
 
 .aboutme__info {
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
     text-align: justify;
 }
 

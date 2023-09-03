@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
-import './styles/SliderTestimonials.css';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import './SliderTestimonials.css';
 
 const SliderTestimonials = ({ testimonials }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -41,7 +41,7 @@ const SliderTestimonials = ({ testimonials }) => {
   }, []);
 
   return (
-    <div className="slider_testimonials">
+    <section className="slider_testimonials">
       <div className="slider-container" ref={sliderRef}>
         <div className="testimonial-slider">
           {testimonials.map((testimonial, index) => {
@@ -80,7 +80,7 @@ const SliderTestimonials = ({ testimonials }) => {
       <button className="slider-button next" onClick={handleNextSlide}>
         Next
       </button>
-    </div>
+    </section>
   );
 };
 

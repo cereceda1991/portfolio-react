@@ -2,15 +2,14 @@ import { Link } from 'react-router-dom';
 
 // Importaciones de componentes y estilos
 import Typewriter from 'typewriter-effect';
-import ButtonModern from '../components/ButtonModern';
-import SideBar from '../components/SideBar';
-import './styles/Home.css';
+import ButtonModern from '../../components/ButtonModern';
+import './Home.css';
 
 //Importacion de Imagenes
 import Foto from '/foto-home.webp';
 
 // Importaciones relacionadas con la API
-import { DataApi } from '../api/DataApi';
+import { DataApi } from '../../api/DataApi';
 
 const Home = () => {
   
@@ -70,16 +69,14 @@ const Home = () => {
         <h3>{slogan}</h3>
         <p>{description}</p>
         <h4>
-          <Link to="/about" onClick={handleUpClick}>
+          <Link to="/projects" onClick={handleUpClick}>
             <ButtonModern content={buttonText} />
           </Link>
         </h4>
       </section>
-
       <section className="home__img">
         <img src={Foto} alt="foto" />
       </section>
-      <SideBar />
     </main>
   );
 };

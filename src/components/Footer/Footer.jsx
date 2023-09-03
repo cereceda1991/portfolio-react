@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
-import Whatsapp from '../assets/icon-whatsapp.svg';
-import './styles/ButtonWsp.css';
-import './styles/Footer.css';
-import SliderTestimonials from './SliderTestimonials';
-import ChatApp from './ChatApp';
+import ChatApp from '../ChatApp';
+import Whatsapp from '../../assets/icon-whatsapp.svg';
+import './ButtonWsp.css';
+import './Footer.css';
 
 // Importaciones relacionadas con la API
-import { DataApi } from '../api/DataApi';
+import { DataApi } from '../../api/DataApi';
+import SideBar from '../Sidebar/SideBar';
+import SliderTestimonials from '../Testimonials/SliderTestimonials';
 
 const Footer = () => {
 
@@ -23,7 +24,7 @@ const Footer = () => {
     <footer className="container__footer">
       <h1 className='container_title'>{title}</h1>
       <SliderTestimonials testimonials={testimonials}/>
-      <section className="footer__count_visit">
+      <section className="footer__count-visit">
         <h1>{visitorNumberText}</h1>
         <img
           src="https://counter10.optistats.ovh/private/contadorvisitasgratis.php?c=9f8phypqz42nealq88usqmmkhgzj823h"
@@ -38,7 +39,7 @@ const Footer = () => {
         </h1>
         <p>{copyRightText}</p>
       </section>
-      <section>
+      <section className='button__whatsApp'>
         <a
           href="https://wa.me/51928263103?text=Hola%20Max,%20vi%20tu%20trabajo%20y%20me%20gustar%C3%ADa%20saber%20mas%20sobre%20ti."
           className="btn__whatsapp"
@@ -49,6 +50,7 @@ const Footer = () => {
         </a>
       </section>
       <ChatApp chat={chat} />
+      <SideBar/>
     </footer>
   );
 };

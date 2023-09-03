@@ -1,9 +1,8 @@
 .container__about {
     display: flex;
     flex-direction: column;
-    width: 100%;
     gap: 3rem;
-    padding: 7rem 1rem 0rem 1rem;
+    padding: 1rem;
 }
 
 .section_dates {
@@ -42,7 +41,7 @@
         margin: auto;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
-        padding: 6rem 6rem 2rem 6rem;
+        padding: 0 6rem;
     }
 
 }
