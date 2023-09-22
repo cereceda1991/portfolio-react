@@ -47,6 +47,7 @@
 }
 
 .home__info p {
+    text-wrap: balance;
     padding-top: 1rem;
 }
 

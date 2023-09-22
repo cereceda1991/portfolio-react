@@ -1,13 +1,10 @@
 import { Link } from 'react-router-dom';
-import ChatApp from '../ChatApp';
 import Whatsapp from '../../assets/icon-whatsapp.svg';
 import './ButtonWsp.css';
 import './Footer.css';
 
-// Importaciones relacionadas con la API
 import { DataApi } from '../../api/DataApi';
 import SideBar from '../Sidebar/SideBar';
-import SliderTestimonials from '../Testimonials/SliderTestimonials';
 
 const Footer = () => {
 
@@ -17,13 +14,11 @@ const Footer = () => {
     return <div>Cargando datos...</div>;
   }
 
-  const { visitorNumberText, copyRightText, title, testimonials, chat} =
+  const { visitorNumberText, copyRightText } =
     languageData.footer;
 
   return (
     <footer className="container__footer">
-      <h1 className='container_title'>{title}</h1>
-      <SliderTestimonials testimonials={testimonials}/>
       <section className="footer__count-visit">
         <h1>{visitorNumberText}</h1>
         <img
@@ -49,8 +44,7 @@ const Footer = () => {
           <img src={Whatsapp} alt="Contacto por WhatsApp" />
         </a>
       </section>
-      <ChatApp chat={chat} />
-      <SideBar/>
+      <SideBar />
     </footer>
   );
 };
